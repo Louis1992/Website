@@ -490,7 +490,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                 )}
 
                 {/* Error Message */}
-                {state.errors.length > 0 && !state.succeeded && (
+                {state.errors && state.errors.length > 0 && !state.succeeded && (
                   <p
                     style={{
                       fontFamily: 'Inter, sans-serif',
