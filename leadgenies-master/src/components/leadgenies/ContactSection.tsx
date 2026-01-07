@@ -19,7 +19,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
     company: '',
     email: '',
     phone: '',
-    challenge: ''
+    message: ''
   });
 
   const [formErrors, setFormErrors] = useState({
