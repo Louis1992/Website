@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FooterSection from '../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
+
+const lang = 'de';
+const pageTitle = "AGB - LeadGenies";
+const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies GmbH.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-white">
+    <h1 class="text-4xl font-bold mb-8">Allgemeine Geschäftsbedingungen (AGB)</h1>
+
+    <div class="prose prose-invert max-w-none">
+      <p class="mb-4">Stand: Januar 2026</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">1. Geltungsbereich</h2>
+      <p>
+        Für die Geschäftsbeziehung zwischen LeadGenies GmbH (nachfolgend „Anbieter“) und dem Kunden (nachfolgend „Kunde“) gelten ausschließlich die nachfolgenden Allgemeinen Geschäftsbedingungen in ihrer zum Zeitpunkt der Bestellung gültigen Fassung.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">2. Vertragsgegenstand</h2>
+      <p>
+        Gegenstand des Vertrages ist die Erbringung von Dienstleistungen im Bereich B2B-Kaltakquise und Leadgenerierung durch den Anbieter.
+      </p>
+
+      <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mt-8">
+        <p class="text-sm text-blue-200">
+          <strong>Hinweis:</strong> Dies ist ein Platzhalter. Bitte fügen Sie hier Ihre vollständigen AGB ein.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>

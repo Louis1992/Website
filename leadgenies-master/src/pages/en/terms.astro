@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FooterSection from '../../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
+
+const lang = 'en';
+const pageTitle = "Terms & Conditions - LeadGenies";
+const pageDescription = "General Terms and Conditions of LeadGenies GmbH.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-white">
+    <h1 class="text-4xl font-bold mb-8">General Terms and Conditions</h1>
+
+    <div class="prose prose-invert max-w-none">
+      <p class="mb-4">Last updated: January 2026</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">1. Scope</h2>
+      <p>
+        For the business relationship between LeadGenies GmbH (hereinafter "Provider") and the customer (hereinafter "Customer"), the following General Terms and Conditions apply exclusively in the version valid at the time of the order.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">2. Subject of Contract</h2>
+      <p>
+        The subject of the contract is the provision of services in the area of B2B cold calling and lead generation by the Provider.
+      </p>
+
+      <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mt-8">
+        <p class="text-sm text-blue-200">
+          <strong>Note:</strong> This is a placeholder. Please insert your full Terms & Conditions here.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>

@@ -1,0 +1,44 @@
+---
+/**
+ * Analytics Component
+ *
+ * Universal component that handles analytics scripts (GTM, GA4, etc.)
+ * from admin dashboard header scripts.
+ *
+ * How it works:
+ * 1. Receives headerScripts from SEO settings
+ * 2. Separates analytics scripts from other scripts
+ * 3. Outputs non-analytics scripts immediately
+ * 4. Outputs analytics scripts using Google's standard implementation
+ *
+ * NOTE: GTM and GA4 load IMMEDIATELY (not deferred) to ensure accurate
+ * Google Ads conversion tracking. Deferring causes data loss.
+ */
+
+import {
+  separateAnalyticsScripts,
+  generateDeferredAnalyticsScript
+} from '../lib/analytics-utils';
+
+interface Props {
+  headerScripts?: string;
+}
+
+const { headerScripts = '' } = Astro.props;
+
+// Separate analytics from other scripts
+const { analyticsScripts, otherScripts } = separateAnalyticsScripts(headerScripts);
+
+// Generate deferred loading script for analytics
+const deferredScript = generateDeferredAnalyticsScript(analyticsScripts);
+---
+
+<!-- Non-analytics scripts (load immediately) -->
+{otherScripts && (
+  <Fragment set:html={otherScripts} />
+)}
+
+<!-- Deferred analytics loading script -->
+{deferredScript && (
+  <Fragment set:html={deferredScript} />
+)}

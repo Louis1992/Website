@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FooterSection from '../../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
+
+const lang = 'en';
+const pageTitle = "Imprint - LeadGenies";
+const pageDescription = "Imprint of LeadGenies GmbH.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-white">
+    <h1 class="text-4xl font-bold mb-8">Imprint</h1>
+
+    <div class="prose prose-invert max-w-none">
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Information according to § 5 TMG</h2>
+      <p>
+        LeadGenies GmbH<br />
+        Musterstraße 1<br />
+        12345 Musterstadt<br />
+        Germany
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Represented by</h2>
+      <p>Mustermann CEO</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Contact</h2>
+      <p>
+        Phone: +49 (0) 123 44 55 66<br />
+        Email: info@leadgenies.de
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Register Entry</h2>
+      <p>
+        Entry in the Commercial Registry.<br />
+        Register Court: Local Court Musterstadt<br />
+        Register Number: HRB 12345
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">VAT ID</h2>
+      <p>
+        Sales tax identification number according to § 27 a Sales Tax Law:<br />
+        DE 123 456 789
+      </p>
+
+      <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mt-8">
+        <p class="text-sm text-blue-200">
+          <strong>Note:</strong> This is a placeholder. Please insert your legal information here.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>

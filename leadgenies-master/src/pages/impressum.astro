@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FooterSection from '../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
+
+const lang = 'de';
+const pageTitle = "Impressum - LeadGenies";
+const pageDescription = "Impressum von LeadGenies GmbH.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-white">
+    <h1 class="text-4xl font-bold mb-8">Impressum</h1>
+
+    <div class="prose prose-invert max-w-none">
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
+      <p>
+        LeadGenies GmbH<br />
+        Musterstraße 1<br />
+        12345 Musterstadt
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Vertreten durch</h2>
+      <p>Mustermann Geschäftsführer</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Kontakt</h2>
+      <p>
+        Telefon: +49 (0) 123 44 55 66<br />
+        E-Mail: info@leadgenies.de
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Registereintrag</h2>
+      <p>
+        Eintragung im Handelsregister.<br />
+        Registergericht: Amtsgericht Musterstadt<br />
+        Registernummer: HRB 12345
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Umsatzsteuer-ID</h2>
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
+        DE 123 456 789
+      </p>
+
+      <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mt-8">
+        <p class="text-sm text-blue-200">
+          <strong>Hinweis:</strong> Dies ist ein Platzhalter. Bitte fügen Sie hier Ihre rechtlichen Angaben ein.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>
