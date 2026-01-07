@@ -12,6 +12,12 @@ export default function CookieBanner({ lang = 'de' }: CookieBannerProps) {
         if (!consent) {
             setShowBanner(true);
         }
+
+        // Listen for openCookieBanner event
+        const handleOpenBanner = () => setShowBanner(true);
+        window.addEventListener('openCookieBanner', handleOpenBanner);
+
+        return () => window.removeEventListener('openCookieBanner', handleOpenBanner);
         // Layout handles initial GTM load and consent restore
     }, []);
 

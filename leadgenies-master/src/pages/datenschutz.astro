@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FooterSection from '../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
+
+const lang = 'de';
+const pageTitle = "Datenschutzerklärung - LeadGenies";
+const pageDescription = "Datenschutzerklärung der LeadGenies GmbH.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-white">
+    <h1 class="text-4xl font-bold mb-8">Datenschutzerklärung</h1>
+
+    <div class="prose prose-invert max-w-none">
+      <p class="mb-4">Stand: Januar 2026</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">1. Datenschutz auf einen Blick</h2>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Allgemeine Hinweise</h3>
+      <p>
+        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">2. Hosting</h2>
+      <p>
+        Wir hosten die Inhalte unserer Website bei folgendem Anbieter: [Provider Name]
+      </p>
+
+      <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mt-8">
+        <p class="text-sm text-blue-200">
+          <strong>Hinweis:</strong> Dies ist ein Platzhalter. Bitte fügen Sie hier Ihre vollständige Datenschutzerklärung ein.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-gray-700">
+        <h3 class="text-xl font-semibold mb-4">Cookie-Einstellungen</h3>
+        <p class="mb-4">Sie können Ihre Cookie-Einstellungen jederzeit ändern:</p>
+        <button
+          onclick="window.dispatchEvent(new Event('openCookieBanner'))"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#2e265d] hover:bg-[#1f1a3d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2e265d]"
+        >
+          Cookie-Einstellungen öffnen
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>
