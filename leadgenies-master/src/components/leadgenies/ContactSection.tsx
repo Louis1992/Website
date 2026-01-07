@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Mail, Phone, Linkedin, Clock, MessageCircle } from 'lucide-react';
 import { translations, type Language } from '../../i18n/translations';
 
@@ -8,6 +9,8 @@ interface ContactSectionProps {
 
 export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
   const t = translations[lang].contact;
+  const [state, handleSubmit] = useForm("mjgknrkv");
+
   const [isMobile, setIsMobile] = useState(false);
   const [titleVisible, setTitleVisible] = useState(false);
   const [leftColumnVisible, setLeftColumnVisible] = useState(false);
@@ -28,7 +31,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
     email: false
   });
 
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
 
   useEffect(() => {
     const checkMobile = () => {
@@ -72,9 +75,28 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // Effect to handle success reset or other side effects if needed
+  useEffect(() => {
+    if (state.succeeded) {
+      setFormData({ name: '', company: '', email: '', phone: '', message: '' });
+    }
+  }, [state.succeeded]);
 
+  // Handle manual input changes locally for controlled inputs
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+
+    // Clear custom validation errors if we had them (optional, keeping your structure)
+    if (formErrors[name as keyof typeof formErrors]) {
+      setFormErrors(prev => ({ ...prev, [name]: false }));
+    }
+  };
+
+  // We rely on Formspree's useForm handleSubmit now
+  // but we can wrap it if we want to do client-side validation first
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
     // Validate required fields
     const errors = {
       name: !formData.name.trim(),
@@ -85,27 +107,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
     setFormErrors(errors);
 
     if (!errors.name && !errors.company && !errors.email) {
-      setSubmitStatus('loading');
-
-      try {
-        const response = await fetch('https://formspree.io/f/mjgknrkv', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-
-        if (response.ok) {
-          setSubmitStatus('success');
-          setFormData({ name: '', company: '', email: '', phone: '', challenge: '' });
-        } else {
-          setSubmitStatus('error');
-        }
-      } catch {
-        setSubmitStatus('error');
-      }
+      handleSubmit(e);
     }
   };
 
@@ -223,7 +225,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                 {t.formTitle}
               </h3>
 
-              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+              <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 {/* Name Field */}
                 <div>
                   <label
@@ -364,11 +366,8 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                       }
                     }}
                   />
-                  {formErrors.email && (
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.75rem', color: '#EF4444', marginTop: '0.25rem' }}>
-                      {t.emailRequired}
-                    </p>
-                  )}
+                    )}
+                  <ValidationError prefix="Email" field="email" errors={state.errors} style={{ color: '#EF4444', fontSize: '0.75rem' }} />
                 </div>
 
                 {/* Phone Field */}
@@ -427,9 +426,9 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                     {t.challengeLabel}
                   </label>
                   <textarea
-                    id="challenge"
-                    name="challenge"
-                    value={formData.challenge}
+                    id="message"
+                    name="message"
+                    value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
                     style={{
@@ -450,41 +449,40 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                       e.currentTarget.style.borderColor = '#E5E7EB';
                     }}
                   />
+                      }}
+                    />
+                  <ValidationError prefix="Message" field="message" errors={state.errors} style={{ color: '#EF4444', fontSize: '0.75rem' }} />
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  disabled={submitStatus === 'loading'}
+                  disabled={state.submitting}
                   style={{
                     fontFamily: 'Inter, sans-serif',
                     fontSize: isMobile ? '1rem' : '1.125rem',
                     fontWeight: '700',
                     color: '#ffffff',
-                    backgroundColor: submitStatus === 'loading' ? '#9CA3AF' : '#4136b3',
+                    backgroundColor: state.submitting ? '#9CA3AF' : '#4136b3',
                     border: 'none',
                     borderRadius: '12px',
                     padding: isMobile ? '1rem' : '1.25rem',
-                    cursor: submitStatus === 'loading' ? 'not-allowed' : 'pointer',
+                    cursor: state.submitting ? 'not-allowed' : 'pointer',
                     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                     marginTop: '0.5rem'
                   }}
                   onMouseEnter={(e) => {
-                    if (submitStatus !== 'loading') {
+                    if (!state.submitting) {
                       e.currentTarget.style.transform = 'translateY(-2px)';
                       e.currentTarget.style.boxShadow = '0 8px 24px rgba(65, 54, 179, 0.4)';
                     }
                   }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
                 >
-                  {submitStatus === 'loading' ? (lang === 'de' ? 'Wird gesendet...' : 'Sending...') : t.submitButton}
+                  {state.submitting ? (lang === 'de' ? 'Wird gesendet...' : 'Sending...') : t.submitButton}
                 </button>
 
                 {/* Success Message */}
-                {submitStatus === 'success' && (
+                {state.succeeded && (
                   <p
                     style={{
                       fontFamily: 'Inter, sans-serif',
@@ -502,7 +500,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                 )}
 
                 {/* Error Message */}
-                {submitStatus === 'error' && (
+                {state.errors.length > 0 && !state.succeeded && (
                   <p
                     style={{
                       fontFamily: 'Inter, sans-serif',
@@ -515,12 +513,12 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                       borderRadius: '8px'
                     }}
                   >
-                    {lang === 'de' ? 'Fehler beim Senden. Bitte versuchen Sie es erneut.' : 'Error sending message. Please try again.'}
+                    {lang === 'de' ? 'Fehler beim Senden. Bitte überprüfen Sie alle Felder.' : 'Error sending. Please check all fields.'}
                   </p>
                 )}
 
                 {/* Response Time */}
-                {submitStatus === 'idle' && (
+                {!state.submitting && !state.succeeded && (
                   <p
                     style={{
                       fontFamily: 'Inter, sans-serif',
