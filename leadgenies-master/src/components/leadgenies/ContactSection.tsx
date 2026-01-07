@@ -82,16 +82,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
     }
   }, [state.succeeded]);
 
-  // Handle manual input changes locally for controlled inputs
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
 
-    // Clear custom validation errors if we had them (optional, keeping your structure)
-    if (formErrors[name as keyof typeof formErrors]) {
-      setFormErrors(prev => ({ ...prev, [name]: false }));
-    }
-  };
 
   // We rely on Formspree's useForm handleSubmit now
   // but we can wrap it if we want to do client-side validation first
@@ -366,7 +357,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                       }
                     }}
                   />
-                    )}
+
                   <ValidationError prefix="Email" field="email" errors={state.errors} style={{ color: '#EF4444', fontSize: '0.75rem' }} />
                 </div>
 
@@ -449,8 +440,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                       e.currentTarget.style.borderColor = '#E5E7EB';
                     }}
                   />
-                      }}
-                    />
+
                   <ValidationError prefix="Message" field="message" errors={state.errors} style={{ color: '#EF4444', fontSize: '0.75rem' }} />
                 </div>
 
