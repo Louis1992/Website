@@ -1,0 +1,9 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/46fbf36a0d5949b6a66e97c036f6fb82.txt",
+      "destination": "/console999/api/indexnow/verify-key"
+    }
+  ]
+}
