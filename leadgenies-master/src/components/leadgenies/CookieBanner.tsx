@@ -11,21 +11,25 @@ export default function CookieBanner({ lang = 'de' }: CookieBannerProps) {
         const consent = localStorage.getItem('cookie_consent');
         if (!consent) {
             setShowBanner(true);
-        } else if (consent === 'true') {
-            // If already consented, ensure GTM is enabled (in case of page reload)
-            if (typeof window !== 'undefined' && (window as any).enableGTM) {
-                (window as any).enableGTM();
-            }
         }
+        // Layout handles initial GTM load and consent restore
     }, []);
 
     const acceptCookies = () => {
         localStorage.setItem('cookie_consent', 'true');
         setShowBanner(false);
 
-        // Enable GTM
-        if (typeof window !== 'undefined' && (window as any).enableGTM) {
-            (window as any).enableGTM();
+        // Update Consent Mode
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+            (window as any).gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'analytics_storage': 'granted'
+            });
+            // Push event for GTM triggers
+            (window as any).dataLayer = (window as any).dataLayer || [];
+            (window as any).dataLayer.push({ 'event': 'consent_update' });
         }
     };
 
@@ -114,7 +118,7 @@ export default function CookieBanner({ lang = 'de' }: CookieBannerProps) {
                             padding: '0.5rem 1.5rem',
                             borderRadius: '4px',
                             border: 'none',
-                            backgroundColor: '#c10000', // Using brand primary color
+                            backgroundColor: '#2e265d', // Changed from red to brand purple
                             color: '#ffffff',
                             cursor: 'pointer',
                             fontSize: '0.9rem',
