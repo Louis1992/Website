@@ -88,7 +88,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
       setSubmitStatus('loading');
 
       try {
-        const response = await fetch('https://formspree.io/f/xdankral', {
+        const response = await fetch('https://formspree.io/f/mjgknrkv', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
