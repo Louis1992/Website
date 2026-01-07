@@ -22,6 +22,7 @@ import {
 import '../styles/global.css';
 import Header from '../components/navigation/Header.astro';
 import DeferredAnalytics from '../components/DeferredAnalytics.astro';
+import CookieBanner from '../components/leadgenies/CookieBanner.tsx';
 
 interface Props {
   title?: string;
@@ -102,11 +103,29 @@ const ogUrl = canonicalUrl;
 
     <!-- Google Tag Manager -->
     <script is:inline>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-5X4XL28N');
+      // Global function to enable GTM, called by CookieBanner
+      window.enableGTM = function() {
+          if (window.gtmEnabled) return; // Prevent double firing
+          window.gtmEnabled = true;
+
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5X4XL28N');
+          
+          console.log('GTM Enabled');
+      };
+
+      // Check for existing consent
+      var consent = null;
+      try {
+          consent = localStorage.getItem('cookie_consent');
+      } catch(e) {}
+
+      if (consent === 'true') {
+          window.enableGTM();
+      }
     </script>
     <!-- End Google Tag Manager -->
 
@@ -261,5 +280,6 @@ const ogUrl = canonicalUrl;
       <Fragment set:html={seoSettings.footerScripts} />
     )}
   <Analytics />
+  <CookieBanner client:load lang={currentLang} />
   </body>
 </html>

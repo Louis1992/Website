@@ -343,7 +343,11 @@ export const translations = {
 
     // Footer
     footer: {
-      copyright: '© {year} LeadGenies GmbH'
+      copyright: '© {year} LeadGenies GmbH',
+      legal: [
+        { label: 'Impressum', href: '/impressum' },
+        { label: 'AGB', href: '/agb' }
+      ]
     },
 
     // Language switcher
@@ -692,7 +696,11 @@ export const translations = {
 
     // Footer
     footer: {
-      copyright: '© {year} LeadGenies GmbH'
+      copyright: '© {year} LeadGenies GmbH',
+      legal: [
+        { label: 'Imprint', href: '/impressum' },
+        { label: 'Terms & Conditions', href: '/agb' }
+      ]
     },
 
     // Language switcher
