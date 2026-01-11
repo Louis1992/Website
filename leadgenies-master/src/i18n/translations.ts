@@ -21,7 +21,7 @@ export const translations = {
       title: 'Mehr B2B-Termine durch echte deutsche Kaltakquise Experten – gestützt auf KI-Daten',
       subtitle: 'Wir füllen Ihren Kalender mit qualifizierten Leads. Unsere deutschen Profi-Caller nutzen modernste Daten-Analyse für maximale Erfolgsquoten – Menschlichkeit trifft auf Präzision.',
       cta: 'Kostenlos anfragen',
-      belowText: 'Schließen Sie sich <strong>10.000+</strong> erfolgreichen deutschen Unternehmen an, die Telemarketing als ihren #1 Vertriebskanal nutzen',
+      belowText: 'Schließen Sie sich <strong>über 10.000</strong> erfolgreichen deutschen Unternehmen an, die Telemarketing als ihren Vertriebskanal Nr. 1 nutzen',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',

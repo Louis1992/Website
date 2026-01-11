@@ -421,7 +421,7 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                   playsInline
                   webkit-playsinline="true"
                   preload="auto"
-                  ref={(el) => { if (el) el.play().catch(() => {}); }}
+                  ref={(el) => { if (el) el.play().catch(() => { }); }}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -632,7 +632,7 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                       fill="#1DA1F2"
                       style={{ flexShrink: 0 }}
                     >
-                      <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/>
+                      <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z" />
                     </svg>
                   </div>
                   {/* Handle */}
@@ -663,8 +663,8 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                   zIndex: 2
                 }}
               >
-                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
-                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
               </svg>
 
               {/* Content Container - aligned to top */}
@@ -733,9 +733,8 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                 fontFamily: 'Inter, sans-serif',
                 color: '#0d0d28'
               }}
-            >
-              Join <strong>10,000+</strong> successful German companies using telemarketing as their #1 sales channel
-            </p>
+              dangerouslySetInnerHTML={{ __html: t.belowText }}
+            />
           </div>
 
           {/* Logo Loop - Mobile */}
@@ -812,7 +811,7 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                   playsInline
                   webkit-playsinline="true"
                   preload="auto"
-                  ref={(el) => { if (el) el.play().catch(() => {}); }}
+                  ref={(el) => { if (el) el.play().catch(() => { }); }}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -1023,7 +1022,7 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                       fill="#1DA1F2"
                       style={{ flexShrink: 0 }}
                     >
-                      <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/>
+                      <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z" />
                     </svg>
                   </div>
                   {/* Handle */}
@@ -1054,8 +1053,8 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                   zIndex: 2
                 }}
               >
-                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
-                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
               </svg>
 
               {/* Content Container - aligned to top */}
@@ -1134,9 +1133,8 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                 fontFamily: 'MomoTrustDisplay, sans-serif',
                 color: '#0d0d28'
               }}
-            >
-              Join <strong>10,000+</strong> successful German companies using telemarketing as their #1 sales channel
-            </p>
+              dangerouslySetInnerHTML={{ __html: t.belowText }}
+            />
           </div>
 
           {/* Logo Loop - Desktop */}
