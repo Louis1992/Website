@@ -66,7 +66,7 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Top-Unternehmen vertrauen uns – bereit für schnelles Wachstum?',
+      title: 'Viele Unternehmen vertrauen uns bereits – bereit für Ihr Wachstum?',
       stats: [
         { label: 'Zufriedene Partner' },
         { label: 'Geführte Gespräche' },

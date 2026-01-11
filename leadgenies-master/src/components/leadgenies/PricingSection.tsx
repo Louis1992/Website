@@ -67,8 +67,7 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
   }, []);
 
   const handleCTAClick = (packageName: string) => {
-    console.log(`CTA clicked for: ${packageName}`);
-    // Add your CTA logic here
+    window.open('https://calendly.com/louis-mickley-leadgenies/30min', '_blank');
   };
 
   return (

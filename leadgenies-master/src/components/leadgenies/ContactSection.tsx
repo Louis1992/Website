@@ -121,7 +121,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
       icon: <Linkedin size={24} />,
       label: 'LinkedIn',
       value: t.linkedInValue,
-      link: 'https://www.linkedin.com/in/louis-mickley/',
+      link: 'https://www.linkedin.com/in/louis-mickley-7615bb177/',
       color: '#0A66C2'
     }
   ];

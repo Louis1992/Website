@@ -18,7 +18,7 @@ export default function FooterSection({ lang = 'de' }: FooterSectionProps) {
   const socialLinks = [
     {
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/louis-mickley-7615bb177/',
       label: 'LinkedIn',
       color: '#0A66C2'
     },
