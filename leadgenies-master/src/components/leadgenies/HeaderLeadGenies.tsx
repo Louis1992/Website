@@ -27,7 +27,22 @@ export default function HeaderLeadGenies({
   ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min'
 }: HeaderLeadGeniesProps) {
   const t = translations[lang].header;
-  const finalMenuItems = menuItems || t.menuItems;
+  /* ... imports ... */
+
+  const t = translations[lang].header;
+  const rawMenuItems = menuItems || t.menuItems;
+
+  // Transform menu items to have absolute paths so they work from subpages
+  const finalMenuItems = rawMenuItems.map(item => {
+    if (item.href.startsWith('#')) {
+      const basePath = lang === 'en' ? '/en' : '/';
+      // Ensure we don't end up with //#section if basePath is /
+      const prefix = basePath === '/' ? '' : basePath;
+      return { ...item, href: `${prefix}/${item.href}`.replace('//', '/') };
+    }
+    return item;
+  });
+
   const finalCtaText = ctaText || t.ctaText;
 
   // German labels are longer, so we need a wider header
@@ -318,8 +333,15 @@ export default function HeaderLeadGenies({
   }, [isMobileMenuOpen, isMounted]);
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const targetPath = lang === 'en' ? '/en' : '/';
+    // Get current path, stripping trailing slash for consistency
+    const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+    const targetPathClean = targetPath.replace(/\/$/, "") || "/";
+
+    if (currentPath === targetPathClean) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const handleMobileMenuItemClick = () => {
@@ -380,7 +402,7 @@ export default function HeaderLeadGenies({
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <a
-            href="#"
+            href={lang === 'en' ? '/en' : '/'}
             onClick={handleLogoClick}
             className="flex-shrink-0 transition-transform hover:scale-105"
           >
@@ -465,25 +487,22 @@ export default function HeaderLeadGenies({
             aria-label="Toggle menu"
           >
             <span
-              className={`w-6 h-0.5 transition-all duration-300 ${
-                isMobileMenuOpen
+              className={`w-6 h-0.5 transition-all duration-300 ${isMobileMenuOpen
                   ? 'bg-white rotate-45 translate-y-2'
                   : 'bg-[#0d0d28]'
-              }`}
+                }`}
             />
             <span
-              className={`w-6 h-0.5 transition-all duration-300 ${
-                isMobileMenuOpen
+              className={`w-6 h-0.5 transition-all duration-300 ${isMobileMenuOpen
                   ? 'bg-white opacity-0'
                   : 'bg-[#0d0d28]'
-              }`}
+                }`}
             />
             <span
-              className={`w-6 h-0.5 transition-all duration-300 ${
-                isMobileMenuOpen
+              className={`w-6 h-0.5 transition-all duration-300 ${isMobileMenuOpen
                   ? 'bg-white -rotate-45 -translate-y-2'
                   : 'bg-[#0d0d28]'
-              }`}
+                }`}
             />
           </button>
         </div>
