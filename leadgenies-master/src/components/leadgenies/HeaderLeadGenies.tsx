@@ -27,6 +27,7 @@ export default function HeaderLeadGenies({
   ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min'
 }: HeaderLeadGeniesProps) {
 
+  const t = translations[lang].header;
   const rawMenuItems = menuItems || t.menuItems;
 
   // Transform menu items to have absolute paths so they work from subpages
