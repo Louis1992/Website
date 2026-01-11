@@ -13,7 +13,7 @@ export const translations = {
         { label: 'Garantie & DSGVO', href: '#guarantee' },
         { label: 'Preise', href: '#pricing' }
       ],
-      ctaText: 'Strategiegespräch buchen'
+      ctaText: 'Kostenlos beraten lassen'
     },
 
     // Hero
@@ -103,7 +103,7 @@ export const translations = {
       chartSubtitle: 'Sehen Sie, wie sich Ihre Investition über 12 Monate auszahlt',
       greatROI: 'Großartiges ROI-Potenzial!',
       letsDiscuss: 'Lassen Sie uns besprechen, wie LeadGenies Ihnen helfen kann, diese Ergebnisse zu erzielen.',
-      cta: 'Strategiegespräch buchen',
+      cta: 'Kostenlos beraten lassen',
       revenueGenerated: 'Generierter Umsatz',
       months: ['Monat 1', 'Monat 2', 'Monat 3', 'Monat 4', 'Monat 5', 'Monat 6', 'Monat 7', 'Monat 8', 'Monat 9', 'Monat 10', 'Monat 11', 'Monat 12']
     },
