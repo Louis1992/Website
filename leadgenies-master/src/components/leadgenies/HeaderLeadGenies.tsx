@@ -26,10 +26,7 @@ export default function HeaderLeadGenies({
   ctaText,
   ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min'
 }: HeaderLeadGeniesProps) {
-  const t = translations[lang].header;
-  /* ... imports ... */
 
-  const t = translations[lang].header;
   const rawMenuItems = menuItems || t.menuItems;
 
   // Transform menu items to have absolute paths so they work from subpages
@@ -488,20 +485,20 @@ export default function HeaderLeadGenies({
           >
             <span
               className={`w-6 h-0.5 transition-all duration-300 ${isMobileMenuOpen
-                  ? 'bg-white rotate-45 translate-y-2'
-                  : 'bg-[#0d0d28]'
+                ? 'bg-white rotate-45 translate-y-2'
+                : 'bg-[#0d0d28]'
                 }`}
             />
             <span
               className={`w-6 h-0.5 transition-all duration-300 ${isMobileMenuOpen
-                  ? 'bg-white opacity-0'
-                  : 'bg-[#0d0d28]'
+                ? 'bg-white opacity-0'
+                : 'bg-[#0d0d28]'
                 }`}
             />
             <span
               className={`w-6 h-0.5 transition-all duration-300 ${isMobileMenuOpen
-                  ? 'bg-white -rotate-45 -translate-y-2'
-                  : 'bg-[#0d0d28]'
+                ? 'bg-white -rotate-45 -translate-y-2'
+                : 'bg-[#0d0d28]'
                 }`}
             />
           </button>
