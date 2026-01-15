@@ -197,7 +197,7 @@ export const translations = {
         {
           name: 'Testmonat',
           duration: '1 Monat',
-          price: '€3.999',
+          price: 'Preis auf Anfrage',
           features: [
             '50-100 Anrufe / Tag',
             'Inkl. Lead-Liste (KI-basiert)',
@@ -206,13 +206,12 @@ export const translations = {
             'Geld-zurück-Garantie'
           ],
           bestFor: 'Zum Testen',
-          cta: 'Pilotphase starten'
+          cta: 'Jetzt Angebot einholen'
         },
         {
           name: 'Growth-Paket',
           duration: '3 Monate',
-          price: '€3.499/Monat',
-          savings: '€1.500 sparen',
+          price: 'Preis auf Anfrage',
           features: [
             'Alles aus dem Testmonat',
             'Direkter WhatsApp-Draht zum Caller',
@@ -221,13 +220,12 @@ export const translations = {
             'Prioritäts-Support'
           ],
           bestFor: 'Ernsthaftes Wachstum',
-          cta: 'Wachstum beschleunigen'
+          cta: 'Jetzt Angebot einholen'
         },
         {
           name: 'Scale-Paket',
           duration: '6 Monate',
-          price: '€2.999/Monat',
-          savings: '€6.000 sparen',
+          price: 'Preis auf Anfrage',
           features: [
             'Alles aus Growth',
             'Langfristige Strategie-Planung',
@@ -236,7 +234,7 @@ export const translations = {
             'Bestes Preis-Leistungs-Verhältnis'
           ],
           bestFor: 'Marktdominanz',
-          cta: 'Dominanz sichern'
+          cta: 'Jetzt Angebot einholen'
         }
       ],
       bestForLabel: 'Ideal für:'
@@ -552,7 +550,7 @@ export const translations = {
         {
           name: 'Test Month',
           duration: '1 Month',
-          price: '€3,999',
+          price: 'Price on Request',
           features: [
             '50 calls/day',
             'Weekly optimization',
@@ -560,13 +558,12 @@ export const translations = {
             'Basic reporting'
           ],
           bestFor: 'Testing the waters',
-          cta: 'Start Test Month'
+          cta: 'Request Quote'
         },
         {
           name: 'Growth Package',
           duration: '3 Months',
-          price: '€3,499/month',
-          savings: 'Save €1,500',
+          price: 'Price on Request',
           features: [
             'Everything in Test Month',
             'Dedicated account manager',
@@ -575,13 +572,12 @@ export const translations = {
             'Priority support'
           ],
           bestFor: 'Serious growth',
-          cta: 'Choose Growth'
+          cta: 'Request Quote'
         },
         {
           name: 'Scale Package',
           duration: '6 Months',
-          price: '€2,999/month',
-          savings: 'Save €6,000',
+          price: 'Price on Request',
           features: [
             'Everything in Growth',
             'Multi-channel outreach',
@@ -590,7 +586,7 @@ export const translations = {
             'Custom integrations'
           ],
           bestFor: 'Market domination',
-          cta: 'Choose Scale'
+          cta: 'Request Quote'
         }
       ],
       bestForLabel: 'Best for:'
