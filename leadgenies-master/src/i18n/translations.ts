@@ -9,7 +9,7 @@ export const translations = {
       menuItems: [
         { label: 'Was wir tun', href: '#hero' },
         { label: 'So funktioniert es', href: '#how-it-works' },
-        { label: 'Lohnt es sich?', href: '#roi-calculator' },
+        { label: 'ROI-Rechner', href: '#roi-calculator' },
         { label: 'Garantie & DSGVO', href: '#guarantee' },
         { label: 'Preise', href: '#pricing' }
       ],
@@ -362,7 +362,7 @@ export const translations = {
       menuItems: [
         { label: 'What We Do', href: '#hero' },
         { label: 'How It Works', href: '#how-it-works' },
-        { label: 'Is It Worth It?', href: '#roi-calculator' },
+        { label: 'ROI Calculator', href: '#roi-calculator' },
         { label: 'Our Guarantee', href: '#guarantee' },
         { label: 'Pricing', href: '#pricing' }
       ],
