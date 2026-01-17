@@ -7,11 +7,12 @@ export const translations = {
     // Header
     header: {
       menuItems: [
-        { label: 'Was wir tun', href: '#hero' },
-        { label: 'So funktioniert es', href: '#how-it-works' },
+        { label: 'Team', href: '#team' },
+        { label: 'Prozess', href: '#how-it-works' },
+        { label: 'Case Studies', href: '#case-studies' },
         { label: 'ROI-Rechner', href: '#roi-calculator' },
-        { label: 'Garantie & DSGVO', href: '#guarantee' },
-        { label: 'Vergütungsmodell', href: '#pricing' }
+        { label: 'Garantie', href: '#guarantee' },
+        { label: 'Preis', href: '#pricing' }
       ],
       ctaText: 'Jetzt beraten lassen'
     },
@@ -532,8 +533,9 @@ export const translations = {
     // Header
     header: {
       menuItems: [
-        { label: 'About', href: '#hero' },
+        { label: 'Team', href: '#team' },
         { label: 'Process', href: '#how-it-works' },
+        { label: 'Case Studies', href: '#case-studies' },
         { label: 'ROI Calculator', href: '#roi-calculator' },
         { label: 'Guarantee', href: '#guarantee' },
         { label: 'Pricing', href: '#pricing' }
