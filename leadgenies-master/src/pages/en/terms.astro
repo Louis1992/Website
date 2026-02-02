@@ -4,14 +4,18 @@ import FooterSection from '../../components/leadgenies/FooterSection.tsx';
 import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
 
 const lang = 'en';
-const pageTitle = "Terms & Conditions - LeadGenies";
-const pageDescription = "General Terms and Conditions of LeadGenies GmbH.";
+const pageTitle = "Terms & Conditions - LeadGenies Vertriebslösungen GmbH";
+const pageDescription = "General Terms and Conditions of LeadGenies Vertriebslösungen GmbH – Remuneration, guarantee, contract term, termination and data protection for our B2B cold calling services.";
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
+  breadcrumbs={[
+    { name: "Home", url: "/en" },
+    { name: "Terms & Conditions", url: "/en/terms" }
+  ]}
 >
   <HeaderLeadGenies lang={lang} client:load />
 

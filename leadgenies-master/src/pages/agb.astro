@@ -4,14 +4,18 @@ import FooterSection from '../components/leadgenies/FooterSection.tsx';
 import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
 
 const lang = 'de';
-const pageTitle = "AGB - LeadGenies";
-const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies GmbH.";
+const pageTitle = "AGB - LeadGenies Vertriebslösungen GmbH";
+const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies Vertriebslösungen GmbH – Vergütung, Garantie, Laufzeit, Kündigung und Datenschutz für unsere B2B-Kaltakquise-Dienstleistungen.";
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
+  breadcrumbs={[
+    { name: "Startseite", url: "/" },
+    { name: "AGB", url: "/agb" }
+  ]}
 >
   <HeaderLeadGenies lang={lang} client:load />
 

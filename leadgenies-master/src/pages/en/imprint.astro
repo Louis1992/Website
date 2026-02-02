@@ -4,14 +4,18 @@ import FooterSection from '../../components/leadgenies/FooterSection.tsx';
 import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
 
 const lang = 'en';
-const pageTitle = "Imprint - LeadGenies";
-const pageDescription = "Imprint of LeadGenies GmbH.";
+const pageTitle = "Imprint - LeadGenies Vertriebslösungen GmbH";
+const pageDescription = "Legal imprint of LeadGenies Vertriebslösungen GmbH – Company details pursuant to § 5 TMG, contact information and responsible persons.";
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
+  breadcrumbs={[
+    { name: "Home", url: "/en" },
+    { name: "Imprint", url: "/en/imprint" }
+  ]}
 >
   <HeaderLeadGenies lang={lang} client:load />
 

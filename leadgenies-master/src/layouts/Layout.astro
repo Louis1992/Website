@@ -50,11 +50,27 @@ const {
   robots
 } = Astro.props;
 
-// Determine alternate language URLs for hreflang
-const baseUrl = 'https://leadgenies.de';
-const germanUrl = baseUrl + '/';
-const englishUrl = baseUrl + '/en';
+// Route mapping between DE and EN pages for hreflang
+const routeMap: Record<string, string> = {
+  '/': '/en',
+  '/en': '/',
+  '/agb': '/en/terms',
+  '/en/terms': '/agb',
+  '/impressum': '/en/imprint',
+  '/en/imprint': '/impressum',
+  '/datenschutz': '/datenschutz', // No EN equivalent yet
+};
+
+// Determine alternate language URLs for hreflang based on current page
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const alternatePath = routeMap[currentPath];
 const currentLang = lang;
+
+const germanPath = currentLang === 'de' ? currentPath : (alternatePath || '/');
+const englishPath = currentLang === 'en' ? currentPath : (alternatePath || '/en');
+
+const germanUrl = getCanonicalUrl(germanPath);
+const englishUrl = getCanonicalUrl(englishPath);
 
 // Fetch SEO settings from admin dashboard
 const seoSettings = await getGeneralSEOSettings();
@@ -66,9 +82,9 @@ if (import.meta.env.DEV) {
   console.log('Favicon URL:', seoSettings.favicon);
 }
 
-// Use settings from admin dashboard or fallback to props
-const pageTitle = seoSettings.metaTags.title ? seoSettings.metaTags.title : title;
-const pageDescription = seoSettings.metaTags.description ? seoSettings.metaTags.description : description;
+// Use page-specific title/description when explicitly set, otherwise fall back to admin dashboard settings
+const pageTitle = title !== SITE_TITLE ? title : (seoSettings.metaTags.title || title);
+const pageDescription = description !== SITE_DESCRIPTION ? description : (seoSettings.metaTags.description || description);
 
 // Get hrefLang attribute
 const hrefLangAttribute = seoSettings.hrefLang || "en-au";
