@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FooterSection from '../../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
+
+const lang = 'en';
+const pageTitle = "Imprint - LeadGenies";
+const pageDescription = "Imprint of LeadGenies GmbH.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" style="color: #0d0d28;">
+    <h1 class="text-4xl font-bold mb-8" style="color: #0d0d28;">Imprint</h1>
+
+    <div class="prose prose-lg max-w-none" style="color: #0d0d28;">
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Information according to § 5 DDG</h2>
+      <p>
+        LeadGenies Vertriebslösungen GmbH<br />
+        Ringstraße 102<br />
+        21218 Seevetal<br />
+        Germany
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Represented by</h2>
+      <p>CEO: Louis Mickley</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Register Entry</h2>
+      <p>
+        Entry in the Commercial Register.<br />
+        Register Court: Local Court Lüneburg<br />
+        Register Number: HRB 212868
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Contact</h2>
+      <p>
+        Phone: +49 174 38082217<br />
+        Email: Louis.Mickley@leadgenies.de
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">VAT ID</h2>
+      <p>
+        Sales tax identification number according to § 27a Sales Tax Law:<br />
+        DE454807620
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Person responsible for content in accordance with § 18 Abs. 2 MStV</h2>
+      <p>
+        Louis Mickley<br />
+        Ringstraße 102<br />
+        21218 Seevetal<br />
+        Germany
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Consumer Dispute Resolution/Universal Arbitration Board</h2>
+      <p>
+        We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Disclaimer</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-2">Liability for Contents</h3>
+      <p>
+        As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 Paragraph 1 DDG. According to §§ 8 to 10 DDG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+      </p>
+      <p class="mt-4">
+        Obligations to remove or block the use of information in accordance with general laws remain unaffected by this. However, liability in this respect is only possible from the time of knowledge of a concrete infringement. Upon becoming aware of such legal violations, we will remove this content immediately.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-2">Liability for Links</h3>
+      <p>
+        Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.
+      </p>
+      <p class="mt-4">
+        However, permanent control of the content of the linked pages is not reasonable without concrete evidence of a violation of the law. Upon becoming aware of legal violations, we will remove such links immediately.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-2">Copyright</h3>
+      <p>
+        The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.
+      </p>
+      <p class="mt-4">
+        Insofar as the content on this site was not created by the operator, the copyrights of third parties are observed. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, we ask for a corresponding hint. Upon becoming aware of legal violations, we will remove such content immediately.
+      </p>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>
