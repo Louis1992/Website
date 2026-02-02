@@ -110,37 +110,16 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
         <p
           style={{
             fontFamily: 'Inter, sans-serif',
-            fontSize: isMobile ? '1rem' : '1.125rem',
+            fontSize: isMobile ? '1rem' : '1.25rem',
             color: '#6B7280',
             textAlign: 'center',
-            maxWidth: '900px',
-            margin: '0 auto',
-            marginBottom: isMobile ? '1.5rem' : '2rem',
+            marginBottom: isMobile ? '3rem' : '4rem',
             opacity: subtitleVisible ? 1 : 0,
-            transition: 'opacity 0.6s ease-out',
-            lineHeight: '1.7'
+            transition: 'opacity 0.6s ease-out'
           }}
         >
           {t.subtitle}
         </p>
-
-        {/* Description */}
-        {t.description && (
-          <p
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontSize: isMobile ? '1rem' : '1.125rem',
-              color: '#0d0d28',
-              textAlign: 'center',
-              marginBottom: isMobile ? '2rem' : '3rem',
-              fontWeight: '600',
-              opacity: subtitleVisible ? 1 : 0,
-              transition: 'opacity 0.6s ease-out 0.1s'
-            }}
-          >
-            {t.description}
-          </p>
-        )}
 
         {/* Pricing Cards */}
         <div
@@ -358,26 +337,6 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
             );
           })}
         </div>
-
-        {/* Footer Text */}
-        {t.footerText && (
-          <p
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontSize: isMobile ? '1rem' : '1.125rem',
-              color: '#6B7280',
-              textAlign: 'center',
-              maxWidth: '800px',
-              margin: '0 auto',
-              marginTop: isMobile ? '3rem' : '4rem',
-              lineHeight: '1.7',
-              opacity: card3Visible ? 1 : 0,
-              transition: 'opacity 0.6s ease-out 0.3s'
-            }}
-          >
-            {t.footerText}
-          </p>
-        )}
       </div>
     </section>
   );

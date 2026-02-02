@@ -95,7 +95,7 @@ export default function TrustSection({ lang = 'de' }: TrustSectionProps) {
       <div className="max-w-7xl mx-auto pt-20 px-4">
         {/* Title */}
         <h2
-          className="text-center mb-8"
+          className="text-center mb-16"
           style={{
             fontFamily: 'MomoTrustDisplay, sans-serif',
             fontSize: '2rem',
@@ -105,81 +105,6 @@ export default function TrustSection({ lang = 'de' }: TrustSectionProps) {
         >
           {t.title}
         </h2>
-
-        {/* Subtitle */}
-        <p
-          className="text-center mb-12 max-w-4xl mx-auto"
-          style={{
-            fontFamily: 'Inter, sans-serif',
-            fontSize: '1.125rem',
-            lineHeight: '1.7',
-            color: '#4a4a4a'
-          }}
-        >
-          {t.subtitle}
-        </p>
-
-        {/* Qualification Checklist */}
-        <div className="max-w-3xl mx-auto mb-16">
-          <h3
-            className="text-center mb-8"
-            style={{
-              fontFamily: 'MomoTrustDisplay, sans-serif',
-              fontSize: '1.5rem',
-              fontWeight: 'bold',
-              color: '#0d0d28'
-            }}
-          >
-            {t.checklistTitle}
-          </h3>
-          <div className="space-y-4">
-            {t.checklist.map((item: string, index: number) => (
-              <div
-                key={index}
-                className="flex items-start gap-4 p-4 rounded-xl"
-                style={{
-                  backgroundColor: '#f8f9ff',
-                  border: '1px solid rgba(86, 77, 202, 0.1)'
-                }}
-              >
-                <svg
-                  className="flex-shrink-0 mt-1"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#564DCA"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <p
-                  style={{
-                    fontFamily: 'Inter, sans-serif',
-                    fontSize: '1rem',
-                    color: '#0d0d28',
-                    lineHeight: '1.6'
-                  }}
-                >
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-          <p
-            className="text-center mt-8"
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontSize: '1.125rem',
-              fontWeight: '600',
-              color: '#564DCA'
-            }}
-          >
-            {t.checklistFooter}
-          </p>
-        </div>
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
