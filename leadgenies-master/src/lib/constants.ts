@@ -1,7 +1,5 @@
 // Site configuration
-export const SITE_URL = import.meta.env.PROD
-  ? "https://www.leadgenies.de"
-  : "http://localhost:4321";
+export const SITE_URL = "https://www.leadgenies.de";
 
 // Helper function for canonical URLs
 export function getCanonicalUrl(path: string): string {
@@ -14,7 +12,7 @@ export const SITE_TITLE = "LeadGenies - AI-Powered B2B Cold Calling with German 
 export const SITE_DESCRIPTION = "Your B2B Telemarketing Agency - Powered by AI, Delivered by Humans. We combine cutting-edge AI lead research with authentic German sales expertise to transform your sales pipeline.";
 
 export const PERSONAL_INFO = {
-  name: "LeadGenies",
+  name: "LeadGenies Vertriebslösungen GmbH",
   title: "B2B Telemarketing Agency",
   subtitle: "AI-Powered Cold Calling with German Excellence",
   address: "Ringstraße 102",

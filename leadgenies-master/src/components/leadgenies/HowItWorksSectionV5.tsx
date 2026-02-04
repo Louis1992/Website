@@ -10,24 +10,24 @@ const translations = {
     subtitle: '5 Schritte zum Erfolg',
     steps: [
       {
-        title: 'Strategie-Check',
-        description: 'Wir analysieren Ihren aktuellen Vertrieb und Ihre Engpässe. Gemeinsam prüfen wir, welches Paket für Ihre Ziele den größten Hebel hat.'
+        title: 'Strategie-Workshop',
+        description: 'Gemeinsame Analyse Ihrer ICPs, Value Proposition und bestehenden Sales-Prozesse. Wir definieren klare KPIs für unsere Partnerschaft.'
       },
       {
-        title: 'Caller-Match & Start',
-        description: 'Sie lernen Ihren persönlichen Caller kennen. Wenn die Chemie stimmt, starten wir. Einfacher Vertrag, keine bürokratischen Hürden.'
+        title: 'Setup & Integration',
+        description: 'Entwicklung der Gesprächsleitfäden, Aufsetzen der KI-gestützten Datenanalyse und nahtlose Integration in Ihr CRM-System.'
       },
       {
-        title: 'Onboarding & Lead-Check',
-        description: 'Wir setzen das Reporting auf. Sie segnen die KI-generierten Lead-Listen final ab – so rufen wir garantiert nur Ihre Wunschkunden an.'
+        title: 'Pilot-Phase (Monat 1)',
+        description: 'Start der Marktbearbeitung. Tägliches Reporting und wöchentliche Kalibrierung zur Sicherstellung der Terminqualität.'
       },
       {
-        title: 'Tägliche Akquise',
-        description: 'Ihr Experte telefoniert täglich für Sie. Durch tägliche Reports und den direkten Draht zum Caller bleiben Sie immer auf dem Laufenden.'
+        title: 'Skalierung & Optimierung',
+        description: 'Kontinuierliche Optimierung der Ansprache und Skalierung des Anrufvolumens basierend auf den ersten Ergebnissen.'
       },
       {
-        title: 'Wöchentliche Optimierung',
-        description: 'In wöchentlichen Feedback-Calls analysieren wir die Quoten und schärfen die Ansprache für noch bessere Ergebnisse nach.'
+        title: 'Strategisches Reporting',
+        description: 'Quartalsweise Strategie-Sessions zur Überprüfung der Ziele und zur Planung der nächsten Schritte. Wir agieren als Ihr proaktiver Wachstumspartner.'
       }
     ]
   },

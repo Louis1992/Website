@@ -6,16 +6,18 @@ import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
 const lang = 'de';
 const pageTitle = "Datenschutzerklärung - LeadGenies Vertriebslösungen GmbH";
 const pageDescription = "Datenschutzerklärung der LeadGenies Vertriebslösungen GmbH – Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.";
+
+const breadcrumbs = [
+  { name: 'Startseite', url: 'https://www.leadgenies.de/' },
+  { name: 'Datenschutz', url: 'https://www.leadgenies.de/datenschutz' }
+];
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
-  breadcrumbs={[
-    { name: "Startseite", url: "/" },
-    { name: "Datenschutz", url: "/datenschutz" }
-  ]}
+  breadcrumbs={breadcrumbs}
 >
   <HeaderLeadGenies lang={lang} client:load />
 

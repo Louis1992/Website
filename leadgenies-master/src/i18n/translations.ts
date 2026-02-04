@@ -7,21 +7,22 @@ export const translations = {
     // Header
     header: {
       menuItems: [
-        { label: 'Was wir tun', href: '#hero' },
-        { label: 'So funktioniert es', href: '#how-it-works' },
+        { label: 'Team', href: '#team' },
+        { label: 'Prozess', href: '#how-it-works' },
+        { label: 'Case Studies', href: '#case-studies' },
         { label: 'ROI-Rechner', href: '#roi-calculator' },
-        { label: 'Garantie & DSGVO', href: '#guarantee' },
-        { label: 'Preise', href: '#pricing' }
+        { label: 'Garantie', href: '#guarantee' },
+        { label: 'Preis', href: '#pricing' }
       ],
-      ctaText: 'Kostenlos beraten lassen'
+      ctaText: 'Jetzt beraten lassen'
     },
 
     // Hero
     hero: {
-      title: 'Mehr B2B-Termine durch echte deutsche Kaltakquise Experten – gestützt auf KI-Daten',
-      subtitle: 'Wir füllen Ihren Kalender mit qualifizierten Leads. Unsere deutschen Profi-Caller nutzen modernste Daten-Analyse für maximale Erfolgsquoten – Menschlichkeit trifft auf Präzision.',
-      cta: 'Kostenlos anfragen',
-      belowText: 'Schließen Sie sich <strong>über 10.000</strong> erfolgreichen deutschen Unternehmen an, die Telemarketing als ihren Vertriebskanal Nr. 1 nutzen',
+      title: 'Professionelle B2B-Telemarketing-Experten für Ihren skalierbaren Vertrieb',
+      subtitle: 'Wir sind Ihre externe Telemarketing-Abteilung. Von Kaltakquise über Lead-Nachverfolgung bis hin zur CRM-Pflege – unsere erfahrenen Sales-Mitarbeiter arbeiten täglich 2-3 Stunden exklusiv für Ihr Unternehmen. Flexibel einsetzbar, DSGVO-konform und ohne Personalrisiko.',
+      cta: 'Jetzt unverbindlich beraten lassen',
+      belowText: 'Für etablierte B2B-Unternehmen mit <strong>ambitionierten Wachstumszielen</strong>',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -66,7 +67,15 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Viele Unternehmen vertrauen uns bereits – bereit für Ihr Wachstum?',
+      title: 'Für wen ist LeadGenies die richtige Lösung?',
+      subtitle: 'Wir arbeiten mit etablierten B2B-Unternehmen (ab 20 Mitarbeitern) zusammen, die bereits über ein funktionierendes Vertriebsteam verfügen und ihren Sales-Prozess systematisch skalieren möchten. Unsere Partner sehen die Terminvereinbarung nicht als Notlösung, sondern als strategischen Hebel für planbares Wachstum.',
+      checklistTitle: 'Qualifizierungs-Checkliste',
+      checklist: [
+        'Sie haben ein etabliertes Produkt mit klarem Product-Market-Fit.',
+        'Ihr Vertriebsteam (mind. 3-5 Mitarbeiter) kann und will mehr qualifizierte Termine wahrnehmen.',
+        'Sie suchen einen langfristigen Partner, keine kurzfristige "Feuerwehr".'
+      ],
+      checklistFooter: 'Trifft das auf Sie zu? Dann lassen Sie uns sprechen.',
       stats: [
         { label: 'Zufriedene Partner' },
         { label: 'Geführte Gespräche' },
@@ -139,16 +148,20 @@ export const translations = {
           title: 'Über unseren Service',
           items: [
             {
-              question: 'Wie verbessert KI Ihr Cold Calling?',
-              answer: 'Wir nutzen KI für ICP-Analyse, Lead-Scoring und Gesprächseinblicke'
+              question: 'Was unterscheidet Sie von einem klassischen Callcenter?',
+              answer: 'Wir sind eine externe SDR-Abteilung (Sales Development Representative). Unsere Mitarbeiter sind hochqualifizierte Vertriebsprofis, die auf Augenhöhe mit Entscheidern kommunizieren. Der Fokus liegt auf der Qualität und Tiefe der Gespräche, nicht auf der reinen Anrufquantität. Wir nutzen zudem KI-Technologie zur Datenanalyse und Prozessoptimierung, was uns von traditionellen Agenturen abhebt.'
             },
             {
-              question: 'Was unterscheidet Sie von anderen Agenturen?',
-              answer: 'Kombination aus deutscher Expertise + KI-Technologie'
+              question: 'Warum gibt es keine 1-Monats-Testphase?',
+              answer: 'Nachhaltiger Vertriebsaufbau ist ein Marathon, kein Sprint. Der erste Monat dient dem Onboarding, der Einarbeitung und der Kalibrierung. Belastbare Ergebnisse und eine signifikante Pipeline-Entwicklung zeigen sich erfahrungsgemäß ab dem zweiten und dritten Monat. Eine 1-Monats-Zusammenarbeit wäre unseriös und würde Ihren und unseren Qualitätsansprüchen nicht gerecht.'
+            },
+            {
+              question: 'Für welche Unternehmen eignet sich Ihr Service NICHT?',
+              answer: 'Unser Service ist nicht geeignet für Startups in der Pre-Seed/Seed-Phase, Unternehmen ohne eigenes Vertriebsteam oder Firmen, deren Produkte/Dienstleistungen einen sehr niedrigen Auftragswert haben. Wir schaffen den größten Mehrwert für etablierte Unternehmen, die einen funktionierenden Prozess haben und diesen skalieren möchten.'
             },
             {
               question: 'Welche Branchen bedienen Sie?',
-              answer: 'B2B SaaS, IT, Beratung, Immobilien, Professional Services'
+              answer: 'B2B SaaS, IT, Beratung, Immobilien, Professional Services – alle Branchen mit komplexen Produkten und höheren Auftragswerten (ACV 15.000+ €)'
             }
           ]
         },
@@ -157,32 +170,32 @@ export const translations = {
           items: [
             {
               question: 'Wie funktioniert Waterfall-Enrichment?',
-              answer: 'Mehrere Datenquellen werden sequenziell validiert'
+              answer: 'Mehrere Datenquellen werden sequenziell validiert, um höchste Datenqualität für Ihre Zielgruppe zu gewährleisten'
             },
             {
               question: 'Was ist Company-Lookalike-Technologie?',
-              answer: 'KI findet ähnliche Unternehmen wie Ihre besten Kunden'
+              answer: 'Unsere KI findet ähnliche Unternehmen wie Ihre besten Kunden, um Ihre Erfolgsquote zu maximieren'
             },
             {
               question: 'Wie stellen Sie Datenqualität sicher?',
-              answer: '7-stufiger Verifizierungsprozess mit 99% Genauigkeit'
+              answer: '7-stufiger Verifizierungsprozess mit 99% Genauigkeit und kontinuierliche Validierung'
             }
           ]
         },
         {
-          title: 'Ergebnisse & Preise',
+          title: 'Ergebnisse & Investition',
           items: [
             {
               question: 'Welche Ergebnisse kann ich erwarten?',
-              answer: 'Durchschnittlich 12-15 qualifizierte Termine pro Monat'
+              answer: 'Durchschnittlich 12-15 qualifizierte Termine pro Monat, abhängig von Ihrer Branche und Zielgruppe'
             },
             {
               question: 'Wie schnell können wir starten?',
-              answer: '48 Stunden vom Vertrag bis zum ersten Anruf'
+              answer: 'Nach dem Strategie-Workshop starten wir innerhalb von 7-10 Tagen mit der aktiven Marktbearbeitung'
             },
             {
-              question: 'Bieten Sie individuelle Pakete an?',
-              answer: 'Ja, basierend auf Ihren spezifischen Anforderungen'
+              question: 'Wie werden die Kosten strukturiert?',
+              answer: 'Unser Preismodell ist transparent und fair: Eine kleine einmalige Onboarding-Pauschale für die Schulung und Integration plus ein monatlicher Festpreis für 2-3 Stunden tägliche Arbeitszeit Ihres persönlichen Sales-Mitarbeiters. Optional können Sie über uns DSGVO-konforme Leadlisten beziehen. Alle Details besprechen wir individuell im Beratungsgespräch.'
             }
           ]
         }
@@ -191,53 +204,55 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparente Pakete für planbares Wachstum',
-      subtitle: 'Wählen Sie Ihre Laufzeit - skalieren Sie Ihren Erfolg',
+      title: 'Transparente Preisgestaltung für Ihren externen Telemarketing-Mitarbeiter',
+      subtitle: 'Unser Preismodell ist einfach und fair: Eine kleine Onboarding-Pauschale plus monatlicher Retainer. Optional können Sie über uns auch professionelle Leadlisten beziehen.',
+      description: 'So funktioniert unser Preismodell:',
       packages: [
         {
-          name: 'Testmonat',
-          duration: '1 Monat',
-          price: 'Preis auf Anfrage',
+          name: 'Onboarding-Pauschale',
+          duration: 'Einmalig',
+          price: 'Individuell',
           features: [
-            '50-100 Anrufe / Tag',
-            'Inkl. Lead-Liste (KI-basiert)',
-            'Tägliches Reporting',
-            'Wöchentliche Optimierung',
-            'Geld-zurück-Garantie'
+            'Intensive Schulung Ihres persönlichen Mitarbeiters',
+            'Integration ins Team & Kennenlernen',
+            'Einweisung in Ihre CRM-Systeme',
+            'Entwicklung der Gesprächsleitfäden',
+            'Setup von Reporting & Prozessen'
           ],
-          bestFor: 'Zum Testen',
-          cta: 'Jetzt Angebot einholen'
+          bestFor: 'Perfekter Start',
+          cta: 'Jetzt beraten lassen'
         },
         {
-          name: 'Growth-Paket',
-          duration: '3 Monate',
-          price: 'Preis auf Anfrage',
+          name: 'Monatlicher Retainer',
+          duration: 'Monatlich',
+          price: 'Festpreis',
           features: [
-            'Alles aus dem Testmonat',
-            'Direkter WhatsApp-Draht zum Caller',
-            'Erweitertes KPI-Reporting',
-            'Wöchentliche Anpassung der Lead-Liste',
-            'Prioritäts-Support'
+            'Tägliche 2-3 Stunden dedizierter Sales-Mitarbeiter',
+            'Flexibel einsetzbar: Kaltakquise, Lead-Nachverfolgung, CRM-Pflege',
+            'Teilnahme an Schulungen & Feedback-Calls',
+            'Wie ein eigener Mitarbeiter – ohne Personalrisiko',
+            'DSGVO-konform & professionell'
           ],
-          bestFor: 'Ernsthaftes Wachstum',
-          cta: 'Jetzt Angebot einholen'
+          bestFor: 'Kontinuierliches Wachstum',
+          cta: 'Jetzt beraten lassen'
         },
         {
-          name: 'Scale-Paket',
-          duration: '6 Monate',
-          price: 'Preis auf Anfrage',
+          name: 'Leadlisten-Service',
+          duration: 'Optional',
+          price: 'Nach Bedarf',
           features: [
-            'Alles aus Growth',
-            'Langfristige Strategie-Planung',
-            'Individuelles Reporting',
-            'Maximale Planungssicherheit',
-            'Bestes Preis-Leistungs-Verhältnis'
+            'DSGVO-konforme Datenbanken (Cognism, EchoBot)',
+            'Aufbereitete Leads in CSV, Excel oder Wunschformat',
+            'Gezielt auf Ihre Zielgruppe zugeschnitten',
+            'Kontinuierliche Aktualisierung möglich',
+            'Optimale Unterstützung für Kaltakquise'
           ],
-          bestFor: 'Marktdominanz',
-          cta: 'Jetzt Angebot einholen'
+          bestFor: 'Maximale Effizienz',
+          cta: 'Jetzt beraten lassen'
         }
       ],
-      bestForLabel: 'Ideal für:'
+      bestForLabel: 'Ideal für:',
+      footerText: 'Möchten Sie ein individuelles Angebot erhalten? Vereinbaren Sie jetzt ein unverbindliches Beratungsgespräch und erfahren Sie, wie wir Ihren Vertrieb skalieren können.'
     },
 
     // Review Cards Section
@@ -318,6 +333,164 @@ export const translations = {
       ]
     },
 
+    // Case Studies Section
+    caseStudies: {
+      title: 'Erfolgsgeschichten unserer Kunden',
+      subtitle: 'Wie etablierte B2B-Unternehmen mit LeadGenies ihren Vertrieb skalieren',
+      studies: [
+        {
+          company: 'CoffeeCup.app',
+          logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/app-v1.svg',
+          industry: 'SaaS / B2B Software',
+          duration: '12 Monate',
+          challenge: {
+            title: 'Die Herausforderung',
+            text: 'Als schnell wachsendes SaaS-Startup mit einem komplexen Produkt fehlte CoffeeCup.app die Zeit und Ressourcen für systematische Kaltakquise. Das interne Team war vollständig mit Produktentwicklung und Bestandskundenpflege ausgelastet.'
+          },
+          solution: {
+            title: 'Die Lösung',
+            text: 'Seit über 12 Monaten arbeitet ein dedizierter LeadGenies-Mitarbeiter täglich 2-3 Stunden exklusiv für CoffeeCup. Nach intensiver Produktschulung führt er selbstständig Kaltakquise durch und pflegt das CRM-System.'
+          },
+          results: {
+            title: 'Das Ergebnis',
+            metrics: [
+              { value: '31', label: 'Termine in 12 Wochen' },
+              { value: '12', label: 'Monate erfolgreiche Zusammenarbeit' },
+              { value: '100%', label: 'Produktkenntnisse des Mitarbeiters' }
+            ],
+            quote: 'Der LeadGenies-Mitarbeiter kennt unser Tool in- und auswendig. Die Termine sind hochqualifiziert und die Entscheider verstehen unser Produkt bereits beim ersten Gespräch.'
+          },
+          testimonial: {
+            name: 'Thomas Reppa',
+            position: 'CEO',
+            image: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Aerion_-Coffee-Cup.png'
+          }
+        },
+        {
+          company: 'Tech-Experts GmbH',
+          logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
+          industry: 'Personalvermittlung / Recruiting',
+          duration: '4 Monate',
+          challenge: {
+            title: 'Die Herausforderung',
+            text: 'Das interne Team von Tech-Experts war vollständig mit laufenden Projekten ausgelastet. Für proaktiven Outbound-Vertrieb fehlten schlichtweg die Kapazitäten, wodurch Wachstumspotenziale ungenutzt blieben.'
+          },
+          solution: {
+            title: 'Die Lösung',
+            text: 'LeadGenies stellt seit 4 Monaten einen erfahrenen Telemarketing-Mitarbeiter, der perfekt ins Team integriert ist. Er nimmt an internen Meetings teil, nutzt die CRM-Systeme und arbeitet eng mit dem Vertriebsleiter zusammen.'
+          },
+          results: {
+            title: 'Das Ergebnis',
+            metrics: [
+              { value: '18', label: 'Termine in 6 Wochen' },
+              { value: '4', label: 'Monate Partnerschaft' },
+              { value: '95%', label: 'Show-up Rate der Termine' }
+            ],
+            quote: 'Die Zusammenarbeit läuft wie mit einem eigenen Mitarbeiter. Konstant hochwertige Termine mit Entscheidern aus dem Mittelstand – genau unsere Zielgruppe.'
+          },
+          testimonial: {
+            name: 'Vivien Poswiat',
+            position: 'Gründer',
+            image: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/vivien.png'
+          }
+        },
+        {
+          company: 'Intech Automation',
+          logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech-v1.svg',
+          industry: 'Industrie-Automation / B2B Tech',
+          duration: '10+ Monate',
+          challenge: {
+            title: 'Die Herausforderung',
+            text: 'Intech Automation vertreibt hochkomplexe technische Produkte im Industriebereich. Die Akquise erfordert tiefes technisches Verständnis und Gespräche auf Augenhöhe mit technischen Einkäufern.'
+          },
+          solution: {
+            title: 'Die Lösung',
+            text: 'LeadGenies hat sich intensiv in die technischen Lösungen eingearbeitet. Seit 10 Monaten unterstützt das Team kontinuierlich bei Kaltakquise, Lead-Nachverfolgung und der Qualifizierung von Interessenten.'
+          },
+          results: {
+            title: 'Das Ergebnis',
+            metrics: [
+              { value: '13', label: 'Termine/Monat im Durchschnitt' },
+              { value: '10+', label: 'Monate kontinuierlicher Support' },
+              { value: '100%', label: 'Technische Gesprächsqualität' }
+            ],
+            quote: 'Die Qualität der Gespräche ist beeindruckend. LeadGenies liefert genau die richtigen Industriekunden – Unternehmen, die unsere Lösungen wirklich brauchen.'
+          },
+          testimonial: {
+            name: 'Sebastian Rott',
+            position: 'Sales Manager',
+            image: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech.png'
+          }
+        }
+      ],
+      cta: 'Ihre Erfolgsgeschichte beginnt hier'
+    },
+
+    // Team Section
+    team: {
+      title: 'Wer callt für Sie?',
+      subtitle: 'Lernen Sie unsere erfahrenen Vertriebsprofis kennen – keine anonymen Callcenter-Agents, sondern spezialisierte Experten mit echtem Branchenwissen.',
+      members: [
+        {
+          name: 'Mona Petersen',
+          role: 'Co-Founder & Director Sales Development',
+          badge: 'C-Level Spezialistin',
+          image: '/mona-petersen.png',
+          bio: 'Mona ist auf die Ansprache von C-Level Entscheidern spezialisiert und überzeugt durch ihre Kombination aus juristischem Fachwissen und charismatischer Persönlichkeit. Mit ihrer DSGVO-Expertise und professionellen Auftritt öffnet sie selbst bei skeptischen Geschäftsführern und Vorständen die Tür zum ersten Gespräch.',
+          education: {
+            title: 'Hintergrund',
+            text: 'Rechtswissenschaften (Jura) mit Spezialisierung auf Datenschutzrecht'
+          },
+          experience: {
+            title: 'Erfahrung',
+            text: '5+ Jahre C-Level Akquise in regulierten B2B-Branchen'
+          },
+          strength: {
+            title: 'Besondere Stärke',
+            text: 'Spezialistin für Geschäftsführer und C-Level im Mittelstand – schafft Vertrauen auf Augenhöhe'
+          }
+        },
+        {
+          name: 'Daniel Kock',
+          role: 'Co-Founder & Head of Fulfillment',
+          badge: 'IT & HR Spezialist',
+          image: '/daniel-kock.png',
+          bio: 'Daniel vereint technisches IT-Verständnis mit Erfahrung aus der Personalvermittlung. Als einer unserer Top-Setter und Closer überzeugt er durch sein tiefes Produktverständnis und seine Fähigkeit, komplexe Lösungen verständlich zu kommunizieren.',
+          education: {
+            title: 'Hintergrund',
+            text: 'IT-Branche mit zusätzlicher Expertise in HR & Recruiting'
+          },
+          experience: {
+            title: 'Erfahrung',
+            text: 'Mehrjährige Erfahrung in Personalvermittlung und Tech-Sales'
+          },
+          strength: {
+            title: 'Besondere Stärke',
+            text: 'Spezialist für komplexe Tech-Produkte und Software-as-a-Service'
+          }
+        },
+        {
+          name: 'Maren Lucatero',
+          role: 'Senior Sales Development Representative',
+          badge: 'International & HR Expertin',
+          image: '/maren-lucatero.png',
+          bio: 'Maren bringt internationale Erfahrung aus Deutschland und Mexiko mit und verbindet HR-Expertise mit exzellenter Kundenbetreuung. Ihre organisatorische Stärke und mehrsprachige Kompetenz machen sie zur idealen Ansprechpartnerin für internationale Geschäftskunden.',
+          education: {
+            title: 'Hintergrund',
+            text: 'HR & Business Administration mit internationaler Projekterfahrung'
+          },
+          experience: {
+            title: 'Erfahrung',
+            text: 'Mehrjährige Erfahrung in Geschäftsführungsassistenz und internationalem Kundenmanagement'
+          },
+          strength: {
+            title: 'Besondere Stärke',
+            text: 'Internationale Kundenkommunikation und mehrsprachige Projektkoordination'
+          }
+        }
+      ]
+    },
+
     // Contact Section
     contact: {
       title: 'Bereit für mehr Umsatz?',
@@ -360,21 +533,22 @@ export const translations = {
     // Header
     header: {
       menuItems: [
-        { label: 'What We Do', href: '#hero' },
-        { label: 'How It Works', href: '#how-it-works' },
+        { label: 'Team', href: '#team' },
+        { label: 'Process', href: '#how-it-works' },
+        { label: 'Case Studies', href: '#case-studies' },
         { label: 'ROI Calculator', href: '#roi-calculator' },
-        { label: 'Our Guarantee', href: '#guarantee' },
+        { label: 'Guarantee', href: '#guarantee' },
         { label: 'Pricing', href: '#pricing' }
       ],
-      ctaText: 'Book a Strategy Call'
+      ctaText: 'Get Consultation'
     },
 
     // Hero
     hero: {
-      title: 'More B2B Appointments by Real Experts – Powered by AI Data',
-      subtitle: 'We fill your calendar with qualified leads. Our professional callers use cutting-edge data analysis for maximum success rates – where human expertise meets precision.',
-      cta: 'Speak with us',
-      belowText: 'Join <strong>10,000+</strong> successful German companies using telemarketing as their #1 sales channel',
+      title: 'Professional B2B Telemarketing Experts for Your Scalable Sales',
+      subtitle: 'Your external telemarketing team. Our experienced sales professionals work 2-3 hours daily exclusively for you – from cold calling to CRM management. GDPR-compliant and without hiring risk.',
+      cta: 'Get Free Consultation Now',
+      belowText: 'For established B2B companies with <strong>ambitious growth goals</strong>',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -419,7 +593,15 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Trusted by top companies ready to scale',
+      title: 'Is LeadGenies the right solution for you?',
+      subtitle: 'We work with established B2B companies (20+ employees) that already have a functioning sales team and want to systematically scale their sales process. Our partners see appointment setting not as a stopgap measure, but as a strategic lever for predictable growth.',
+      checklistTitle: 'Qualification Checklist',
+      checklist: [
+        'You have an established product with clear product-market fit.',
+        'Your sales team (min. 3-5 people) can and wants to handle more qualified appointments.',
+        'You are looking for a long-term partner, not a short-term "firefighter".'
+      ],
+      checklistFooter: 'Does this apply to you? Let\'s talk.',
       stats: [
         { label: 'Satisfied Partners' },
         { label: 'Conversations Held' },
@@ -492,16 +674,20 @@ export const translations = {
           title: 'About Our Service',
           items: [
             {
-              question: 'How does AI enhance your cold calling?',
-              answer: 'We use AI for ICP analysis, lead scoring, and conversation insights'
+              question: 'What distinguishes you from a traditional call center?',
+              answer: 'We are an external SDR (Sales Development Representative) department. Our team consists of highly qualified sales professionals who communicate at eye level with decision-makers. The focus is on the quality and depth of conversations, not on pure call volume. We also use AI technology for data analysis and process optimization, which sets us apart from traditional agencies.'
             },
             {
-              question: 'What makes you different from other agencies?',
-              answer: 'Combination of German expertise + AI technology'
+              question: 'Why is there no 1-month trial period?',
+              answer: 'Sustainable sales development is a marathon, not a sprint. The first month is for onboarding, training, and calibration. Reliable results and significant pipeline development typically show from the second and third month onwards. A 1-month collaboration would be unprofessional and would not meet your and our quality standards.'
+            },
+            {
+              question: 'For which companies is your service NOT suitable?',
+              answer: 'Our service is not suitable for startups in the pre-seed/seed phase, companies without their own sales team, or companies whose products/services have a very low contract value. We create the greatest added value for established companies that have a functioning process and want to scale it.'
             },
             {
               question: 'Which industries do you serve?',
-              answer: 'B2B SaaS, IT, Consulting, Real Estate, Professional Services'
+              answer: 'B2B SaaS, IT, Consulting, Real Estate, Professional Services – all industries with complex products and higher contract values (ACV €15,000+)'
             }
           ]
         },
@@ -510,32 +696,32 @@ export const translations = {
           items: [
             {
               question: 'How does waterfall enrichment work?',
-              answer: 'Multiple data sources validated in sequence'
+              answer: 'Multiple data sources are validated sequentially to ensure the highest data quality for your target audience'
             },
             {
               question: 'What is company lookalike technology?',
-              answer: 'AI finds similar companies to your best customers'
+              answer: 'Our AI finds similar companies to your best customers to maximize your success rate'
             },
             {
               question: 'How do you ensure data quality?',
-              answer: '7-step verification process with 99% accuracy'
+              answer: '7-step verification process with 99% accuracy and continuous validation'
             }
           ]
         },
         {
-          title: 'Results & Pricing',
+          title: 'Results & Investment',
           items: [
             {
               question: 'What results can I expect?',
-              answer: 'Average 12-15 qualified appointments per month'
+              answer: 'Average 12-15 qualified appointments per month, depending on your industry and target audience'
             },
             {
               question: 'How quickly can we start?',
-              answer: '48 hours from contract to first call'
+              answer: 'After the strategy workshop, we start active market cultivation within 7-10 days'
             },
             {
-              question: 'Do you offer custom packages?',
-              answer: 'Yes, based on your specific needs'
+              question: 'How are costs structured?',
+              answer: 'Our pricing model is transparent and fair: A small one-time onboarding fee for training and integration plus a monthly fixed price for 2-3 hours daily working time of your personal sales professional. Optionally, you can obtain GDPR-compliant lead lists through us. We discuss all details individually in the consultation call.'
             }
           ]
         }
@@ -544,61 +730,64 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparent Pricing for Predictable Growth',
-      subtitle: 'Choose your commitment level - scale your success',
+      title: 'Transparent Pricing for Your External Telemarketing Professional',
+      subtitle: 'Our pricing model is simple and fair: A small onboarding fee plus monthly retainer. Optionally, you can also obtain professional lead lists through us.',
+      description: 'How our pricing model works:',
       packages: [
         {
-          name: 'Test Month',
-          duration: '1 Month',
-          price: 'Price on Request',
+          name: 'Onboarding Fee',
+          duration: 'One-time',
+          price: 'Individual',
           features: [
-            '50 calls/day',
-            'Weekly optimization',
-            'Money-back guarantee',
-            'Basic reporting'
+            'Intensive training of your personal team member',
+            'Team integration & introduction',
+            'Training in your CRM systems',
+            'Development of conversation scripts',
+            'Setup of reporting & processes'
           ],
-          bestFor: 'Testing the waters',
-          cta: 'Request Quote'
+          bestFor: 'Perfect Start',
+          cta: 'Get Advice Now'
         },
         {
-          name: 'Growth Package',
-          duration: '3 Months',
-          price: 'Price on Request',
+          name: 'Monthly Retainer',
+          duration: 'Monthly',
+          price: 'Fixed Price',
           features: [
-            'Everything in Test Month',
-            'Dedicated account manager',
-            'Advanced AI insights',
-            'Custom ICP workshop',
-            'Priority support'
+            'Daily 2-3 hours dedicated sales professional',
+            'Flexibly deployable: Cold calling, lead follow-up, CRM management',
+            'Participation in training & feedback calls',
+            'Like your own employee – without hiring risk',
+            'GDPR-compliant & professional'
           ],
-          bestFor: 'Serious growth',
-          cta: 'Request Quote'
+          bestFor: 'Continuous Growth',
+          cta: 'Get Advice Now'
         },
         {
-          name: 'Scale Package',
-          duration: '6 Months',
-          price: 'Price on Request',
+          name: 'Lead List Service',
+          duration: 'Optional',
+          price: 'On Demand',
           features: [
-            'Everything in Growth',
-            'Multi-channel outreach',
-            'C-level targeting',
-            'Quarterly strategy sessions',
-            'Custom integrations'
+            'GDPR-compliant databases (Cognism, EchoBot)',
+            'Prepared leads in CSV, Excel or desired format',
+            'Specifically tailored to your target audience',
+            'Continuous updates possible',
+            'Optimal support for cold calling'
           ],
-          bestFor: 'Market domination',
-          cta: 'Request Quote'
+          bestFor: 'Maximum Efficiency',
+          cta: 'Get Advice Now'
         }
       ],
-      bestForLabel: 'Best for:'
+      bestForLabel: 'Best for:',
+      footerText: 'Would you like to receive an individual offer? Schedule a non-binding consultation now and learn how we can scale your sales.'
     },
 
     // Review Cards Section
     reviewCards: {
       row1: [
         {
-          company: 'CoffeeCup.app',
-          review: 'Working with LeadGenies transformed our sales pipeline. Their callers reliably generate quality appointments every week. Our sales team now focuses on closing deals while LeadGenies handles cold outreach.',
-          name: 'Thomas Reppa.',
+          company: 'Case Study: CoffeeCup.app',
+          review: 'Challenge: As a SaaS startup with a complex product, we lacked time for systematic cold calling. Solution: For over 12 months, a dedicated LeadGenies professional has been working 2-3 hours daily exclusively for us. Result: Average 3-4 qualified B2B appointments per month with decision-makers who understand our product. The team member knows our tool inside out.',
+          name: 'Thomas Reppa',
           position: 'CEO',
           bgColor: '#E8F4F8'
         },
@@ -610,9 +799,9 @@ export const translations = {
           bgColor: '#F0F8E8'
         },
         {
-          company: 'Tech-Experts GmbH',
-          review: 'Outsourcing to LeadGenies was more effective and cost-efficient than in-house calling. Their callers communicate at eye level with decision-makers and consistently deliver valuable appointments.',
-          name: 'Vivien Poswiat.',
+          company: 'Case Study: Tech-Experts GmbH',
+          review: 'Challenge: Our internal team was busy with projects, resources for outbound were lacking. Solution: For 14 months, LeadGenies has been supporting us with an experienced telemarketing professional who is perfectly integrated into our team. Result: Consistently 3-4 high-quality appointments monthly with C-level from mid-market companies. The collaboration works like with our own employee.',
+          name: 'Vivien Poswiat',
           position: 'Founder',
           bgColor: '#FFF9E6'
         },
@@ -624,9 +813,9 @@ export const translations = {
           bgColor: '#F5F5F5'
         },
         {
-          company: 'Intech Automation',
-          review: 'LeadGenies became a core part of our sales process. Their team quickly understood our complex technical products and generated qualified appointments with exactly the right companies.',
-          name: 'Sebastian Rott.',
+          company: 'Case Study: Intech Automation',
+          review: 'Challenge: Complex technical products require deep understanding in acquisition. Solution: LeadGenies has intensively familiarized themselves with our solutions. For 10 months, we have been continuously receiving support in cold calling and lead follow-up. Result: 3-4 qualified appointments per month with exactly the right industrial customers. The quality of conversations is impressive.',
+          name: 'Sebastian Rott',
           position: 'Sales Manager',
           bgColor: '#FFE8E8'
         }
@@ -666,6 +855,164 @@ export const translations = {
           name: 'Sascha Schwarz.',
           position: 'Sales Director',
           bgColor: '#F5F5F5'
+        }
+      ]
+    },
+
+    // Case Studies Section
+    caseStudies: {
+      title: 'Success Stories from Our Clients',
+      subtitle: 'How established B2B companies scale their sales with LeadGenies',
+      studies: [
+        {
+          company: 'CoffeeCup.app',
+          logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/app-v1.svg',
+          industry: 'SaaS / B2B Software',
+          duration: '12 Months',
+          challenge: {
+            title: 'The Challenge',
+            text: 'As a fast-growing SaaS startup with a complex product, CoffeeCup.app lacked the time and resources for systematic cold calling. The internal team was fully occupied with product development and existing customer care.'
+          },
+          solution: {
+            title: 'The Solution',
+            text: 'For over 12 months, a dedicated LeadGenies professional has been working 2-3 hours daily exclusively for CoffeeCup. After intensive product training, he independently conducts cold calling and maintains the CRM system.'
+          },
+          results: {
+            title: 'The Result',
+            metrics: [
+              { value: '31', label: 'Appointments in 12 Weeks' },
+              { value: '12', label: 'Months Successful Partnership' },
+              { value: '100%', label: 'Product Knowledge of Team Member' }
+            ],
+            quote: 'The LeadGenies team member knows our tool inside out. The appointments are highly qualified and decision-makers already understand our product in the first conversation.'
+          },
+          testimonial: {
+            name: 'Thomas Reppa',
+            position: 'CEO',
+            image: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Aerion_-Coffee-Cup.png'
+          }
+        },
+        {
+          company: 'Tech-Experts GmbH',
+          logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
+          industry: 'Recruitment / HR Services',
+          duration: '4 Months',
+          challenge: {
+            title: 'The Challenge',
+            text: 'Tech-Experts\' internal team was fully occupied with ongoing projects. There was simply no capacity for proactive outbound sales, leaving growth potential untapped.'
+          },
+          solution: {
+            title: 'The Solution',
+            text: 'LeadGenies has been providing an experienced telemarketing professional for 4 months who is perfectly integrated into the team. He participates in internal meetings, uses the CRM systems, and works closely with the sales manager.'
+          },
+          results: {
+            title: 'The Result',
+            metrics: [
+              { value: '18', label: 'Appointments in 6 Weeks' },
+              { value: '4', label: 'Months Partnership' },
+              { value: '95%', label: 'Appointment Show-up Rate' }
+            ],
+            quote: 'The collaboration works like with our own employee. Consistently high-quality appointments with decision-makers from mid-market companies – exactly our target audience.'
+          },
+          testimonial: {
+            name: 'Vivien Poswiat',
+            position: 'Founder',
+            image: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/vivien.png'
+          }
+        },
+        {
+          company: 'Intech Automation',
+          logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech-v1.svg',
+          industry: 'Industrial Automation / B2B Tech',
+          duration: '10+ Months',
+          challenge: {
+            title: 'The Challenge',
+            text: 'Intech Automation sells highly complex technical products in the industrial sector. Acquisition requires deep technical understanding and conversations at eye level with technical buyers.'
+          },
+          solution: {
+            title: 'The Solution',
+            text: 'LeadGenies has intensively familiarized themselves with the technical solutions. For 10 months, the team has been continuously supporting cold calling, lead follow-up, and qualification of prospects.'
+          },
+          results: {
+            title: 'The Result',
+            metrics: [
+              { value: '13', label: 'Appointments/Month on Average' },
+              { value: '10+', label: 'Months Continuous Support' },
+              { value: '100%', label: 'Technical Conversation Quality' }
+            ],
+            quote: 'The quality of conversations is impressive. LeadGenies delivers exactly the right industrial customers – companies that truly need our solutions.'
+          },
+          testimonial: {
+            name: 'Sebastian Rott',
+            position: 'Sales Manager',
+            image: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech.png'
+          }
+        }
+      ],
+      cta: 'Your Success Story Starts Here'
+    },
+
+    // Team Section
+    team: {
+      title: 'Who Will Be Calling for You?',
+      subtitle: 'Meet our experienced sales professionals – not anonymous call center agents, but specialized experts with real industry knowledge.',
+      members: [
+        {
+          name: 'Mona Petersen',
+          role: 'Co-Founder & Director Sales Development',
+          badge: 'C-Level Specialist',
+          image: '/mona-petersen.png',
+          bio: 'Mona specializes in reaching C-level decision-makers and convinces through her combination of legal expertise and charismatic personality. With her GDPR knowledge and professional presence, she opens doors to conversations even with skeptical CEOs and executives.',
+          education: {
+            title: 'Background',
+            text: 'Law degree with specialization in data protection law'
+          },
+          experience: {
+            title: 'Experience',
+            text: '5+ years C-level acquisition in regulated B2B industries'
+          },
+          strength: {
+            title: 'Special Strength',
+            text: 'Specialist for CEOs and C-level in mid-market – builds trust at eye level'
+          }
+        },
+        {
+          name: 'Daniel Kock',
+          role: 'Co-Founder & Head of Fulfillment',
+          badge: 'IT & HR Specialist',
+          image: '/daniel-kock.png',
+          bio: 'Daniel combines technical IT understanding with experience from recruitment. As one of our top setters and closers, he convinces through his deep product understanding and ability to communicate complex solutions clearly.',
+          education: {
+            title: 'Background',
+            text: 'IT industry with additional expertise in HR & recruiting'
+          },
+          experience: {
+            title: 'Experience',
+            text: 'Multiple years of experience in recruitment and tech sales'
+          },
+          strength: {
+            title: 'Special Strength',
+            text: 'Specialist for complex tech products and Software-as-a-Service'
+          }
+        },
+        {
+          name: 'Maren Lucatero',
+          role: 'Senior Sales Development Representative',
+          badge: 'International & HR Expert',
+          image: '/maren-lucatero.png',
+          bio: 'Maren brings international experience from Germany and Mexico, combining HR expertise with excellent customer service. Her organizational strength and multilingual competence make her the ideal contact for international business clients.',
+          education: {
+            title: 'Background',
+            text: 'HR & Business Administration with international project experience'
+          },
+          experience: {
+            title: 'Experience',
+            text: 'Multiple years of experience in executive assistance and international customer management'
+          },
+          strength: {
+            title: 'Special Strength',
+            text: 'International customer communication and multilingual project coordination'
+          }
         }
       ]
     },

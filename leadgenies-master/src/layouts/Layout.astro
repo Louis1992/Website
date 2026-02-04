@@ -50,27 +50,30 @@ const {
   robots
 } = Astro.props;
 
-// Route mapping between DE and EN pages for hreflang
-const routeMap: Record<string, string> = {
-  '/': '/en',
-  '/en': '/',
-  '/agb': '/en/terms',
-  '/en/terms': '/agb',
-  '/impressum': '/en/imprint',
-  '/en/imprint': '/impressum',
-  '/datenschutz': '/datenschutz', // No EN equivalent yet
-};
-
-// Determine alternate language URLs for hreflang based on current page
-const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
-const alternatePath = routeMap[currentPath];
+// Determine alternate language URLs for hreflang - page-specific
+const baseUrl = SITE_URL;
+const currentPath = Astro.url.pathname;
 const currentLang = lang;
 
-const germanPath = currentLang === 'de' ? currentPath : (alternatePath || '/');
-const englishPath = currentLang === 'en' ? currentPath : (alternatePath || '/en');
+// Map of German to English page equivalents
+const pageLanguageMap: Record<string, string> = {
+  '/': '/en',
+  '/agb': '/en/terms',
+  '/impressum': '/en/imprint',
+  '/datenschutz': '/en/privacy',
+  '/en': '/',
+  '/en/terms': '/agb',
+  '/en/imprint': '/impressum',
+  '/en/privacy': '/datenschutz',
+};
 
-const germanUrl = getCanonicalUrl(germanPath);
-const englishUrl = getCanonicalUrl(englishPath);
+// Get the current page path without trailing slash
+const normalizedPath = currentPath.replace(/\/$/, '') || '/';
+const alternatePath = pageLanguageMap[normalizedPath];
+
+// Generate correct hreflang URLs
+const germanUrl = baseUrl + (normalizedPath.startsWith('/en') ? (alternatePath || '/') : normalizedPath);
+const englishUrl = baseUrl + (normalizedPath.startsWith('/en') ? normalizedPath : (alternatePath || '/en'));
 
 // Fetch SEO settings from admin dashboard
 const seoSettings = await getGeneralSEOSettings();
@@ -82,7 +85,7 @@ if (import.meta.env.DEV) {
   console.log('Favicon URL:', seoSettings.favicon);
 }
 
-// Use page-specific title/description when explicitly set, otherwise fall back to admin dashboard settings
+// Use page-specific props first, then fallback to admin dashboard settings
 const pageTitle = title !== SITE_TITLE ? title : (seoSettings.metaTags.title || title);
 const pageDescription = description !== SITE_DESCRIPTION ? description : (seoSettings.metaTags.description || description);
 

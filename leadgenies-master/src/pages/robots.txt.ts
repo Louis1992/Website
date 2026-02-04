@@ -30,8 +30,7 @@ export const GET: APIRoute = async ({ site }) => {
     robotsTxt += `Allow: /\n`;
   }
   
-  // Add sitemap (ensure no double slashes)
-  // Note: @astrojs/sitemap generates sitemap-index.xml by default
+  // Add sitemap - remove trailing slash from siteUrl to prevent double slash
   const cleanSiteUrl = siteUrl.replace(/\/$/, '');
   robotsTxt += `\nSitemap: ${cleanSiteUrl}/sitemap-index.xml\n`;
   

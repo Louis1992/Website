@@ -2,20 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import FooterSection from '../components/leadgenies/FooterSection.tsx';
 import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
+import { generateBreadcrumbSchema } from '../lib/seo';
 
 const lang = 'de';
 const pageTitle = "AGB - LeadGenies Vertriebslösungen GmbH";
 const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies Vertriebslösungen GmbH – Vergütung, Garantie, Laufzeit, Kündigung und Datenschutz für unsere B2B-Kaltakquise-Dienstleistungen.";
+
+const breadcrumbs = [
+  { name: 'Startseite', url: 'https://www.leadgenies.de/' },
+  { name: 'AGB', url: 'https://www.leadgenies.de/agb' }
+];
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
-  breadcrumbs={[
-    { name: "Startseite", url: "/" },
-    { name: "AGB", url: "/agb" }
-  ]}
+  breadcrumbs={breadcrumbs}
 >
   <HeaderLeadGenies lang={lang} client:load />
 
@@ -23,7 +26,6 @@ const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies Vertrie
     <h1 class="text-4xl font-bold mb-8" style="color: #0d0d28;">Allgemeine Geschäftsbedingungen (AGB)</h1>
 
     <div class="prose prose-lg max-w-none" style="color: #0d0d28;">
-      <p class="mb-4"><strong>Allgemeine Geschäftsbedingungen (AGB) der LeadGenies Vertriebslösungen GmbH</strong></p>
       <p class="mb-4">Stand: Februar 2026</p>
 
       <h2 class="text-2xl font-semibold mt-8 mb-4">1. Geltungsbereich</h2>
@@ -49,21 +51,21 @@ const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies Vertrie
 
       <h3 class="text-xl font-semibold mt-4 mb-2">3.3 Onboarding-Pauschale</h3>
       <p>
-        Für die initiale Einrichtung der Kampagne, die Durchführung des ICP-Workshops und die Einarbeitung in die spezifischen Anforderungen des Auftraggebers wird eine einmalige <strong>Onboarding-Pauschale</strong> gemäß dem individuellen Angebot fällig. Diese Pauschale deckt den initialen Aufwand des Anbieters und ist mit Vertragsschluss verdient und fällig. Sie ist im Falle einer Kündigung – gleich aus welchem Grund – nicht erstattungsfähig, da die Leistung der Einrichtung zu diesem Zeitpunkt bereits vollständig erbracht wurde.
+        Für die initiale Einrichtung der Kampagne, die Durchführung des ICP-Workshops und die Einarbeitung in die spezifischen Anforderungen des Auftraggebers wird eine einmalige Onboarding-Pauschale gemäß dem individuellen Angebot fällig. Diese Pauschale deckt den initialen Aufwand des Anbieters und ist mit Vertragsschluss verdient und fällig. Sie ist im Falle einer Kündigung – gleich aus welchem Grund – nicht erstattungsfähig, da die Leistung der Einrichtung zu diesem Zeitpunkt bereits vollständig erbracht wurde.
       </p>
 
       <h2 class="text-2xl font-semibold mt-8 mb-4">4. 0-Termin-Garantie (Geld-zurück-Garantie)</h2>
       <p>
         Der Anbieter gewährt dem Auftraggeber für den <strong>ersten Vertragsmonat</strong> eine Geld-zurück-Garantie unter den folgenden Bedingungen:
       </p>
-      <p class="mt-2">
+      <p class="mt-4">
         Sollte es dem Anbieter im ersten Monat der Zusammenarbeit nicht gelingen, <strong>mindestens einen (1) Termin</strong> zu vereinbaren, erhält der Auftraggeber die für diesen Monat gezahlte Vergütung zurückerstattet.
       </p>
-      <p class="mt-2">
+      <p class="mt-4">
         Als <strong>vereinbarter Termin</strong> im Sinne dieser Garantie gilt jeder Termin, der mit einem Ansprechpartner aus der vom Auftraggeber definierten oder gemeinsam erarbeiteten Zielgruppe fest vereinbart wurde (Datum und Uhrzeit).
       </p>
-      <p class="mt-2">
-        <strong>Wichtig:</strong> Für die Erfüllung der Garantie ist ausschließlich die <strong>Terminvereinbarung</strong> maßgeblich. Ob der Termin seitens des Interessenten oder des Auftraggebers tatsächlich wahrgenommen wird (z.B. bei Nichterscheinen/No-Show des Interessenten oder Absage nach Vereinbarung), ist für die Definition als „vereinbarter Termin" unerheblich. Die Leistung des Anbieters gilt mit der Fixierung des Termins als erbracht.
+      <p class="mt-4">
+        <strong>Wichtig:</strong> Für die Erfüllung der Garantie ist ausschließlich die <strong>Terminvereinbarung</strong> maßgeblich. Ob der Termin seitens des Interessenten oder des Auftraggebers tatsächlich wahrgenommen wird (z.B. bei Nichterscheinen/No-Show des Interessenten oder Absage nach Vereinbarung), ist für die Definition als "vereinbarter Termin" unerheblich. Die Leistung des Anbieters gilt mit der Fixierung des Termins als erbracht.
       </p>
 
       <h2 class="text-2xl font-semibold mt-8 mb-4">5. Mitwirkungspflichten des Auftraggebers</h2>
@@ -95,10 +97,8 @@ const pageDescription = "Allgemeine Geschäftsbedingungen der LeadGenies Vertrie
 
       <h3 class="text-xl font-semibold mt-4 mb-2">7.3</h3>
       <p>
-        Erfolgt keine fristgerechte Kündigung, verlängert sich der Vertrag automatisch um die Dauer der ursprünglichen Mindestvertragslaufzeit.
-      </p>
-      <p class="mt-2 italic">
-        Beispiel: Bei einer Mindestlaufzeit von 3 Monaten verlängert sich der Vertrag bei ausbleibender Kündigung um jeweils weitere 3 Monate.
+        Erfolgt keine fristgerechte Kündigung, verlängert sich der Vertrag automatisch um die Dauer der ursprünglichen Mindestvertragslaufzeit.<br />
+        <em>Beispiel: Bei einer Mindestlaufzeit von 3 Monaten verlängert sich der Vertrag bei ausbleibender Kündigung um jeweils weitere 3 Monate.</em>
       </p>
 
       <h3 class="text-xl font-semibold mt-4 mb-2">7.4</h3>

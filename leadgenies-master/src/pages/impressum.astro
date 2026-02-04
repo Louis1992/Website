@@ -5,17 +5,19 @@ import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
 
 const lang = 'de';
 const pageTitle = "Impressum - LeadGenies Vertriebslösungen GmbH";
-const pageDescription = "Impressum der LeadGenies Vertriebslösungen GmbH – Angaben gemäß § 5 TMG, Kontaktdaten und verantwortliche Personen.";
+const pageDescription = "Impressum der LeadGenies Vertriebslösungen GmbH – Angaben gemäß § 5 DDG, Kontaktdaten, Handelsregister und verantwortliche Person.";
+
+const breadcrumbs = [
+  { name: 'Startseite', url: 'https://www.leadgenies.de/' },
+  { name: 'Impressum', url: 'https://www.leadgenies.de/impressum' }
+];
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
-  breadcrumbs={[
-    { name: "Startseite", url: "/" },
-    { name: "Impressum", url: "/impressum" }
-  ]}
+  breadcrumbs={breadcrumbs}
 >
   <HeaderLeadGenies lang={lang} client:load />
 

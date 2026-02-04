@@ -5,17 +5,19 @@ import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
 
 const lang = 'en';
 const pageTitle = "Imprint - LeadGenies Vertriebslösungen GmbH";
-const pageDescription = "Legal imprint of LeadGenies Vertriebslösungen GmbH – Company details pursuant to § 5 TMG, contact information and responsible persons.";
+const pageDescription = "Legal notice of LeadGenies Vertriebslösungen GmbH – Company information according to § 5 DDG, contact details, and responsible person.";
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://www.leadgenies.de/en' },
+  { name: 'Imprint', url: 'https://www.leadgenies.de/en/imprint' }
+];
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   lang={lang}
-  breadcrumbs={[
-    { name: "Home", url: "/en" },
-    { name: "Imprint", url: "/en/imprint" }
-  ]}
+  breadcrumbs={breadcrumbs}
 >
   <HeaderLeadGenies lang={lang} client:load />
 
