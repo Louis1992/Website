@@ -30,8 +30,9 @@ export const GET: APIRoute = async ({ site }) => {
     robotsTxt += `Allow: /\n`;
   }
   
-  // Add sitemap
-  robotsTxt += `\nSitemap: ${siteUrl}/sitemap.xml\n`;
+  // Add sitemap (ensure no double slashes)
+  const cleanSiteUrl = siteUrl.replace(/\/$/, '');
+  robotsTxt += `\nSitemap: ${cleanSiteUrl}/sitemap.xml\n`;
   
   return new Response(robotsTxt, {
     headers: {

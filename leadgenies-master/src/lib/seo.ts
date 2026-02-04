@@ -101,8 +101,8 @@ const defaultSchemaSettings: SchemaSettings = {
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
   },
   geo: {
-    latitude: "52.5200",
-    longitude: "13.4050"
+    latitude: "53.3833",
+    longitude: "9.9667"
   },
   priceRange: "$$$"
 };

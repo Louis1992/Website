@@ -1,8 +1,7 @@
 // Site configuration
-export const SITE_URL = import.meta.env.NEXT_PUBLIC_VERCEL_URL
-  || (import.meta.env.PROD
-    ? "https://example.com" // Fallback if NEXT_PUBLIC_VERCEL_URL not set
-    : "http://localhost:4321");
+export const SITE_URL = import.meta.env.PROD
+  ? "https://www.leadgenies.de"
+  : "http://localhost:4321";
 
 // Helper function for canonical URLs
 export function getCanonicalUrl(path: string): string {
@@ -18,14 +17,14 @@ export const PERSONAL_INFO = {
   name: "LeadGenies",
   title: "B2B Telemarketing Agency",
   subtitle: "AI-Powered Cold Calling with German Excellence",
-  address: "TBD",
-  city: "Berlin",
-  state: "",
-  postcode: "TBD",
+  address: "Ringstraße 102",
+  city: "Seevetal",
+  state: "Niedersachsen",
+  postcode: "21218",
   country: "Germany",
-  phone: "+49 XXX XXXXXXX",
+  phone: "+49 173 8082217",
   email: "louis@leadgenies.de",
-  businessSite: "https://leadgenies.de"
+  businessSite: "https://www.leadgenies.de"
 };
 
 // Temporary alias for backward compatibility during migration
