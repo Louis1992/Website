@@ -31,8 +31,9 @@ export const GET: APIRoute = async ({ site }) => {
   }
   
   // Add sitemap (ensure no double slashes)
+  // Note: @astrojs/sitemap generates sitemap-index.xml by default
   const cleanSiteUrl = siteUrl.replace(/\/$/, '');
-  robotsTxt += `\nSitemap: ${cleanSiteUrl}/sitemap.xml\n`;
+  robotsTxt += `\nSitemap: ${cleanSiteUrl}/sitemap-index.xml\n`;
   
   return new Response(robotsTxt, {
     headers: {
