@@ -1,0 +1,144 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FooterSection from '../../components/leadgenies/FooterSection.tsx';
+import HeaderLeadGenies from '../../components/leadgenies/HeaderLeadGenies.tsx';
+import { generateBreadcrumbSchema } from '../../lib/seo';
+
+const lang = 'en';
+const pageTitle = "Terms & Conditions - LeadGenies Vertriebslösungen GmbH";
+const pageDescription = "General Terms and Conditions of LeadGenies Vertriebslösungen GmbH – Remuneration, guarantee, contract term, termination and data protection for our B2B cold calling services.";
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://www.leadgenies.de/en' },
+  { name: 'Terms & Conditions', url: 'https://www.leadgenies.de/en/terms' }
+];
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+  breadcrumbs={breadcrumbs}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" style="color: #0d0d28;">
+    <h1 class="text-4xl font-bold mb-8" style="color: #0d0d28;">General Terms and Conditions</h1>
+
+    <div class="prose prose-lg max-w-none" style="color: #0d0d28;">
+      <p class="mb-4">Last updated: February 2026</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">1. Scope of Application</h2>
+      <p>
+        These General Terms and Conditions (GTC) apply to all business relationships between <strong>LeadGenies Vertriebslösungen GmbH</strong> (hereinafter "Provider") and its customers (hereinafter "Client"). The offer is aimed exclusively at entrepreneurs, legal entities under public law, or special funds under public law within the meaning of § 14 BGB (German Civil Code).
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">2. Subject of Contract</h2>
+      <p>
+        The subject of the contract is the provision of services in the area of B2B new customer acquisition (cold calling), lead generation, and appointment setting. The Provider acts in the name and on behalf of the Client to contact potential interested parties (leads) according to the agreed target group and to arrange appointments for the Client.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">3. Remuneration and Payment Terms</h2>
+      <h3 class="text-xl font-semibold mt-4 mb-2">3.1 Prepayment</h3>
+      <p>
+        Unless otherwise agreed contractually, <strong>prepayment</strong> applies to all services of the Provider. The remuneration is due before the start of the respective service period or before the start of the campaign. The Provider is only obliged to provide the service after full receipt of payment.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">3.2 Late Payment and Refusal of Performance</h3>
+      <p>
+        If the Client is in default of payment, the Provider is entitled to immediately stop the further execution of the agreed services (right of retention) until the due payment has been made in full. Delays caused by such a service-related pause are the responsibility of the Client; the Provider's claim to remuneration remains unaffected by this.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">3.3 Onboarding Fee</h3>
+      <p>
+        A one-time onboarding fee is due for the initial setup of the campaign, the ICP workshop, and the familiarization with the Client's specific requirements, as specified in the individual offer. This fee covers the Provider's initial effort and is earned and due upon conclusion of the contract. It is non-refundable in the event of termination – regardless of the reason – as the setup service has already been fully rendered at this point.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">4. Zero Appointment Guarantee (Money-Back Guarantee)</h2>
+      <p>
+        The Provider grants the Client a money-back guarantee for the <strong>first contract month</strong> under the following conditions:
+      </p>
+      <p class="mt-4">
+        Should the Provider fail to arrange <strong>at least one (1) appointment</strong> in the first month of cooperation, the Client will be refunded the remuneration paid for this month.
+      </p>
+      <p class="mt-4">
+        An <strong>agreed appointment</strong> within the meaning of this guarantee is defined as any appointment that has been firmly agreed (date and time) with a contact person from the target group defined by the Client or jointly developed.
+      </p>
+      <p class="mt-4">
+        <strong>Important:</strong> Only the <strong>arrangement of the appointment</strong> is decisive for the fulfillment of the guarantee. Whether the appointment is actually attended by the interested party or the Client (e.g., in the case of no-show of the interested party or cancellation after agreement) is irrelevant for the definition as an "agreed appointment". The service of the Provider is considered rendered with the fixing of the appointment date.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">5. Duties of Cooperation of the Client</h2>
+      <h3 class="text-xl font-semibold mt-4 mb-2">5.1</h3>
+      <p>
+        The Client undertakes to provide the Provider with all information, documents, and access necessary for the implementation of the campaign (e.g., target group definition, value proposition, contacts, calendar access) in a timely manner and in the agreed form. The Client shall designate a responsible contact person for the duration of the cooperation.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">5.2</h3>
+      <p>
+        If the Client fails to fulfill their cooperation obligations or does so only with delay, resulting service delays or additional effort shall be entirely at the Client's expense. The agreed service period shall not be extended as a result. The Provider's remuneration claim for the agreed period remains in full force, even if the agreed services cannot be provided or can only be provided to a limited extent due to the lack of cooperation. The Provider will notify the Client of the missing cooperation and the resulting consequences.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">6. Liability</h2>
+      <p>
+        The Provider is liable without limitation for intent and gross negligence. For simple negligence, the Provider is only liable for the breach of essential contractual obligations (cardinal obligations), the fulfillment of which enables the proper execution of the contract in the first place and on the observance of which the contractual partner may regularly rely. In this case, liability is limited to the foreseeable damage typical for the contract.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">7. Term, Termination and Contract Extension</h2>
+      <h3 class="text-xl font-semibold mt-4 mb-2">7.1</h3>
+      <p>
+        The initial minimum contract term results from the individual offer. It begins on the start date specified in the offer.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">7.2</h3>
+      <p>
+        The contract may be terminated by either party with two (2) weeks' notice to the end of the respective contract period. Termination must be in text form (e.g., email).
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">7.3</h3>
+      <p>
+        If no timely termination is given, the contract is automatically extended by the duration of the original minimum contract term.<br />
+        <em>Example: With a minimum term of 3 months, the contract is extended by another 3 months if not terminated.</em>
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">7.4</h3>
+      <p>
+        The right to extraordinary termination for good cause remains unaffected.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">8. Confidentiality and Data Protection</h2>
+      <h3 class="text-xl font-semibold mt-4 mb-2">8.1</h3>
+      <p>
+        Both parties undertake to keep confidential all confidential information of the other party obtained in the course of the cooperation and to use it only for the contractually agreed purposes. This obligation continues after termination of the contract.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">8.2</h3>
+      <p>
+        The Provider processes personal data on behalf of the Client in accordance with the General Data Protection Regulation (GDPR). If required for the provision of services, the parties shall conclude a separate data processing agreement (DPA).
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">9. Force Majeure</h2>
+      <p>
+        Events of force majeure that significantly impede or make it impossible for a party to perform (e.g., strikes, natural disasters, pandemics, cyber attacks) shall release the affected party from its performance obligations for the duration of such events. The parties shall inform each other immediately about the occurrence of such an event.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">10. Final Provisions</h2>
+      <h3 class="text-xl font-semibold mt-4 mb-2">10.1</h3>
+      <p>
+        The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">10.2</h3>
+      <p>
+        The place of jurisdiction for all disputes arising from this contractual relationship is, provided the Client is a merchant, a legal entity under public law, or a special fund under public law, the registered office of the Provider.
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">10.3</h3>
+      <p>
+        Should individual provisions of these GTC be or become invalid, the validity of the remaining provisions shall not be affected. In place of the invalid provision, a valid provision shall be deemed agreed which comes closest to the economic purpose of the invalid provision. (Severability clause)
+      </p>
+    </div>
+  </main>
+
+  <FooterSection lang={lang} client:load />
+</Layout>
