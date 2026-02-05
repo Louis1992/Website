@@ -219,7 +219,7 @@ export const translations = {
         {
           name: 'Onboarding-Pauschale',
           duration: 'Einmalig',
-          price: '€2.000',
+          price: '€1.999',
           features: [
             'Intensive Schulung Ihres persönlichen Mitarbeiters',
             'Integration ins Team & Kennenlernen',
@@ -233,7 +233,7 @@ export const translations = {
         {
           name: 'Monatlicher Retainer',
           duration: 'Monatlich',
-          price: '€4.000',
+          price: '€3.999',
           priceNote: '= €133/Arbeitstag',
           features: [
             'Tägliche 2-3 Stunden dedizierter Sales-Mitarbeiter',
@@ -761,7 +761,7 @@ export const translations = {
         {
           name: 'Onboarding Fee',
           duration: 'One-time',
-          price: '€2,000',
+          price: '€1,999',
           features: [
             'Intensive training of your personal team member',
             'Team integration & introduction',
@@ -775,7 +775,7 @@ export const translations = {
         {
           name: 'Monthly Retainer',
           duration: 'Monthly',
-          price: '€4,000',
+          price: '€3,999',
           priceNote: '= €133/working day',
           features: [
             'Daily 2-3 hours dedicated sales professional',
