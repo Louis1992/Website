@@ -182,11 +182,51 @@ export default function CaseStudiesSection({ lang = 'de' }: CaseStudiesSectionPr
                 style={{
                   fontFamily: 'Inter, sans-serif',
                   fontSize: isMobile ? '0.875rem' : '1rem',
-                  color: '#6B7280'
+                  color: '#6B7280',
+                  marginBottom: '8px'
                 }}
               >
                 {currentStudy.industry} • {currentStudy.duration}
               </p>
+              {/* Company Size & Deal Size Badges */}
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                {currentStudy.companySize && (
+                  <span
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      padding: '4px 10px',
+                      backgroundColor: '#EEF2FF',
+                      borderRadius: '6px',
+                      fontFamily: 'Inter, sans-serif',
+                      fontSize: '0.75rem',
+                      fontWeight: '600',
+                      color: '#4338CA'
+                    }}
+                  >
+                    👥 {currentStudy.companySize}
+                  </span>
+                )}
+                {currentStudy.avgDealSize && (
+                  <span
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      padding: '4px 10px',
+                      backgroundColor: '#ECFDF5',
+                      borderRadius: '6px',
+                      fontFamily: 'Inter, sans-serif',
+                      fontSize: '0.75rem',
+                      fontWeight: '600',
+                      color: '#047857'
+                    }}
+                  >
+                    💰 {currentStudy.avgDealSize}
+                  </span>
+                )}
+              </div>
             </div>
           </div>
 

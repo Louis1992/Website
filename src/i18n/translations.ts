@@ -14,15 +14,15 @@ export const translations = {
         { label: 'Garantie', href: '#guarantee' },
         { label: 'Preis', href: '#pricing' }
       ],
-      ctaText: 'Jetzt beraten lassen'
+      ctaText: 'Qualifizierungsgespräch'
     },
 
     // Hero
     hero: {
-      title: 'Professionelle B2B-Telemarketing-Experten für Ihren skalierbaren Vertrieb',
-      subtitle: 'Wir sind Ihre externe Telemarketing-Abteilung. Von Kaltakquise über Lead-Nachverfolgung bis hin zur CRM-Pflege – unsere erfahrenen Sales-Mitarbeiter arbeiten täglich 2-3 Stunden exklusiv für Ihr Unternehmen. Flexibel einsetzbar, DSGVO-konform und ohne Personalrisiko.',
-      cta: 'Jetzt unverbindlich beraten lassen',
-      belowText: 'Für etablierte B2B-Unternehmen mit <strong>ambitionierten Wachstumszielen</strong>',
+      title: 'Die externe Vertriebsabteilung für etablierte B2B-Unternehmen',
+      subtitle: 'Ihre dedizierte Telemarketing-Abteilung für systematische Kaltakquise. Unsere erfahrenen Sales-Profis arbeiten täglich 2-3 Stunden exklusiv für Ihr Unternehmen – DSGVO-konform, ohne Personalrisiko und mit messbaren Ergebnissen.',
+      cta: 'Qualifizierungsgespräch vereinbaren',
+      belowText: 'Für B2B-Unternehmen mit <strong>€20.000+ Monatsumsatz</strong> und eigenem Vertriebsteam',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -67,15 +67,23 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Für wen ist LeadGenies die richtige Lösung?',
-      subtitle: 'Wir arbeiten mit etablierten B2B-Unternehmen (ab 20 Mitarbeitern) zusammen, die bereits über ein funktionierendes Vertriebsteam verfügen und ihren Sales-Prozess systematisch skalieren möchten. Unsere Partner sehen die Terminvereinbarung nicht als Notlösung, sondern als strategischen Hebel für planbares Wachstum.',
-      checklistTitle: 'Qualifizierungs-Checkliste',
+      title: 'Passt LeadGenies zu Ihrem Unternehmen?',
+      subtitle: 'Wir arbeiten ausschließlich mit etablierten B2B-Unternehmen zusammen, die bereits über ein funktionierendes Vertriebsteam verfügen und ihren Sales-Prozess systematisch skalieren möchten.',
+      checklistTitle: 'Sie sind bei uns richtig, wenn:',
       checklist: [
-        'Sie haben ein etabliertes Produkt mit klarem Product-Market-Fit.',
-        'Ihr Vertriebsteam (mind. 3-5 Mitarbeiter) kann und will mehr qualifizierte Termine wahrnehmen.',
-        'Sie suchen einen langfristigen Partner, keine kurzfristige "Feuerwehr".'
+        'Ihr Unternehmen generiert mindestens €20.000 monatlichen Umsatz.',
+        'Sie haben ein Vertriebsteam von mind. 3-5 Mitarbeitern, das mehr Termine wahrnehmen kann.',
+        'Ihre durchschnittliche Auftragsgröße liegt bei €15.000+ (ACV).',
+        'Sie suchen einen langfristigen Partner für mind. 6 Monate Zusammenarbeit.'
       ],
-      checklistFooter: 'Trifft das auf Sie zu? Dann lassen Sie uns sprechen.',
+      checklistFooter: 'Alle Punkte treffen zu? Dann lassen Sie uns sprechen.',
+      notSuitableTitle: 'Nicht geeignet für:',
+      notSuitableList: [
+        'Solopreneure & Freelancer ohne eigenes Sales-Team',
+        'Startups in Pre-Seed/Seed-Phase',
+        'Unternehmen mit Auftragswerten unter €5.000',
+        'Wer kurzfristige "Feuerwehr-Aktionen" sucht'
+      ],
       stats: [
         { label: 'Zufriedene Partner' },
         { label: 'Geführte Gespräche' },
@@ -204,14 +212,14 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparente Preisgestaltung für Ihren externen Telemarketing-Mitarbeiter',
-      subtitle: 'Unser Preismodell ist einfach und fair: Eine kleine Onboarding-Pauschale plus monatlicher Retainer. Optional können Sie über uns auch professionelle Leadlisten beziehen.',
-      description: 'So funktioniert unser Preismodell:',
+      title: 'Transparente Preisgestaltung',
+      subtitle: 'Klare Preise, keine versteckten Kosten. Sie wissen von Anfang an, was Sie investieren.',
+      description: 'Investment für etablierte B2B-Unternehmen:',
       packages: [
         {
           name: 'Onboarding-Pauschale',
           duration: 'Einmalig',
-          price: 'Individuell',
+          price: '€2.000',
           features: [
             'Intensive Schulung Ihres persönlichen Mitarbeiters',
             'Integration ins Team & Kennenlernen',
@@ -220,12 +228,13 @@ export const translations = {
             'Setup von Reporting & Prozessen'
           ],
           bestFor: 'Perfekter Start',
-          cta: 'Jetzt beraten lassen'
+          cta: 'Qualifizierungsgespräch buchen'
         },
         {
           name: 'Monatlicher Retainer',
           duration: 'Monatlich',
-          price: 'Festpreis',
+          price: '€4.000',
+          priceNote: '= €133/Arbeitstag',
           features: [
             'Tägliche 2-3 Stunden dedizierter Sales-Mitarbeiter',
             'Flexibel einsetzbar: Kaltakquise, Lead-Nachverfolgung, CRM-Pflege',
@@ -234,12 +243,12 @@ export const translations = {
             'DSGVO-konform & professionell'
           ],
           bestFor: 'Kontinuierliches Wachstum',
-          cta: 'Jetzt beraten lassen'
+          cta: 'Qualifizierungsgespräch buchen'
         },
         {
           name: 'Leadlisten-Service',
           duration: 'Optional',
-          price: 'Nach Bedarf',
+          price: '€499',
           features: [
             'DSGVO-konforme Datenbanken (Cognism, EchoBot)',
             'Aufbereitete Leads in CSV, Excel oder Wunschformat',
@@ -248,11 +257,12 @@ export const translations = {
             'Optimale Unterstützung für Kaltakquise'
           ],
           bestFor: 'Maximale Effizienz',
-          cta: 'Jetzt beraten lassen'
+          cta: 'Qualifizierungsgespräch buchen'
         }
       ],
       bestForLabel: 'Ideal für:',
-      footerText: 'Möchten Sie ein individuelles Angebot erhalten? Vereinbaren Sie jetzt ein unverbindliches Beratungsgespräch und erfahren Sie, wie wir Ihren Vertrieb skalieren können.'
+      roiNote: 'Bei 12+ Terminen/Monat = ca. €333 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €36.000+ Monatsumsatz-Potenzial.',
+      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für kleinere Unternehmen empfehlen wir, erst intern zu skalieren.'
     },
 
     // Review Cards Section
@@ -342,6 +352,8 @@ export const translations = {
           company: 'CoffeeCup.app',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/app-v1.svg',
           industry: 'SaaS / B2B Software',
+          companySize: '25+ Mitarbeiter',
+          avgDealSize: 'ACV €18.000+',
           duration: '12 Monate',
           challenge: {
             title: 'Die Herausforderung',
@@ -370,6 +382,8 @@ export const translations = {
           company: 'Tech-Experts GmbH',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
           industry: 'Personalvermittlung / Recruiting',
+          companySize: '35+ Mitarbeiter',
+          avgDealSize: 'ACV €25.000+',
           duration: '4 Monate',
           challenge: {
             title: 'Die Herausforderung',
@@ -398,6 +412,8 @@ export const translations = {
           company: 'Intech Automation',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech-v1.svg',
           industry: 'Industrie-Automation / B2B Tech',
+          companySize: '50+ Mitarbeiter',
+          avgDealSize: 'ACV €45.000+',
           duration: '10+ Monate',
           challenge: {
             title: 'Die Herausforderung',
@@ -493,9 +509,9 @@ export const translations = {
 
     // Contact Section
     contact: {
-      title: 'Bereit für mehr Umsatz?',
-      subtitle: 'Lassen Sie uns herausfinden, ob wir zueinander passen.',
-      formTitle: 'Schnellkontakt-Formular',
+      title: 'Passt LeadGenies zu Ihrem Unternehmen?',
+      subtitle: 'Lassen Sie uns in einem kurzen Gespräch klären, ob wir der richtige Partner für Sie sind.',
+      formTitle: 'Qualifizierungsgespräch anfragen',
       nameLabel: 'Name*',
       nameRequired: 'Name ist erforderlich',
       companyLabel: 'Unternehmen*',
@@ -504,7 +520,7 @@ export const translations = {
       emailRequired: 'E-Mail ist erforderlich',
       phoneLabel: 'Telefon',
       challengeLabel: 'Was ist Ihre größte Vertriebsherausforderung?',
-      submitButton: 'Kostenlos & unverbindlich sprechen',
+      submitButton: 'Qualifizierungsgespräch vereinbaren',
       responseTime: 'Antwort innerhalb von 2 Stunden während der Geschäftszeiten',
       directContactTitle: 'Direkter Kontakt',
       officeHoursLabel: 'Bürozeiten',
@@ -540,15 +556,15 @@ export const translations = {
         { label: 'Guarantee', href: '#guarantee' },
         { label: 'Pricing', href: '#pricing' }
       ],
-      ctaText: 'Get Consultation'
+      ctaText: 'Book Qualification Call'
     },
 
     // Hero
     hero: {
-      title: 'Professional B2B Telemarketing Experts for Your Scalable Sales',
-      subtitle: 'Your external telemarketing team. Our experienced sales professionals work 2-3 hours daily exclusively for you – from cold calling to CRM management. GDPR-compliant and without hiring risk.',
-      cta: 'Get Free Consultation Now',
-      belowText: 'For established B2B companies with <strong>ambitious growth goals</strong>',
+      title: 'The External Sales Department for Established B2B Companies',
+      subtitle: 'Your dedicated telemarketing department for systematic cold calling. Our experienced sales professionals work 2-3 hours daily exclusively for your company – GDPR-compliant, without hiring risk, and with measurable results.',
+      cta: 'Book Qualification Call',
+      belowText: 'For B2B companies with <strong>€20,000+ monthly revenue</strong> and existing sales team',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -593,15 +609,23 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Is LeadGenies the right solution for you?',
-      subtitle: 'We work with established B2B companies (20+ employees) that already have a functioning sales team and want to systematically scale their sales process. Our partners see appointment setting not as a stopgap measure, but as a strategic lever for predictable growth.',
-      checklistTitle: 'Qualification Checklist',
+      title: 'Is LeadGenies Right for Your Business?',
+      subtitle: 'We work exclusively with established B2B companies that already have a functioning sales team and want to systematically scale their sales process.',
+      checklistTitle: 'You\'re a fit if:',
       checklist: [
-        'You have an established product with clear product-market fit.',
-        'Your sales team (min. 3-5 people) can and wants to handle more qualified appointments.',
-        'You are looking for a long-term partner, not a short-term "firefighter".'
+        'Your company generates at least €20,000 monthly revenue.',
+        'You have a sales team of min. 3-5 members who can handle more appointments.',
+        'Your average deal size is €15,000+ (ACV).',
+        'You\'re looking for a long-term partner for at least 6 months.'
       ],
-      checklistFooter: 'Does this apply to you? Let\'s talk.',
+      checklistFooter: 'All points apply? Let\'s talk.',
+      notSuitableTitle: 'Not suitable for:',
+      notSuitableList: [
+        'Solopreneurs & freelancers without a sales team',
+        'Startups in pre-seed/seed phase',
+        'Companies with deal values under €5,000',
+        'Those seeking short-term "firefighting"'
+      ],
       stats: [
         { label: 'Satisfied Partners' },
         { label: 'Conversations Held' },
@@ -730,14 +754,14 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparent Pricing for Your External Telemarketing Professional',
-      subtitle: 'Our pricing model is simple and fair: A small onboarding fee plus monthly retainer. Optionally, you can also obtain professional lead lists through us.',
-      description: 'How our pricing model works:',
+      title: 'Transparent Pricing',
+      subtitle: 'Clear prices, no hidden costs. You know from the start what you\'re investing.',
+      description: 'Investment for established B2B companies:',
       packages: [
         {
           name: 'Onboarding Fee',
           duration: 'One-time',
-          price: 'Individual',
+          price: '€2,000',
           features: [
             'Intensive training of your personal team member',
             'Team integration & introduction',
@@ -746,12 +770,13 @@ export const translations = {
             'Setup of reporting & processes'
           ],
           bestFor: 'Perfect Start',
-          cta: 'Get Advice Now'
+          cta: 'Book Qualification Call'
         },
         {
           name: 'Monthly Retainer',
           duration: 'Monthly',
-          price: 'Fixed Price',
+          price: '€4,000',
+          priceNote: '= €133/working day',
           features: [
             'Daily 2-3 hours dedicated sales professional',
             'Flexibly deployable: Cold calling, lead follow-up, CRM management',
@@ -760,12 +785,12 @@ export const translations = {
             'GDPR-compliant & professional'
           ],
           bestFor: 'Continuous Growth',
-          cta: 'Get Advice Now'
+          cta: 'Book Qualification Call'
         },
         {
           name: 'Lead List Service',
           duration: 'Optional',
-          price: 'On Demand',
+          price: '€499',
           features: [
             'GDPR-compliant databases (Cognism, EchoBot)',
             'Prepared leads in CSV, Excel or desired format',
@@ -774,11 +799,12 @@ export const translations = {
             'Optimal support for cold calling'
           ],
           bestFor: 'Maximum Efficiency',
-          cta: 'Get Advice Now'
+          cta: 'Book Qualification Call'
         }
       ],
       bestForLabel: 'Best for:',
-      footerText: 'Would you like to receive an individual offer? Schedule a non-binding consultation now and learn how we can scale your sales.'
+      roiNote: 'At 12+ appointments/month = approx. €333 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €36,000+ monthly revenue potential.',
+      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For smaller companies, we recommend scaling internally first.'
     },
 
     // Review Cards Section
@@ -868,6 +894,8 @@ export const translations = {
           company: 'CoffeeCup.app',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/app-v1.svg',
           industry: 'SaaS / B2B Software',
+          companySize: '25+ employees',
+          avgDealSize: 'ACV €18,000+',
           duration: '12 Months',
           challenge: {
             title: 'The Challenge',
@@ -896,6 +924,8 @@ export const translations = {
           company: 'Tech-Experts GmbH',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
           industry: 'Recruitment / HR Services',
+          companySize: '35+ employees',
+          avgDealSize: 'ACV €25,000+',
           duration: '4 Months',
           challenge: {
             title: 'The Challenge',
@@ -924,6 +954,8 @@ export const translations = {
           company: 'Intech Automation',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech-v1.svg',
           industry: 'Industrial Automation / B2B Tech',
+          companySize: '50+ employees',
+          avgDealSize: 'ACV €45,000+',
           duration: '10+ Months',
           challenge: {
             title: 'The Challenge',
@@ -1019,9 +1051,9 @@ export const translations = {
 
     // Contact Section
     contact: {
-      title: 'Ready to Fill Your Pipeline with Qualified Leads?',
-      subtitle: '',
-      formTitle: 'Quick Contact Form',
+      title: 'Is LeadGenies Right for Your Business?',
+      subtitle: 'Let\'s have a quick conversation to determine if we\'re the right partner for you.',
+      formTitle: 'Request Qualification Call',
       nameLabel: 'Name*',
       nameRequired: 'Name is required',
       companyLabel: 'Company*',
@@ -1030,7 +1062,7 @@ export const translations = {
       emailRequired: 'Email is required',
       phoneLabel: 'Phone',
       challengeLabel: "What's your biggest sales challenge?",
-      submitButton: 'Get Your Free Strategy Session',
+      submitButton: 'Book Qualification Call',
       responseTime: 'Response within 2 hours during business days',
       directContactTitle: 'Contact Directly',
       officeHoursLabel: 'Office Hours',

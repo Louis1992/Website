@@ -37,7 +37,7 @@ export default function ROICalculatorSection({ lang = 'de' }: ROICalculatorSecti
   const sectionRef = useRef<HTMLElement>(null);
 
   // Input states - simplified to 3 key fields
-  const [dealValue, setDealValue] = useState(5000);
+  const [dealValue, setDealValue] = useState(15000);
   const [closingRate, setClosingRate] = useState(20);
   const [monthlyAppointments, setMonthlyAppointments] = useState(8);
 
@@ -78,7 +78,7 @@ export default function ROICalculatorSection({ lang = 'de' }: ROICalculatorSecti
   }, []);
 
   // Calculate results - simplified logic
-  const serviceCost = 3000; // Fixed service cost
+  const serviceCost = 4000; // Fixed service cost (monthly retainer)
   const expectedMonthlyRevenue = monthlyAppointments * (closingRate / 100) * dealValue;
   const netGain = expectedMonthlyRevenue - serviceCost;
   const roi = ((netGain / serviceCost) * 100);
@@ -278,20 +278,38 @@ export default function ROICalculatorSection({ lang = 'de' }: ROICalculatorSecti
                 type="range"
                 id="dealValue"
                 aria-label={t.dealValue}
-                min="1000"
-                max="50000"
-                step="500"
+                min="5000"
+                max="100000"
+                step="1000"
                 value={dealValue}
                 onChange={(e) => setDealValue(Number(e.target.value))}
                 style={{
                   width: '100%',
                   height: '6px',
                   borderRadius: '3px',
-                  background: `linear-gradient(to right, #8B5CF6 0%, #8B5CF6 ${((dealValue - 1000) / (50000 - 1000)) * 100}%, #E5E7EB ${((dealValue - 1000) / (50000 - 1000)) * 100}%, #E5E7EB 100%)`,
+                  background: `linear-gradient(to right, #8B5CF6 0%, #8B5CF6 ${((dealValue - 5000) / (100000 - 5000)) * 100}%, #E5E7EB ${((dealValue - 5000) / (100000 - 5000)) * 100}%, #E5E7EB 100%)`,
                   outline: 'none',
                   cursor: 'pointer'
                 }}
               />
+              {dealValue < 15000 && (
+                <p
+                  style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '0.75rem',
+                    color: '#DC2626',
+                    marginTop: '0.5rem',
+                    padding: '0.5rem 0.75rem',
+                    backgroundColor: '#FEF2F2',
+                    borderRadius: '6px',
+                    border: '1px solid #FECACA'
+                  }}
+                >
+                  {lang === 'de'
+                    ? '⚠️ Bei Auftragswerten unter €15.000 empfehlen wir, zuerst Ihren durchschnittlichen Kundenwert zu erhöhen.'
+                    : '⚠️ For deal values under €15,000, we recommend increasing your average customer value first.'}
+                </p>
+              )}
             </div>
 
             {/* Closing Rate Slider */}
