@@ -1,0 +1,43 @@
+{
+  "type": "schema",
+  "settings": {
+    "businessName": "LeadGenies",
+    "businessType": "ProfessionalService",
+    "address": {
+      "streetAddress": "Ringstraße 102",
+      "locality": "Seevetal",
+      "region": "Niedersachsen",
+      "postCode": "21218",
+      "country": "DE"
+    },
+    "contact": {
+      "email": "louis@leadgenies.de",
+      "phone": "+49 173 8082217"
+    },
+    "image": "https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/leadgenies-logo.svg",
+    "website": "https://www.leadgenies.de",
+    "paymentMethods": [
+      "credit card",
+      "bank transfer",
+      "invoice"
+    ],
+    "openingHours": {
+      "open": "09:00",
+      "close": "18:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ]
+    },
+    "geo": {
+      "latitude": "53.3833",
+      "longitude": "9.9667"
+    },
+    "priceRange": "$$$"
+  },
+  "updated_at": "2026-02-04T00:00:00.000Z",
+  "version": 3
+}

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "./colors.css";
+
+/* Section and Container Styles */
+@layer components {
+  .section-zen {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  .container-zen {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure proper box-sizing */
+* {
+  box-sizing: border-box;
+}
