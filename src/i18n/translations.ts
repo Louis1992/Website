@@ -224,10 +224,11 @@ export const translations = {
           features: [
             '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefonakquise',
-            'Individuelles Reporting nach Ihren Wünschen',
-            'Zugang zur LeadGenies-App mit Live-Tracking',
+            'Tägliches Reporting + wöchentlicher Feedback-Call',
+            'LeadGenies-App: Tägliche Übersicht & Insights',
+            'Leadlisten auf Anfrage (separat buchbar)',
             'DSGVO-konform & professionell',
-            'Ziel: 8–12 qualifizierte Termine/Monat'
+            'Ziel: 8–15 qualifizierte Termine/Monat'
           ],
           bestFor: 'Schneller Einstieg',
           cta: 'Qualifizierungsgespräch buchen'
@@ -240,11 +241,12 @@ export const translations = {
           savings: 'Empfohlen',
           features: [
             '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
-            'Kanal: Telefon + Follow-up E-Mails',
-            'Super-individuelles Reporting für Ihr Team',
-            'LeadGenies-App mit Live-Tracking & Insights',
-            '200 verifizierte Leads/Monat inklusive',
-            'Ziel: 15–20 qualifizierte Termine/Monat'
+            'Kanal: Telefon + alle Follow-up-Mails & Nachverfolgung',
+            'Super-individuelles Reporting nach Kundenwunsch',
+            'LeadGenies-App: Live-Tracking & Insights Plus',
+            'Bis zu 1.000 verifizierte Leads/Monat inkl. mit ICP-Workshop',
+            'Wöchentliche Zielgruppen-Review & Qualitäts-Tracking',
+            'Ziel: 15–30 qualifizierte Termine/Monat'
           ],
           bestFor: 'Maximales Wachstum',
           cta: 'Qualifizierungsgespräch buchen'
@@ -255,19 +257,19 @@ export const translations = {
           price: 'Individuell',
           priceNote: 'Onboarding + Strategy-Workshop inkludiert',
           features: [
-            'Dedizierter Sales-Mitarbeiter (Vollzeit)',
-            'Alle Follow-up-Aufgaben übernommen',
-            'Tägliches persönliches Reporting',
-            'LeadGenies-App mit Vollzugriff & Priority Support',
-            'Unbegrenzte verifizierte Leads inklusive',
-            'Ziel: 25+ qualifizierte Termine/Monat'
+            '5–6 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Individuelle Einarbeitung ins Team mit allen Aufgaben',
+            'Volle Integration in Ihre Infrastruktur & Ihr Team',
+            'LeadGenies-App: Vollzugriff & Priority Support',
+            'Unbegrenzte verifizierte Leads inkl. mit dauerhaftem Qualitäts-Reporting',
+            'Ziel: 50+ qualifizierte Termine/Monat'
           ],
           bestFor: 'Volle Sales-Power',
           cta: 'Erstgespräch vereinbaren'
         }
       ],
       bestForLabel: 'Ideal für:',
-      roiNote: 'Rechenbeispiel Scale-Paket: Bei 15+ Terminen/Monat = ca. €333 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €45.000+ Monatsumsatz-Potenzial.',
+      roiNote: 'Rechenbeispiel Scale-Paket: Bei 20+ Terminen/Monat = ca. €250 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial.',
       footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für kleinere Unternehmen empfehlen wir, erst intern zu skalieren.'
     },
 
@@ -772,10 +774,11 @@ export const translations = {
           features: [
             '2 hours/day dedicated sales professional',
             'Channel: Phone outreach',
-            'Customized reporting tailored to your needs',
-            'LeadGenies App access with live call tracking',
+            'Daily reporting + weekly feedback call',
+            'LeadGenies App: Daily overview & insights',
+            'Lead lists available on request (separate)',
             'GDPR-compliant & professional',
-            'Target: 8–12 qualified appointments/month'
+            'Target: 8–15 qualified appointments/month'
           ],
           bestFor: 'Quick Start',
           cta: 'Book Qualification Call'
@@ -788,11 +791,12 @@ export const translations = {
           savings: 'Recommended',
           features: [
             '3–4 hours/day dedicated sales professional',
-            'Channel: Phone + follow-up emails',
-            'Highly customized reporting for your team',
-            'LeadGenies App with live tracking & insights',
-            '200 verified leads/month included',
-            'Target: 15–20 qualified appointments/month'
+            'Channel: Phone + all follow-up emails & tracking',
+            'Highly customized reporting tailored to your needs',
+            'LeadGenies App: Live tracking & Insights Plus',
+            'Up to 1,000 verified leads/month incl. with ICP workshop',
+            'Weekly target audience review & quality tracking',
+            'Target: 15–30 qualified appointments/month'
           ],
           bestFor: 'Maximum Growth',
           cta: 'Book Qualification Call'
@@ -803,19 +807,19 @@ export const translations = {
           price: 'Custom',
           priceNote: 'Onboarding + strategy workshop included',
           features: [
-            'Dedicated full-time sales professional',
-            'All follow-up tasks handled for you',
-            'Daily personal reporting',
-            'LeadGenies App with full access & priority support',
-            'Unlimited verified leads included',
-            'Target: 25+ qualified appointments/month'
+            '5–6 hours/day dedicated sales professional',
+            'Individual team onboarding with all tasks covered',
+            'Full integration into your infrastructure & team',
+            'LeadGenies App: Full access & priority support',
+            'Unlimited verified leads incl. with ongoing quality reporting',
+            'Target: 50+ qualified appointments/month'
           ],
           bestFor: 'Full Sales Power',
           cta: 'Schedule Introduction Call'
         }
       ],
       bestForLabel: 'Best for:',
-      roiNote: 'Scale package example: At 15+ appointments/month = approx. €333 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €45,000+ monthly revenue potential.',
+      roiNote: 'Scale package example: At 20+ appointments/month = approx. €250 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential.',
       footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For smaller companies, we recommend scaling internally first.'
     },
 
