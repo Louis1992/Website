@@ -5,10 +5,13 @@ import { translations, type Language } from '../../i18n/translations';
 
 interface ContactSectionProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
-  const t = translations[lang].contact;
+export default function ContactSection({ lang = 'de', pageVariant = 'main' }: ContactSectionProps) {
+  const t = pageVariant === 'starter'
+    ? { ...translations[lang].contact, ...translations[lang].starterContact }
+    : translations[lang].contact;
   const [state, handleSubmit] = useForm("mjgknrkv");
 
   const [isMobile, setIsMobile] = useState(false);
@@ -217,6 +220,9 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
               </h3>
 
               <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                {pageVariant === 'starter' && (
+                  <input type="hidden" name="_source" value="starter" />
+                )}
                 {/* Name Field */}
                 <div>
                   <label
@@ -404,7 +410,7 @@ export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
                 {/* Challenge Textarea */}
                 <div>
                   <label
-                    htmlFor="message"
+                    htmlFor="challenge"
                     style={{
                       fontFamily: 'Inter, sans-serif',
                       fontSize: '0.875rem',

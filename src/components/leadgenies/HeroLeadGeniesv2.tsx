@@ -5,10 +5,13 @@ import { translations, type Language } from '../../i18n/translations';
 
 interface HeroLeadGeniesProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
-  const t = translations[lang].hero;
+export default function HeroLeadGenies({ lang = 'de', pageVariant = 'main' }: HeroLeadGeniesProps) {
+  const t = pageVariant === 'starter'
+    ? { ...translations[lang].hero, ...translations[lang].starterHero }
+    : translations[lang].hero;
   const [isMounted, setIsMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
@@ -421,8 +424,6 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                   playsInline
                   webkit-playsinline="true"
                   preload="auto"
-                  poster="https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/video-poster-mobile.jpg"
-                  aria-label={lang === 'de' ? 'Hintergrundvideo von LeadGenies' : 'Background video from LeadGenies'}
                   ref={(el) => { if (el) el.play().catch(() => { }); }}
                   style={{
                     width: '100%',
@@ -813,8 +814,6 @@ export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
                   playsInline
                   webkit-playsinline="true"
                   preload="auto"
-                  poster="https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/video-poster-desktop.jpg"
-                  aria-label={lang === 'de' ? 'Hintergrundvideo von LeadGenies' : 'Background video from LeadGenies'}
                   ref={(el) => { if (el) el.play().catch(() => { }); }}
                   style={{
                     width: '100%',

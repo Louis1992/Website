@@ -18,28 +18,35 @@ interface HeaderLeadGeniesProps {
   menuItems?: MenuItem[];
   ctaText?: string;
   ctaHref?: string;
+  pageVariant?: 'main' | 'starter';
 }
 
 export default function HeaderLeadGenies({
   lang = 'de',
   menuItems,
   ctaText,
-  ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min'
+  ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min',
+  pageVariant = 'main'
 }: HeaderLeadGeniesProps) {
 
-  const t = translations[lang].header;
+  const t = translations[lang][pageVariant === 'starter' ? 'starterHeader' : 'header'];
   const rawMenuItems = menuItems || t.menuItems;
 
   // Transform menu items to have absolute paths so they work from subpages
   const finalMenuItems = rawMenuItems.map(item => {
     if (item.href.startsWith('#')) {
-      const basePath = lang === 'en' ? '/en' : '/';
-      // Ensure we don't end up with //#section if basePath is /
+      const basePath = pageVariant === 'starter'
+        ? (lang === 'en' ? '/en/starter' : '/starter')
+        : (lang === 'en' ? '/en' : '/');
       const prefix = basePath === '/' ? '' : basePath;
       return { ...item, href: `${prefix}/${item.href}`.replace('//', '/') };
     }
     return item;
   });
+
+  // Language switcher paths
+  const dePath = pageVariant === 'starter' ? '/starter' : '/';
+  const enPath = pageVariant === 'starter' ? '/en/starter' : '/en';
 
   const finalCtaText = ctaText || t.ctaText;
 
@@ -435,7 +442,7 @@ export default function HeaderLeadGenies({
             className="hidden md:flex items-center gap-1 overflow-hidden"
           >
             <a
-              href="/"
+              href={dePath}
               onClick={() => {
                 document.cookie = 'preferred_lang=de; path=/; max-age=31536000';
               }}
@@ -451,7 +458,7 @@ export default function HeaderLeadGenies({
             </a>
             <span style={{ color: 'rgba(13, 13, 40, 0.3)' }}>|</span>
             <a
-              href="/en"
+              href={enPath}
               onClick={() => {
                 document.cookie = 'preferred_lang=en; path=/; max-age=31536000';
               }}
@@ -546,7 +553,7 @@ export default function HeaderLeadGenies({
             style={{ opacity: 0 }}
           >
             <a
-              href="/"
+              href={dePath}
               onClick={() => {
                 document.cookie = 'preferred_lang=de; path=/; max-age=31536000';
                 handleMobileMenuItemClick();
@@ -562,7 +569,7 @@ export default function HeaderLeadGenies({
             </a>
             <span style={{ color: 'rgba(255, 255, 255, 0.3)' }}>|</span>
             <a
-              href="/en"
+              href={enPath}
               onClick={() => {
                 document.cookie = 'preferred_lang=en; path=/; max-age=31536000';
                 handleMobileMenuItemClick();

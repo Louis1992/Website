@@ -5,10 +5,13 @@ import { translations, type Language } from '../../i18n/translations';
 
 interface TrustSectionProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function TrustSection({ lang = 'de' }: TrustSectionProps) {
-  const t = translations[lang].trust;
+export default function TrustSection({ lang = 'de', pageVariant = 'main' }: TrustSectionProps) {
+  const t = pageVariant === 'starter'
+    ? { ...translations[lang].trust, ...translations[lang].starterTrust }
+    : translations[lang].trust;
   const [isVisible, setIsVisible] = useState(false);
   const [badgeVisible, setBadgeVisible] = useState(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -179,59 +182,6 @@ export default function TrustSection({ lang = 'de' }: TrustSectionProps) {
           >
             {t.checklistFooter}
           </p>
-
-          {/* Not Suitable For Section */}
-          {t.notSuitableTitle && t.notSuitableList && (
-            <div
-              className="mt-12 p-6 rounded-xl"
-              style={{
-                backgroundColor: '#fef2f2',
-                border: '1px solid rgba(239, 68, 68, 0.2)'
-              }}
-            >
-              <h4
-                className="text-center mb-4"
-                style={{
-                  fontFamily: 'MomoTrustDisplay, sans-serif',
-                  fontSize: '1.25rem',
-                  fontWeight: 'bold',
-                  color: '#991b1b'
-                }}
-              >
-                {t.notSuitableTitle}
-              </h4>
-              <div className="flex flex-wrap justify-center gap-3">
-                {t.notSuitableList.map((item: string, index: number) => (
-                  <span
-                    key={index}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                    style={{
-                      backgroundColor: '#ffffff',
-                      border: '1px solid rgba(239, 68, 68, 0.3)',
-                      fontFamily: 'Inter, sans-serif',
-                      fontSize: '0.875rem',
-                      color: '#7f1d1d'
-                    }}
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#ef4444"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <line x1="18" y1="6" x2="6" y2="18" />
-                      <line x1="6" y1="6" x2="18" y2="18" />
-                    </svg>
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Stats Grid */}

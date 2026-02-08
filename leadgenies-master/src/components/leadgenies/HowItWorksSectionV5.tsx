@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { translations as centralTranslations } from '../../i18n/translations';
 
 // Video background URL
 const VIDEO_BG_URL = 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Background%20How%20it%20Works%20Compressed.mp4';
@@ -119,9 +120,10 @@ const stepIcons = [StepIcon1, StepIcon2, StepIcon3, StepIcon4, StepIcon5];
 
 interface HowItWorksSectionV5Props {
   lang?: 'de' | 'en';
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function HowItWorksSectionV5({ lang = 'de' }: HowItWorksSectionV5Props) {
+export default function HowItWorksSectionV5({ lang = 'de', pageVariant = 'main' }: HowItWorksSectionV5Props) {
   const [isMobile, setIsMobile] = useState(false);
   const [titleVisible, setTitleVisible] = useState(false);
   const [subtitleVisible, setSubtitleVisible] = useState(false);
@@ -138,14 +140,17 @@ export default function HowItWorksSectionV5({ lang = 'de' }: HowItWorksSectionV5
   const [stepCardVisible, setStepCardVisible] = useState(false);
 
   // Desktop-only state - track which cards are visible
-  const [desktopCardsVisible, setDesktopCardsVisible] = useState<boolean[]>([false, false, false, false, false]);
+  const [desktopCardsVisible, setDesktopCardsVisible] = useState<boolean[]>(new Array(5).fill(false));
 
   const sectionRef = useRef<HTMLElement>(null);
   const line3SentinelRef = useRef<HTMLDivElement>(null);
   const circleRef = useRef<SVGCircleElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const t = translations[lang] || translations.de;
+  const t = pageVariant === 'starter'
+    ? centralTranslations[lang].starterHowItWorks
+    : (translations[lang] || translations.de);
+  const totalSteps = t.steps.length;
 
   useEffect(() => {
     const checkMobile = () => {
@@ -237,7 +242,7 @@ export default function HowItWorksSectionV5({ lang = 'de' }: HowItWorksSectionV5
     // Each card sequence takes ~650ms, with 50ms delay between starting each
     const SEQUENCE_DELAY = 700; // Total time between each card starting
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < totalSteps; i++) {
       setTimeout(() => {
         setDesktopCardsVisible(prev => {
           const newState = [...prev];
@@ -259,7 +264,7 @@ export default function HowItWorksSectionV5({ lang = 'de' }: HowItWorksSectionV5
       setTimeout(() => {
         const nextStep = currentStep + 1;
         setCurrentStep(nextStep);
-        if (nextStep === 5) setIsForward(false);
+        if (nextStep === totalSteps) setIsForward(false);
         setStepCardVisible(true);
         requestAnimationFrame(() => setStepTransitioning(false));
       }, 300);

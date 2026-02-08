@@ -5,10 +5,13 @@ import { translations, type Language } from '../../i18n/translations';
 
 interface TrustSectionProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function TrustSection({ lang = 'de' }: TrustSectionProps) {
-  const t = translations[lang].trust;
+export default function TrustSection({ lang = 'de', pageVariant = 'main' }: TrustSectionProps) {
+  const t = pageVariant === 'starter'
+    ? { ...translations[lang].trust, ...translations[lang].starterTrust }
+    : translations[lang].trust;
   const [isVisible, setIsVisible] = useState(false);
   const [badgeVisible, setBadgeVisible] = useState(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);

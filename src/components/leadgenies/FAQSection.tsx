@@ -14,10 +14,11 @@ interface FAQCategory {
 
 interface FAQSectionProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function FAQSection({ lang = 'de' }: FAQSectionProps) {
-  const t = translations[lang].faq;
+export default function FAQSection({ lang = 'de', pageVariant = 'main' }: FAQSectionProps) {
+  const t = translations[lang][pageVariant === 'starter' ? 'starterFaq' : 'faq'];
   const [isMobile, setIsMobile] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [activeQuestion, setActiveQuestion] = useState<number | null>(null);

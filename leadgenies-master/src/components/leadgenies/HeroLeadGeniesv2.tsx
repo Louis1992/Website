@@ -5,10 +5,13 @@ import { translations, type Language } from '../../i18n/translations';
 
 interface HeroLeadGeniesProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function HeroLeadGenies({ lang = 'de' }: HeroLeadGeniesProps) {
-  const t = translations[lang].hero;
+export default function HeroLeadGenies({ lang = 'de', pageVariant = 'main' }: HeroLeadGeniesProps) {
+  const t = pageVariant === 'starter'
+    ? { ...translations[lang].hero, ...translations[lang].starterHero }
+    : translations[lang].hero;
   const [isMounted, setIsMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isIOS, setIsIOS] = useState(false);

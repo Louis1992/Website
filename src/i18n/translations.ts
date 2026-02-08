@@ -218,7 +218,7 @@ export const translations = {
       packages: [
         {
           name: 'Growth',
-          duration: 'Monat-zu-Monat',
+          duration: 'Ab 3 Monate',
           price: '€3.499',
           priceNote: '/Monat · zzgl. €1.999 Onboarding',
           features: [
@@ -235,7 +235,7 @@ export const translations = {
         },
         {
           name: 'Scale',
-          duration: 'Ab 3 Monate',
+          duration: 'Ab 6 Monate',
           price: '€4.999',
           priceNote: '/Monat · Onboarding inkludiert',
           savings: 'Empfohlen',
@@ -253,7 +253,7 @@ export const translations = {
         },
         {
           name: 'Enterprise',
-          duration: 'Ab 6 Monate',
+          duration: 'Ab 12 Monate',
           price: 'Individuell',
           priceNote: 'Onboarding + Strategy-Workshop inkludiert',
           features: [
@@ -270,7 +270,7 @@ export const translations = {
       ],
       bestForLabel: 'Ideal für:',
       roiNote: 'Rechenbeispiel Scale-Paket: Bei 20+ Terminen/Monat = ca. €250 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial.',
-      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für kleinere Unternehmen empfehlen wir, erst intern zu skalieren.'
+      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für wachsende Unternehmen ohne eigenes Sales-Team: <a href="/starter" style="color: #4136b3; font-weight: 600;">Entdecken Sie unser Starter-Programm →</a>'
     },
 
     // Review Cards Section
@@ -550,6 +550,183 @@ export const translations = {
     language: {
       de: 'DE',
       en: 'EN'
+    },
+
+    // ===== STARTER PAGE TRANSLATIONS =====
+
+    starterHeader: {
+      menuItems: [
+        { label: 'Prozess', href: '#how-it-works' },
+        { label: 'Case Studies', href: '#case-studies' },
+        { label: 'Garantie', href: '#guarantee' },
+        { label: 'Pakete', href: '#pricing' },
+        { label: 'Kontakt', href: '#contact' }
+      ],
+      ctaText: 'Beratungsgespräch'
+    },
+
+    starterHero: {
+      title: 'Professionelle B2B-Kaltakquise – speziell für wachsende Unternehmen',
+      subtitle: 'Sie haben ein gutes Produkt, aber noch kein großes Vertriebsteam? Wir übernehmen Ihre Kaltakquise komplett – inklusive Leadlisten, Onboarding und Reporting. Ein Preis, alles drin.',
+      cta: 'Kostenloses Beratungsgespräch',
+      belowText: 'Für B2B-Unternehmen die <strong>ihren Vertrieb aufbauen</strong> wollen'
+    },
+
+    starterTrust: {
+      title: 'Ist das Starter-Programm das Richtige für Sie?',
+      subtitle: 'Unser Starter-Programm ist speziell für wachsende B2B-Unternehmen konzipiert, die professionelle Kaltakquise nutzen möchten, ohne gleich ein eigenes SDR-Team aufbauen zu müssen.',
+      checklistTitle: 'Perfekt für Sie, wenn:',
+      checklist: [
+        'Ihr Unternehmen generiert mindestens €5.000 monatlichen Umsatz.',
+        'Sie haben ein B2B-Produkt oder eine B2B-Dienstleistung und möchten aktiv neue Kunden gewinnen.',
+        'Ihre durchschnittliche Auftragsgröße liegt bei €3.000+ (ACV).',
+        'Sie möchten einen strukturierten Vertriebsprozess aufbauen – auch ohne eigenes Sales-Team.'
+      ],
+      checklistFooter: 'Klingt nach Ihnen? Dann lassen Sie uns sprechen.'
+    },
+
+    starterHowItWorks: {
+      title: 'So starten wir gemeinsam',
+      subtitle: 'In 4 einfachen Schritten zu Ihrem externen Vertriebsteam',
+      steps: [
+        {
+          number: '01',
+          title: 'Beratungsgespräch',
+          description: 'Wir lernen Ihr Unternehmen, Ihr Produkt und Ihre Zielgruppe kennen. Gemeinsam definieren wir, welches Starter-Paket am besten passt.'
+        },
+        {
+          number: '02',
+          title: 'Onboarding (inklusive)',
+          description: 'Wir schulen unseren Sales-Mitarbeiter auf Ihr Produkt, entwickeln den Gesprächsleitfaden und richten alle Prozesse ein – ohne Extra-Kosten.'
+        },
+        {
+          number: '03',
+          title: 'Kaltakquise startet',
+          description: 'Ihr dedizierter Sales-Mitarbeiter beginnt mit der täglichen Akquise. Sie erhalten qualifizierte Termine direkt in Ihren Kalender.'
+        },
+        {
+          number: '04',
+          title: 'Wachstum & Optimierung',
+          description: 'Durch regelmäßiges Reporting und Feedback optimieren wir kontinuierlich. Ihre Pipeline wächst planbar und nachhaltig.'
+        }
+      ]
+    },
+
+    starterPricing: {
+      title: 'Starter-Pakete – Alles inklusive',
+      subtitle: 'Ein Preis, keine versteckten Kosten. Onboarding, Leadlisten und Reporting – alles inklusive.',
+      description: 'Investment für wachsende B2B-Unternehmen:',
+      packages: [
+        {
+          name: 'Starter',
+          duration: 'Ab 3 Monate',
+          price: '€2.499',
+          priceNote: '/Monat · alles inklusive',
+          features: [
+            '1 Stunde/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefonakquise',
+            'Onboarding & Einarbeitung inklusive',
+            'DSGVO-konforme Leadlisten inklusive',
+            'Wöchentliches Reporting',
+            'DSGVO-konform & professionell',
+            'Ziel: 5–8 qualifizierte Termine/Monat'
+          ],
+          bestFor: 'Vertrieb starten',
+          cta: 'Beratungsgespräch buchen'
+        },
+        {
+          name: 'Starter Plus',
+          duration: 'Ab 3 Monate',
+          price: '€3.499',
+          priceNote: '/Monat · alles inklusive',
+          savings: 'Empfohlen',
+          features: [
+            '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefon + E-Mail Follow-ups',
+            'Onboarding & Einarbeitung inklusive',
+            'DSGVO-konforme Leadlisten inklusive',
+            'Tägliches Reporting + wöchentlicher Feedback-Call',
+            'LeadGenies-App: Übersicht & Insights',
+            'Ziel: 8–15 qualifizierte Termine/Monat'
+          ],
+          bestFor: 'Bestes Preis-Leistungs-Verhältnis',
+          cta: 'Beratungsgespräch buchen'
+        },
+        {
+          name: 'Starter Pro',
+          duration: 'Ab 3 Monate',
+          price: '€4.499',
+          priceNote: '/Monat · alles inklusive',
+          features: [
+            '3 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefon + E-Mail + LinkedIn Outreach',
+            'Onboarding & Einarbeitung inklusive',
+            'DSGVO-konforme Leadlisten inklusive',
+            'Tägliches Reporting + wöchentlicher Strategy-Call',
+            'Sales-Coaching für Ihr Team (1x/Monat)',
+            'Ziel: 15–25 qualifizierte Termine/Monat'
+          ],
+          bestFor: 'Maximaler Vertriebsaufbau',
+          cta: 'Beratungsgespräch buchen'
+        }
+      ],
+      bestForLabel: 'Ideal für:',
+      roiNote: 'Rechenbeispiel Starter Plus: Bei 10 Terminen/Monat und Ø €5.000 Auftragswert mit 20% Abschlussrate = €10.000 Monatsumsatz-Potenzial. Alles inklusive – keine Extra-Kosten.',
+      footerText: 'Sie sind bereits ein etabliertes Unternehmen mit eigenem Vertriebsteam? <a href="/" style="color: #4136b3; font-weight: 600;">Entdecken Sie unsere Enterprise-Pakete →</a>'
+    },
+
+    starterFaq: {
+      title: 'Häufige Fragen zum Starter-Programm',
+      categories: [
+        {
+          title: 'Über das Starter-Programm',
+          items: [
+            {
+              question: 'Was unterscheidet das Starter-Programm von den regulären Paketen?',
+              answer: 'Das Starter-Programm ist speziell für kleinere B2B-Unternehmen konzipiert. Alles ist inklusive – Onboarding, Leadlisten, Reporting. Sie zahlen einen Preis und bekommen den vollen Service. Bei unseren regulären Paketen richten wir uns an größere Unternehmen mit eigenem Vertriebsteam.'
+            },
+            {
+              question: 'Ich habe noch kein Vertriebsteam – ist das ein Problem?',
+              answer: 'Nein, genau dafür ist das Starter-Programm da. Wir übernehmen die Kaltakquise komplett und liefern Ihnen qualifizierte Termine. Sie müssen nur die Gespräche führen und abschließen.'
+            },
+            {
+              question: 'Wie viele Termine kann ich realistisch erwarten?',
+              answer: 'Je nach Paket zwischen 5-25 Termine pro Monat. Beim Starter Plus (unserem beliebtesten Paket) sind es typischerweise 8-15 qualifizierte Termine monatlich.'
+            },
+            {
+              question: 'Warum eine Mindestlaufzeit von 3 Monaten?',
+              answer: 'Der erste Monat dient dem Onboarding und der Kalibrierung. Ab Monat 2-3 sehen Sie die vollen Ergebnisse. Eine kürzere Laufzeit wäre nicht fair Ihnen gegenüber, da der volle Wert erst nach der Einarbeitungsphase sichtbar wird.'
+            }
+          ]
+        },
+        {
+          title: 'Ablauf & Leistungen',
+          items: [
+            {
+              question: 'Was ist alles im Preis enthalten?',
+              answer: 'Alles: Onboarding, Gesprächsleitfaden-Entwicklung, DSGVO-konforme Leadlisten, tägliche Kaltakquise, Reporting und regelmäßige Feedback-Calls. Es gibt keine versteckten Zusatzkosten.'
+            },
+            {
+              question: 'Wie schnell können wir starten?',
+              answer: 'Nach dem Beratungsgespräch und Vertragsabschluss starten wir innerhalb von 7-10 Tagen mit dem Onboarding. Die ersten Anrufe erfolgen typischerweise in der zweiten Woche.'
+            },
+            {
+              question: 'Kann ich später auf ein größeres Paket upgraden?',
+              answer: 'Ja, absolut. Viele unserer Starter-Kunden wachsen mit uns und steigen auf unsere Enterprise-Pakete um. Wir begleiten Sie auf dem gesamten Weg.'
+            },
+            {
+              question: 'Welche Branchen bedient ihr?',
+              answer: 'B2B SaaS, IT-Dienstleistungen, Beratung, Agenturen, Professional Services – alle B2B-Branchen mit Auftragswerten ab €3.000.'
+            }
+          ]
+        }
+      ]
+    },
+
+    starterContact: {
+      title: 'Bereit, Ihren Vertrieb zu starten?',
+      subtitle: 'Lassen Sie uns in einem kurzen Gespräch klären, welches Starter-Paket am besten zu Ihnen passt. Unverbindlich und kostenlos.',
+      formTitle: 'Kostenloses Beratungsgespräch anfragen'
     }
   },
 
@@ -768,7 +945,7 @@ export const translations = {
       packages: [
         {
           name: 'Growth',
-          duration: 'Month-to-month',
+          duration: 'From 3 months',
           price: '€3,499',
           priceNote: '/month · plus €1,999 onboarding',
           features: [
@@ -785,7 +962,7 @@ export const translations = {
         },
         {
           name: 'Scale',
-          duration: 'From 3 months',
+          duration: 'From 6 months',
           price: '€4,999',
           priceNote: '/month · onboarding included',
           savings: 'Recommended',
@@ -803,7 +980,7 @@ export const translations = {
         },
         {
           name: 'Enterprise',
-          duration: 'From 6 months',
+          duration: 'From 12 months',
           price: 'Custom',
           priceNote: 'Onboarding + strategy workshop included',
           features: [
@@ -820,7 +997,7 @@ export const translations = {
       ],
       bestForLabel: 'Best for:',
       roiNote: 'Scale package example: At 20+ appointments/month = approx. €250 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential.',
-      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For smaller companies, we recommend scaling internally first.'
+      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For growing companies without a sales team: <a href="/en/starter" style="color: #4136b3; font-weight: 600;">Discover our Starter Program →</a>'
     },
 
     // Review Cards Section
@@ -1100,6 +1277,183 @@ export const translations = {
     language: {
       de: 'DE',
       en: 'EN'
+    },
+
+    // ===== STARTER PAGE TRANSLATIONS =====
+
+    starterHeader: {
+      menuItems: [
+        { label: 'Process', href: '#how-it-works' },
+        { label: 'Case Studies', href: '#case-studies' },
+        { label: 'Guarantee', href: '#guarantee' },
+        { label: 'Packages', href: '#pricing' },
+        { label: 'Contact', href: '#contact' }
+      ],
+      ctaText: 'Free Consultation'
+    },
+
+    starterHero: {
+      title: 'Professional B2B Cold Calling – Built for Growing Companies',
+      subtitle: 'Great product but no big sales team yet? We handle your cold calling completely – including lead lists, onboarding, and reporting. One price, everything included.',
+      cta: 'Free Consultation',
+      belowText: 'For B2B companies looking to <strong>build their sales</strong>'
+    },
+
+    starterTrust: {
+      title: 'Is the Starter Program Right for You?',
+      subtitle: 'Our Starter Program is designed specifically for growing B2B companies that want to leverage professional cold calling without building an in-house SDR team.',
+      checklistTitle: 'Perfect for you if:',
+      checklist: [
+        'Your company generates at least €5,000 monthly revenue.',
+        'You have a B2B product or service and want to actively acquire new customers.',
+        'Your average deal size is €3,000+ (ACV).',
+        'You want to build a structured sales process – even without your own sales team.'
+      ],
+      checklistFooter: 'Sound like you? Let\'s talk.'
+    },
+
+    starterHowItWorks: {
+      title: 'How We Get Started Together',
+      subtitle: 'Your external sales team in 4 simple steps',
+      steps: [
+        {
+          number: '01',
+          title: 'Consultation Call',
+          description: 'We learn about your company, product, and target audience. Together we define which Starter package fits best.'
+        },
+        {
+          number: '02',
+          title: 'Onboarding (Included)',
+          description: 'We train our sales professional on your product, develop conversation scripts, and set up all processes – at no extra cost.'
+        },
+        {
+          number: '03',
+          title: 'Cold Calling Starts',
+          description: 'Your dedicated sales professional begins daily outreach. You receive qualified appointments directly in your calendar.'
+        },
+        {
+          number: '04',
+          title: 'Growth & Optimization',
+          description: 'Through regular reporting and feedback, we continuously optimize. Your pipeline grows predictably and sustainably.'
+        }
+      ]
+    },
+
+    starterPricing: {
+      title: 'Starter Packages – Everything Included',
+      subtitle: 'One price, no hidden costs. Onboarding, lead lists, and reporting – all included.',
+      description: 'Investment for growing B2B companies:',
+      packages: [
+        {
+          name: 'Starter',
+          duration: 'From 3 months',
+          price: '€2,499',
+          priceNote: '/month · everything included',
+          features: [
+            '1 hour/day dedicated sales professional',
+            'Channel: Phone outreach',
+            'Onboarding & training included',
+            'GDPR-compliant lead lists included',
+            'Weekly reporting',
+            'GDPR-compliant & professional',
+            'Target: 5–8 qualified appointments/month'
+          ],
+          bestFor: 'Start Selling',
+          cta: 'Book Consultation'
+        },
+        {
+          name: 'Starter Plus',
+          duration: 'From 3 months',
+          price: '€3,499',
+          priceNote: '/month · everything included',
+          savings: 'Recommended',
+          features: [
+            '2 hours/day dedicated sales professional',
+            'Channel: Phone + email follow-ups',
+            'Onboarding & training included',
+            'GDPR-compliant lead lists included',
+            'Daily reporting + weekly feedback call',
+            'LeadGenies App: Overview & insights',
+            'Target: 8–15 qualified appointments/month'
+          ],
+          bestFor: 'Best Value',
+          cta: 'Book Consultation'
+        },
+        {
+          name: 'Starter Pro',
+          duration: 'From 3 months',
+          price: '€4,499',
+          priceNote: '/month · everything included',
+          features: [
+            '3 hours/day dedicated sales professional',
+            'Channel: Phone + email + LinkedIn outreach',
+            'Onboarding & training included',
+            'GDPR-compliant lead lists included',
+            'Daily reporting + weekly strategy call',
+            'Sales coaching for your team (1x/month)',
+            'Target: 15–25 qualified appointments/month'
+          ],
+          bestFor: 'Maximum Sales Growth',
+          cta: 'Book Consultation'
+        }
+      ],
+      bestForLabel: 'Best for:',
+      roiNote: 'Starter Plus example: At 10 appointments/month with avg. €5,000 deal value and 20% close rate = €10,000 monthly revenue potential. Everything included – no extra costs.',
+      footerText: 'Already an established company with your own sales team? <a href="/en" style="color: #4136b3; font-weight: 600;">Discover our Enterprise packages →</a>'
+    },
+
+    starterFaq: {
+      title: 'Frequently Asked Questions about the Starter Program',
+      categories: [
+        {
+          title: 'About the Starter Program',
+          items: [
+            {
+              question: 'What makes the Starter Program different from regular packages?',
+              answer: 'The Starter Program is designed specifically for smaller B2B companies. Everything is included – onboarding, lead lists, reporting. You pay one price and get the full service. Our regular packages are designed for larger companies with existing sales teams.'
+            },
+            {
+              question: 'I don\'t have a sales team yet – is that a problem?',
+              answer: 'No, that\'s exactly what the Starter Program is for. We handle cold calling completely and deliver qualified appointments. You just need to have the conversations and close deals.'
+            },
+            {
+              question: 'How many appointments can I realistically expect?',
+              answer: 'Depending on the package, between 5-25 appointments per month. With Starter Plus (our most popular package), you can typically expect 8-15 qualified appointments monthly.'
+            },
+            {
+              question: 'Why a minimum commitment of 3 months?',
+              answer: 'The first month is for onboarding and calibration. You\'ll see full results from month 2-3. A shorter period wouldn\'t be fair to you, as the full value only becomes visible after the ramp-up phase.'
+            }
+          ]
+        },
+        {
+          title: 'Process & Services',
+          items: [
+            {
+              question: 'What\'s included in the price?',
+              answer: 'Everything: onboarding, script development, GDPR-compliant lead lists, daily cold calling, reporting, and regular feedback calls. There are no hidden additional costs.'
+            },
+            {
+              question: 'How quickly can we start?',
+              answer: 'After the consultation and contract signing, we begin onboarding within 7-10 days. First calls typically happen in the second week.'
+            },
+            {
+              question: 'Can I upgrade to a larger package later?',
+              answer: 'Yes, absolutely. Many of our Starter customers grow with us and move to our Enterprise packages. We support you every step of the way.'
+            },
+            {
+              question: 'Which industries do you serve?',
+              answer: 'B2B SaaS, IT services, consulting, agencies, professional services – all B2B industries with deal values starting at €3,000.'
+            }
+          ]
+        }
+      ]
+    },
+
+    starterContact: {
+      title: 'Ready to Start Selling?',
+      subtitle: 'Let\'s have a quick chat to figure out which Starter package fits you best. No commitment, completely free.',
+      formTitle: 'Request Free Consultation'
     }
   }
 };

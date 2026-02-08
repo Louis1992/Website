@@ -17,10 +17,11 @@ interface PricingPackage {
 
 interface PricingSectionProps {
   lang?: Language;
+  pageVariant?: 'main' | 'starter';
 }
 
-export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
-  const t = translations[lang].pricing;
+export default function PricingSection({ lang = 'de', pageVariant = 'main' }: PricingSectionProps) {
+  const t = translations[lang][pageVariant === 'starter' ? 'starterPricing' : 'pricing'];
   const [isMobile, setIsMobile] = useState(false);
   const [titleVisible, setTitleVisible] = useState(false);
   const [subtitleVisible, setSubtitleVisible] = useState(false);
@@ -400,7 +401,7 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
                 fontWeight: '500'
               }}
             >
-              💡 {t.roiNote}
+              {t.roiNote}
             </p>
           </div>
         )}
@@ -415,14 +416,13 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
               textAlign: 'center',
               maxWidth: '800px',
               margin: '0 auto',
-              marginTop: isMobile ? '2rem' : '2.5rem',
+              marginTop: isMobile ? '3rem' : '4rem',
               lineHeight: '1.7',
               opacity: card3Visible ? 1 : 0,
               transition: 'opacity 0.6s ease-out 0.3s'
             }}
-          >
-            {t.footerText}
-          </p>
+            dangerouslySetInnerHTML={{ __html: t.footerText }}
+          />
         )}
       </div>
     </section>
