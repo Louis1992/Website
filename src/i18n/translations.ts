@@ -213,55 +213,61 @@ export const translations = {
     // Pricing Section
     pricing: {
       title: 'Transparente Preisgestaltung',
-      subtitle: 'Klare Preise, keine versteckten Kosten. Sie wissen von Anfang an, was Sie investieren.',
+      subtitle: 'Klare Preise, keine versteckten Kosten. Wählen Sie das Paket, das zu Ihrem Wachstum passt.',
       description: 'Investment für etablierte B2B-Unternehmen:',
       packages: [
         {
-          name: 'Onboarding-Pauschale',
-          duration: 'Einmalig',
-          price: '€1.999',
+          name: 'Growth',
+          duration: 'Monat-zu-Monat',
+          price: '€3.499',
+          priceNote: '/Monat · zzgl. €1.999 Onboarding',
           features: [
-            'Intensive Schulung Ihres persönlichen Mitarbeiters',
-            'Integration ins Team & Kennenlernen',
-            'Einweisung in Ihre CRM-Systeme',
-            'Entwicklung der Gesprächsleitfäden',
-            'Setup von Reporting & Prozessen'
+            '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefonakquise',
+            'Individuelles Reporting nach Ihren Wünschen',
+            'Zugang zur LeadGenies-App mit Live-Tracking',
+            'DSGVO-konform & professionell',
+            'Ziel: 8–12 qualifizierte Termine/Monat'
           ],
-          bestFor: 'Perfekter Start',
+          bestFor: 'Schneller Einstieg',
           cta: 'Qualifizierungsgespräch buchen'
         },
         {
-          name: 'Monatlicher Retainer',
-          duration: 'Monatlich',
-          price: '€3.999',
-          priceNote: '= €133/Arbeitstag',
+          name: 'Scale',
+          duration: 'Ab 3 Monate',
+          price: '€4.999',
+          priceNote: '/Monat · Onboarding inkludiert',
+          savings: 'Empfohlen',
           features: [
-            'Tägliche 2-3 Stunden dedizierter Sales-Mitarbeiter',
-            'Flexibel einsetzbar: Kaltakquise, Lead-Nachverfolgung, CRM-Pflege',
-            'Teilnahme an Schulungen & Feedback-Calls',
-            'Wie ein eigener Mitarbeiter – ohne Personalrisiko',
-            'DSGVO-konform & professionell'
+            '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefon + Follow-up E-Mails',
+            'Super-individuelles Reporting für Ihr Team',
+            'LeadGenies-App mit Live-Tracking & Insights',
+            '200 verifizierte Leads/Monat inklusive',
+            'Ziel: 15–20 qualifizierte Termine/Monat'
           ],
-          bestFor: 'Kontinuierliches Wachstum',
+          bestFor: 'Maximales Wachstum',
           cta: 'Qualifizierungsgespräch buchen'
         },
         {
-          name: 'Leadlisten-Service',
-          duration: 'Optional',
-          price: '€499',
+          name: 'Enterprise',
+          duration: 'Ab 6 Monate',
+          price: 'Individuell',
+          priceNote: 'Onboarding + Strategy-Workshop inkludiert',
           features: [
-            'DSGVO-konforme Datenbanken (Cognism, EchoBot)',
-            'Aufbereitete Leads in CSV, Excel oder Wunschformat',
-            'Gezielt auf Ihre Zielgruppe zugeschnitten',
-            'Kontinuierliche Aktualisierung möglich',
-            'Optimale Unterstützung für Kaltakquise'
+            'Dedizierter Sales-Mitarbeiter (Vollzeit)',
+            'Alle Follow-up-Aufgaben übernommen',
+            'Tägliches persönliches Reporting',
+            'LeadGenies-App mit Vollzugriff & Priority Support',
+            'Unbegrenzte verifizierte Leads inklusive',
+            'Ziel: 25+ qualifizierte Termine/Monat'
           ],
-          bestFor: 'Maximale Effizienz',
-          cta: 'Qualifizierungsgespräch buchen'
+          bestFor: 'Volle Sales-Power',
+          cta: 'Erstgespräch vereinbaren'
         }
       ],
       bestForLabel: 'Ideal für:',
-      roiNote: 'Bei 12+ Terminen/Monat = ca. €333 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €36.000+ Monatsumsatz-Potenzial.',
+      roiNote: 'Rechenbeispiel Scale-Paket: Bei 15+ Terminen/Monat = ca. €333 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €45.000+ Monatsumsatz-Potenzial.',
       footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für kleinere Unternehmen empfehlen wir, erst intern zu skalieren.'
     },
 
@@ -755,55 +761,61 @@ export const translations = {
     // Pricing Section
     pricing: {
       title: 'Transparent Pricing',
-      subtitle: 'Clear prices, no hidden costs. You know from the start what you\'re investing.',
+      subtitle: 'Clear prices, no hidden costs. Choose the package that fits your growth.',
       description: 'Investment for established B2B companies:',
       packages: [
         {
-          name: 'Onboarding Fee',
-          duration: 'One-time',
-          price: '€1,999',
+          name: 'Growth',
+          duration: 'Month-to-month',
+          price: '€3,499',
+          priceNote: '/month · plus €1,999 onboarding',
           features: [
-            'Intensive training of your personal team member',
-            'Team integration & introduction',
-            'Training in your CRM systems',
-            'Development of conversation scripts',
-            'Setup of reporting & processes'
+            '2 hours/day dedicated sales professional',
+            'Channel: Phone outreach',
+            'Customized reporting tailored to your needs',
+            'LeadGenies App access with live call tracking',
+            'GDPR-compliant & professional',
+            'Target: 8–12 qualified appointments/month'
           ],
-          bestFor: 'Perfect Start',
+          bestFor: 'Quick Start',
           cta: 'Book Qualification Call'
         },
         {
-          name: 'Monthly Retainer',
-          duration: 'Monthly',
-          price: '€3,999',
-          priceNote: '= €133/working day',
+          name: 'Scale',
+          duration: 'From 3 months',
+          price: '€4,999',
+          priceNote: '/month · onboarding included',
+          savings: 'Recommended',
           features: [
-            'Daily 2-3 hours dedicated sales professional',
-            'Flexibly deployable: Cold calling, lead follow-up, CRM management',
-            'Participation in training & feedback calls',
-            'Like your own employee – without hiring risk',
-            'GDPR-compliant & professional'
+            '3–4 hours/day dedicated sales professional',
+            'Channel: Phone + follow-up emails',
+            'Highly customized reporting for your team',
+            'LeadGenies App with live tracking & insights',
+            '200 verified leads/month included',
+            'Target: 15–20 qualified appointments/month'
           ],
-          bestFor: 'Continuous Growth',
+          bestFor: 'Maximum Growth',
           cta: 'Book Qualification Call'
         },
         {
-          name: 'Lead List Service',
-          duration: 'Optional',
-          price: '€499',
+          name: 'Enterprise',
+          duration: 'From 6 months',
+          price: 'Custom',
+          priceNote: 'Onboarding + strategy workshop included',
           features: [
-            'GDPR-compliant databases (Cognism, EchoBot)',
-            'Prepared leads in CSV, Excel or desired format',
-            'Specifically tailored to your target audience',
-            'Continuous updates possible',
-            'Optimal support for cold calling'
+            'Dedicated full-time sales professional',
+            'All follow-up tasks handled for you',
+            'Daily personal reporting',
+            'LeadGenies App with full access & priority support',
+            'Unlimited verified leads included',
+            'Target: 25+ qualified appointments/month'
           ],
-          bestFor: 'Maximum Efficiency',
-          cta: 'Book Qualification Call'
+          bestFor: 'Full Sales Power',
+          cta: 'Schedule Introduction Call'
         }
       ],
       bestForLabel: 'Best for:',
-      roiNote: 'At 12+ appointments/month = approx. €333 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €36,000+ monthly revenue potential.',
+      roiNote: 'Scale package example: At 15+ appointments/month = approx. €333 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €45,000+ monthly revenue potential.',
       footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For smaller companies, we recommend scaling internally first.'
     },
 

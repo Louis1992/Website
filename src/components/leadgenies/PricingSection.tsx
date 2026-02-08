@@ -11,6 +11,7 @@ interface PricingPackage {
   features: string[];
   bestFor: string;
   cta: string;
+  ctaLink?: string;
   highlighted?: boolean;
 }
 
@@ -67,8 +68,9 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
     };
   }, []);
 
-  const handleCTAClick = (packageName: string) => {
-    window.open('https://calendly.com/louis-mickley-leadgenies/30min', '_blank');
+  const handleCTAClick = (packageName: string, ctaLink?: string) => {
+    const link = ctaLink || 'https://calendly.com/louis-mickley-leadgenies/30min';
+    window.open(link, '_blank');
   };
 
   return (
@@ -341,7 +343,7 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
 
                 {/* CTA Button */}
                 <button
-                  onClick={() => handleCTAClick(pkg.name)}
+                  onClick={() => handleCTAClick(pkg.name, pkg.ctaLink)}
                   style={{
                     fontFamily: 'Inter, sans-serif',
                     fontSize: isMobile ? '1rem' : '1.125rem',
