@@ -204,55 +204,65 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparente Preisgestaltung für Ihren externen Telemarketing-Mitarbeiter',
-      subtitle: 'Unser Preismodell ist einfach und fair: Eine kleine Onboarding-Pauschale plus monatlicher Retainer. Optional können Sie über uns auch professionelle Leadlisten beziehen.',
-      description: 'So funktioniert unser Preismodell:',
+      title: 'Transparente Preisgestaltung',
+      subtitle: 'Klare Preise, keine versteckten Kosten. Wählen Sie das Paket, das zu Ihrem Wachstum passt.',
+      description: 'Investment für etablierte B2B-Unternehmen:',
       packages: [
         {
-          name: 'Onboarding-Pauschale',
-          duration: 'Einmalig',
+          name: 'Growth',
+          duration: 'Monat-zu-Monat',
+          price: '€3.499',
+          priceNote: '/Monat · zzgl. €1.999 Onboarding',
+          features: [
+            '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefonakquise',
+            'Tägliches Reporting + wöchentlicher Feedback-Call',
+            'LeadGenies-App: Tägliche Übersicht & Insights',
+            'Leadlisten auf Anfrage (separat buchbar)',
+            'DSGVO-konform & professionell',
+            'Ziel: 8–15 qualifizierte Termine/Monat'
+          ],
+          bestFor: 'Schneller Einstieg',
+          cta: 'Qualifizierungsgespräch buchen'
+        },
+        {
+          name: 'Scale',
+          duration: 'Ab 3 Monate',
+          price: '€4.999',
+          priceNote: '/Monat · Onboarding inkludiert',
+          savings: 'Empfohlen',
+          features: [
+            '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Kanal: Telefon + alle Follow-up-Mails & Nachverfolgung',
+            'Super-individuelles Reporting nach Kundenwunsch',
+            'LeadGenies-App: Live-Tracking & Insights Plus',
+            'Bis zu 1.000 verifizierte Leads/Monat inkl. mit ICP-Workshop',
+            'Wöchentliche Zielgruppen-Review & Qualitäts-Tracking',
+            'Ziel: 15–30 qualifizierte Termine/Monat'
+          ],
+          bestFor: 'Maximales Wachstum',
+          cta: 'Qualifizierungsgespräch buchen'
+        },
+        {
+          name: 'Enterprise',
+          duration: 'Ab 6 Monate',
           price: 'Individuell',
+          priceNote: 'Onboarding + Strategy-Workshop inkludiert',
           features: [
-            'Intensive Schulung Ihres persönlichen Mitarbeiters',
-            'Integration ins Team & Kennenlernen',
-            'Einweisung in Ihre CRM-Systeme',
-            'Entwicklung der Gesprächsleitfäden',
-            'Setup von Reporting & Prozessen'
+            '5–6 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Individuelle Einarbeitung ins Team mit allen Aufgaben',
+            'Volle Integration in Ihre Infrastruktur & Ihr Team',
+            'LeadGenies-App: Vollzugriff & Priority Support',
+            'Unbegrenzte verifizierte Leads inkl. mit dauerhaftem Qualitäts-Reporting',
+            'Ziel: 50+ qualifizierte Termine/Monat'
           ],
-          bestFor: 'Perfekter Start',
-          cta: 'Jetzt beraten lassen'
-        },
-        {
-          name: 'Monatlicher Retainer',
-          duration: 'Monatlich',
-          price: 'Festpreis',
-          features: [
-            'Tägliche 2-3 Stunden dedizierter Sales-Mitarbeiter',
-            'Flexibel einsetzbar: Kaltakquise, Lead-Nachverfolgung, CRM-Pflege',
-            'Teilnahme an Schulungen & Feedback-Calls',
-            'Wie ein eigener Mitarbeiter – ohne Personalrisiko',
-            'DSGVO-konform & professionell'
-          ],
-          bestFor: 'Kontinuierliches Wachstum',
-          cta: 'Jetzt beraten lassen'
-        },
-        {
-          name: 'Leadlisten-Service',
-          duration: 'Optional',
-          price: 'Nach Bedarf',
-          features: [
-            'DSGVO-konforme Datenbanken (Cognism, EchoBot)',
-            'Aufbereitete Leads in CSV, Excel oder Wunschformat',
-            'Gezielt auf Ihre Zielgruppe zugeschnitten',
-            'Kontinuierliche Aktualisierung möglich',
-            'Optimale Unterstützung für Kaltakquise'
-          ],
-          bestFor: 'Maximale Effizienz',
-          cta: 'Jetzt beraten lassen'
+          bestFor: 'Volle Sales-Power',
+          cta: 'Erstgespräch vereinbaren'
         }
       ],
       bestForLabel: 'Ideal für:',
-      footerText: 'Möchten Sie ein individuelles Angebot erhalten? Vereinbaren Sie jetzt ein unverbindliches Beratungsgespräch und erfahren Sie, wie wir Ihren Vertrieb skalieren können.'
+      roiNote: 'Rechenbeispiel Scale-Paket: Bei 20+ Terminen/Monat = ca. €250 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial.',
+      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für kleinere Unternehmen empfehlen wir, erst intern zu skalieren.'
     },
 
     // Review Cards Section
@@ -730,55 +740,65 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparent Pricing for Your External Telemarketing Professional',
-      subtitle: 'Our pricing model is simple and fair: A small onboarding fee plus monthly retainer. Optionally, you can also obtain professional lead lists through us.',
-      description: 'How our pricing model works:',
+      title: 'Transparent Pricing',
+      subtitle: 'Clear prices, no hidden costs. Choose the package that fits your growth.',
+      description: 'Investment for established B2B companies:',
       packages: [
         {
-          name: 'Onboarding Fee',
-          duration: 'One-time',
-          price: 'Individual',
+          name: 'Growth',
+          duration: 'Month-to-month',
+          price: '€3,499',
+          priceNote: '/month · plus €1,999 onboarding',
           features: [
-            'Intensive training of your personal team member',
-            'Team integration & introduction',
-            'Training in your CRM systems',
-            'Development of conversation scripts',
-            'Setup of reporting & processes'
+            '2 hours/day dedicated sales professional',
+            'Channel: Phone outreach',
+            'Daily reporting + weekly feedback call',
+            'LeadGenies App: Daily overview & insights',
+            'Lead lists available on request (separate)',
+            'GDPR-compliant & professional',
+            'Target: 8–15 qualified appointments/month'
           ],
-          bestFor: 'Perfect Start',
-          cta: 'Get Advice Now'
+          bestFor: 'Quick Start',
+          cta: 'Book Qualification Call'
         },
         {
-          name: 'Monthly Retainer',
-          duration: 'Monthly',
-          price: 'Fixed Price',
+          name: 'Scale',
+          duration: 'From 3 months',
+          price: '€4,999',
+          priceNote: '/month · onboarding included',
+          savings: 'Recommended',
           features: [
-            'Daily 2-3 hours dedicated sales professional',
-            'Flexibly deployable: Cold calling, lead follow-up, CRM management',
-            'Participation in training & feedback calls',
-            'Like your own employee – without hiring risk',
-            'GDPR-compliant & professional'
+            '3–4 hours/day dedicated sales professional',
+            'Channel: Phone + all follow-up emails & tracking',
+            'Highly customized reporting tailored to your needs',
+            'LeadGenies App: Live tracking & Insights Plus',
+            'Up to 1,000 verified leads/month incl. with ICP workshop',
+            'Weekly target audience review & quality tracking',
+            'Target: 15–30 qualified appointments/month'
           ],
-          bestFor: 'Continuous Growth',
-          cta: 'Get Advice Now'
+          bestFor: 'Maximum Growth',
+          cta: 'Book Qualification Call'
         },
         {
-          name: 'Lead List Service',
-          duration: 'Optional',
-          price: 'On Demand',
+          name: 'Enterprise',
+          duration: 'From 6 months',
+          price: 'Custom',
+          priceNote: 'Onboarding + strategy workshop included',
           features: [
-            'GDPR-compliant databases (Cognism, EchoBot)',
-            'Prepared leads in CSV, Excel or desired format',
-            'Specifically tailored to your target audience',
-            'Continuous updates possible',
-            'Optimal support for cold calling'
+            '5–6 hours/day dedicated sales professional',
+            'Individual team onboarding with all tasks covered',
+            'Full integration into your infrastructure & team',
+            'LeadGenies App: Full access & priority support',
+            'Unlimited verified leads incl. with ongoing quality reporting',
+            'Target: 50+ qualified appointments/month'
           ],
-          bestFor: 'Maximum Efficiency',
-          cta: 'Get Advice Now'
+          bestFor: 'Full Sales Power',
+          cta: 'Schedule Introduction Call'
         }
       ],
       bestForLabel: 'Best for:',
-      footerText: 'Would you like to receive an individual offer? Schedule a non-binding consultation now and learn how we can scale your sales.'
+      roiNote: 'Scale package example: At 20+ appointments/month = approx. €250 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential.',
+      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For smaller companies, we recommend scaling internally first.'
     },
 
     // Review Cards Section

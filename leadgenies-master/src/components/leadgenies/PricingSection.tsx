@@ -6,10 +6,12 @@ interface PricingPackage {
   name: string;
   duration: string;
   price: string;
+  priceNote?: string;
   savings?: string;
   features: string[];
   bestFor: string;
   cta: string;
+  ctaLink?: string;
   highlighted?: boolean;
 }
 
@@ -66,8 +68,9 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
     };
   }, []);
 
-  const handleCTAClick = (packageName: string) => {
-    window.open('https://calendly.com/louis-mickley-leadgenies/30min', '_blank');
+  const handleCTAClick = (packageName: string, ctaLink?: string) => {
+    const link = ctaLink || 'https://calendly.com/louis-mickley-leadgenies/30min';
+    window.open(link, '_blank');
   };
 
   return (
@@ -248,6 +251,19 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
                   >
                     {pkg.price}
                   </p>
+                  {pkg.priceNote && (
+                    <p
+                      style={{
+                        fontFamily: 'Inter, sans-serif',
+                        fontSize: '0.875rem',
+                        color: pkg.highlighted ? 'rgba(255, 255, 255, 0.7)' : '#6B7280',
+                        marginTop: '0.5rem',
+                        fontWeight: '500'
+                      }}
+                    >
+                      {pkg.priceNote}
+                    </p>
+                  )}
                 </div>
 
                 {/* Features */}
@@ -327,7 +343,7 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
 
                 {/* CTA Button */}
                 <button
-                  onClick={() => handleCTAClick(pkg.name)}
+                  onClick={() => handleCTAClick(pkg.name, pkg.ctaLink)}
                   style={{
                     fontFamily: 'Inter, sans-serif',
                     fontSize: isMobile ? '1rem' : '1.125rem',
@@ -358,6 +374,36 @@ export default function PricingSection({ lang = 'de' }: PricingSectionProps) {
             );
           })}
         </div>
+
+        {/* ROI Note */}
+        {t.roiNote && (
+          <div
+            style={{
+              backgroundColor: '#f0fdf4',
+              border: '1px solid rgba(34, 197, 94, 0.3)',
+              borderRadius: '16px',
+              padding: isMobile ? '1.5rem' : '2rem',
+              maxWidth: '900px',
+              margin: '0 auto',
+              marginTop: isMobile ? '2.5rem' : '3.5rem',
+              opacity: card3Visible ? 1 : 0,
+              transition: 'opacity 0.6s ease-out 0.2s'
+            }}
+          >
+            <p
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: isMobile ? '0.9375rem' : '1rem',
+                color: '#166534',
+                textAlign: 'center',
+                lineHeight: '1.7',
+                fontWeight: '500'
+              }}
+            >
+              {t.roiNote}
+            </p>
+          </div>
+        )}
 
         {/* Footer Text */}
         {t.footerText && (

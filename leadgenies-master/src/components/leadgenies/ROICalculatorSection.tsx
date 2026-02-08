@@ -78,7 +78,7 @@ export default function ROICalculatorSection({ lang = 'de' }: ROICalculatorSecti
   }, []);
 
   // Calculate results - simplified logic
-  const serviceCost = 3000; // Fixed service cost
+  const serviceCost = 3499; // Fixed service cost (Growth tier monthly retainer)
   const expectedMonthlyRevenue = monthlyAppointments * (closingRate / 100) * dealValue;
   const netGain = expectedMonthlyRevenue - serviceCost;
   const roi = ((netGain / serviceCost) * 100);
