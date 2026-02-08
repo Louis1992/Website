@@ -262,7 +262,7 @@ export const translations = {
       ],
       bestForLabel: 'Ideal für:',
       roiNote: 'Rechenbeispiel Scale-Paket: Bei 20+ Terminen/Monat = ca. €250 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial.',
-      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für wachsende Unternehmen ohne eigenes Sales-Team: <a href="/starter" style="color: #4136b3; font-weight: 600;">Entdecken Sie unser Starter-Programm →</a>'
+      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für wachsende Unternehmen ohne eigenes Sales-Team: <a href="/starter" style="color: #4136b3; font-weight: 600;">Entdecken Sie unser Starter-Programm →</a><br/><br/>Leadlisten separat benötigt? Über unseren Partner <a href="https://www.lead-schmiede.de" target="_blank" rel="noopener" style="color: #4136b3; font-weight: 600;">Lead-Schmiede.de</a> erhalten Sie DSGVO-konforme B2B-Leadlisten ab €1,50/Lead.'
     },
 
     // Review Cards Section
@@ -609,13 +609,13 @@ export const translations = {
           price: '€2.499',
           priceNote: '/Monat · alles inklusive',
           features: [
-            '1 Stunde/Tag dedizierter Sales-Mitarbeiter',
+            '1–2 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefonakquise',
             'Onboarding & Einarbeitung inklusive',
             'DSGVO-konforme Leadlisten inklusive',
             'Wöchentliches Reporting',
             'DSGVO-konform & professionell',
-            'Ziel: 5–8 qualifizierte Termine/Monat'
+            'Ziel: 5–10 qualifizierte Termine/Monat'
           ],
           bestFor: 'Vertrieb starten',
           cta: 'Beratungsgespräch buchen'
@@ -623,17 +623,17 @@ export const translations = {
         {
           name: 'Starter Plus',
           duration: 'Ab 3 Monate',
-          price: '€3.499',
+          price: '€3.999',
           priceNote: '/Monat · alles inklusive',
           savings: 'Empfohlen',
           features: [
-            '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefon + E-Mail Follow-ups',
             'Onboarding & Einarbeitung inklusive',
             'DSGVO-konforme Leadlisten inklusive',
             'Tägliches Reporting + wöchentlicher Feedback-Call',
             'LeadGenies-App: Übersicht & Insights',
-            'Ziel: 8–15 qualifizierte Termine/Monat'
+            'Ziel: 10–18 qualifizierte Termine/Monat'
           ],
           bestFor: 'Bestes Preis-Leistungs-Verhältnis',
           cta: 'Beratungsgespräch buchen'
@@ -641,23 +641,23 @@ export const translations = {
         {
           name: 'Starter Pro',
           duration: 'Ab 3 Monate',
-          price: '€4.499',
+          price: '€5.499',
           priceNote: '/Monat · alles inklusive',
           features: [
-            '3 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '5–6 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefon + E-Mail + LinkedIn Outreach',
             'Onboarding & Einarbeitung inklusive',
             'DSGVO-konforme Leadlisten inklusive',
             'Tägliches Reporting + wöchentlicher Strategy-Call',
             'Sales-Coaching für Ihr Team (1x/Monat)',
-            'Ziel: 15–25 qualifizierte Termine/Monat'
+            'Ziel: 18–30 qualifizierte Termine/Monat'
           ],
           bestFor: 'Maximaler Vertriebsaufbau',
           cta: 'Beratungsgespräch buchen'
         }
       ],
       bestForLabel: 'Ideal für:',
-      roiNote: 'Rechenbeispiel Starter Plus: Bei 10 Terminen/Monat und Ø €5.000 Auftragswert mit 20% Abschlussrate = €10.000 Monatsumsatz-Potenzial. Alles inklusive – keine Extra-Kosten.',
+      roiNote: 'Rechenbeispiel Starter Plus: Bei 14 Terminen/Monat und Ø €5.000 Auftragswert mit 20% Abschlussrate = €14.000 Monatsumsatz-Potenzial. Alles inklusive – keine Extra-Kosten.',
       footerText: 'Sie sind bereits ein etabliertes Unternehmen mit eigenem Vertriebsteam? <a href="/" style="color: #4136b3; font-weight: 600;">Entdecken Sie unsere Enterprise-Pakete →</a>'
     },
 
@@ -975,7 +975,7 @@ export const translations = {
       ],
       bestForLabel: 'Best for:',
       roiNote: 'Scale package example: At 20+ appointments/month = approx. €250 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential.',
-      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For growing companies without a sales team: <a href="/en/starter" style="color: #4136b3; font-weight: 600;">Discover our Starter Program →</a>'
+      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For growing companies without a sales team: <a href="/en/starter" style="color: #4136b3; font-weight: 600;">Discover our Starter Program →</a><br/><br/>Need lead lists separately? Through our partner <a href="https://www.lead-schmiede.de" target="_blank" rel="noopener" style="color: #4136b3; font-weight: 600;">Lead-Schmiede.de</a> you can get GDPR-compliant B2B lead lists from €1.50/lead.'
     },
 
     // Review Cards Section
@@ -1322,13 +1322,13 @@ export const translations = {
           price: '€2,499',
           priceNote: '/month · everything included',
           features: [
-            '1 hour/day dedicated sales professional',
+            '1–2 hours/day dedicated sales professional',
             'Channel: Phone outreach',
             'Onboarding & training included',
             'GDPR-compliant lead lists included',
             'Weekly reporting',
             'GDPR-compliant & professional',
-            'Target: 5–8 qualified appointments/month'
+            'Target: 5–10 qualified appointments/month'
           ],
           bestFor: 'Start Selling',
           cta: 'Book Consultation'
@@ -1336,17 +1336,17 @@ export const translations = {
         {
           name: 'Starter Plus',
           duration: 'From 3 months',
-          price: '€3,499',
+          price: '€3,999',
           priceNote: '/month · everything included',
           savings: 'Recommended',
           features: [
-            '2 hours/day dedicated sales professional',
+            '3–4 hours/day dedicated sales professional',
             'Channel: Phone + email follow-ups',
             'Onboarding & training included',
             'GDPR-compliant lead lists included',
             'Daily reporting + weekly feedback call',
             'LeadGenies App: Overview & insights',
-            'Target: 8–15 qualified appointments/month'
+            'Target: 10–18 qualified appointments/month'
           ],
           bestFor: 'Best Value',
           cta: 'Book Consultation'
@@ -1354,23 +1354,23 @@ export const translations = {
         {
           name: 'Starter Pro',
           duration: 'From 3 months',
-          price: '€4,499',
+          price: '€5,499',
           priceNote: '/month · everything included',
           features: [
-            '3 hours/day dedicated sales professional',
+            '5–6 hours/day dedicated sales professional',
             'Channel: Phone + email + LinkedIn outreach',
             'Onboarding & training included',
             'GDPR-compliant lead lists included',
             'Daily reporting + weekly strategy call',
             'Sales coaching for your team (1x/month)',
-            'Target: 15–25 qualified appointments/month'
+            'Target: 18–30 qualified appointments/month'
           ],
           bestFor: 'Maximum Sales Growth',
           cta: 'Book Consultation'
         }
       ],
       bestForLabel: 'Best for:',
-      roiNote: 'Starter Plus example: At 10 appointments/month with avg. €5,000 deal value and 20% close rate = €10,000 monthly revenue potential. Everything included – no extra costs.',
+      roiNote: 'Starter Plus example: At 14 appointments/month with avg. €5,000 deal value and 20% close rate = €14,000 monthly revenue potential. Everything included – no extra costs.',
       footerText: 'Already an established company with your own sales team? <a href="/en" style="color: #4136b3; font-weight: 600;">Discover our Enterprise packages →</a>'
     },
 

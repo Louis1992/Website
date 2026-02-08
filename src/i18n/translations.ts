@@ -14,15 +14,15 @@ export const translations = {
         { label: 'Garantie', href: '#guarantee' },
         { label: 'Preis', href: '#pricing' }
       ],
-      ctaText: 'Qualifizierungsgespräch'
+      ctaText: 'Jetzt beraten lassen'
     },
 
     // Hero
     hero: {
-      title: 'Die externe Vertriebsabteilung für etablierte B2B-Unternehmen',
-      subtitle: 'Ihre dedizierte Telemarketing-Abteilung für systematische Kaltakquise. Unsere erfahrenen Sales-Profis arbeiten täglich 2-3 Stunden exklusiv für Ihr Unternehmen – DSGVO-konform, ohne Personalrisiko und mit messbaren Ergebnissen.',
-      cta: 'Qualifizierungsgespräch vereinbaren',
-      belowText: 'Für B2B-Unternehmen mit <strong>€20.000+ Monatsumsatz</strong> und eigenem Vertriebsteam',
+      title: 'Professionelle B2B-Telemarketing-Experten für Ihren skalierbaren Vertrieb',
+      subtitle: 'Wir sind Ihre externe Telemarketing-Abteilung. Von Kaltakquise über Lead-Nachverfolgung bis hin zur CRM-Pflege – unsere erfahrenen Sales-Mitarbeiter arbeiten täglich 2-3 Stunden exklusiv für Ihr Unternehmen. Flexibel einsetzbar, DSGVO-konform und ohne Personalrisiko.',
+      cta: 'Jetzt unverbindlich beraten lassen',
+      belowText: 'Für etablierte B2B-Unternehmen mit <strong>ambitionierten Wachstumszielen</strong>',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -67,23 +67,15 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Passt LeadGenies zu Ihrem Unternehmen?',
-      subtitle: 'Wir arbeiten ausschließlich mit etablierten B2B-Unternehmen zusammen, die bereits über ein funktionierendes Vertriebsteam verfügen und ihren Sales-Prozess systematisch skalieren möchten.',
-      checklistTitle: 'Sie sind bei uns richtig, wenn:',
+      title: 'Für wen ist LeadGenies die richtige Lösung?',
+      subtitle: 'Wir arbeiten mit etablierten B2B-Unternehmen (ab 20 Mitarbeitern) zusammen, die bereits über ein funktionierendes Vertriebsteam verfügen und ihren Sales-Prozess systematisch skalieren möchten. Unsere Partner sehen die Terminvereinbarung nicht als Notlösung, sondern als strategischen Hebel für planbares Wachstum.',
+      checklistTitle: 'Qualifizierungs-Checkliste',
       checklist: [
-        'Ihr Unternehmen generiert mindestens €20.000 monatlichen Umsatz.',
-        'Sie haben ein Vertriebsteam von mind. 3-5 Mitarbeitern, das mehr Termine wahrnehmen kann.',
-        'Ihre durchschnittliche Auftragsgröße liegt bei €15.000+ (ACV).',
-        'Sie suchen einen langfristigen Partner für mind. 6 Monate Zusammenarbeit.'
+        'Sie haben ein etabliertes Produkt mit klarem Product-Market-Fit.',
+        'Ihr Vertriebsteam (mind. 3-5 Mitarbeiter) kann und will mehr qualifizierte Termine wahrnehmen.',
+        'Sie suchen einen langfristigen Partner, keine kurzfristige "Feuerwehr".'
       ],
-      checklistFooter: 'Alle Punkte treffen zu? Dann lassen Sie uns sprechen.',
-      notSuitableTitle: 'Nicht geeignet für:',
-      notSuitableList: [
-        'Solopreneure & Freelancer ohne eigenes Sales-Team',
-        'Startups in Pre-Seed/Seed-Phase',
-        'Unternehmen mit Auftragswerten unter €5.000',
-        'Wer kurzfristige "Feuerwehr-Aktionen" sucht'
-      ],
+      checklistFooter: 'Trifft das auf Sie zu? Dann lassen Sie uns sprechen.',
       stats: [
         { label: 'Zufriedene Partner' },
         { label: 'Geführte Gespräche' },
@@ -270,7 +262,7 @@ export const translations = {
       ],
       bestForLabel: 'Ideal für:',
       roiNote: 'Rechenbeispiel Scale-Paket: Bei 20+ Terminen/Monat = ca. €250 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial.',
-      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für wachsende Unternehmen ohne eigenes Sales-Team: <a href="/starter" style="color: #4136b3; font-weight: 600;">Entdecken Sie unser Starter-Programm →</a>'
+      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für wachsende Unternehmen ohne eigenes Sales-Team: <a href="/starter" style="color: #4136b3; font-weight: 600;">Entdecken Sie unser Starter-Programm →</a><br/><br/>Leadlisten separat benötigt? Über unseren Partner <a href="https://www.lead-schmiede.de" target="_blank" rel="noopener" style="color: #4136b3; font-weight: 600;">Lead-Schmiede.de</a> erhalten Sie DSGVO-konforme B2B-Leadlisten ab €1,50/Lead.'
     },
 
     // Review Cards Section
@@ -360,8 +352,6 @@ export const translations = {
           company: 'CoffeeCup.app',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/app-v1.svg',
           industry: 'SaaS / B2B Software',
-          companySize: '25+ Mitarbeiter',
-          avgDealSize: 'ACV €18.000+',
           duration: '12 Monate',
           challenge: {
             title: 'Die Herausforderung',
@@ -390,8 +380,6 @@ export const translations = {
           company: 'Tech-Experts GmbH',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
           industry: 'Personalvermittlung / Recruiting',
-          companySize: '35+ Mitarbeiter',
-          avgDealSize: 'ACV €25.000+',
           duration: '4 Monate',
           challenge: {
             title: 'Die Herausforderung',
@@ -420,8 +408,6 @@ export const translations = {
           company: 'Intech Automation',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech-v1.svg',
           industry: 'Industrie-Automation / B2B Tech',
-          companySize: '50+ Mitarbeiter',
-          avgDealSize: 'ACV €45.000+',
           duration: '10+ Monate',
           challenge: {
             title: 'Die Herausforderung',
@@ -459,7 +445,7 @@ export const translations = {
           name: 'Mona Petersen',
           role: 'Co-Founder & Director Sales Development',
           badge: 'C-Level Spezialistin',
-          image: '/mona-petersen.jpg',
+          image: '/mona-petersen.png',
           bio: 'Mona ist auf die Ansprache von C-Level Entscheidern spezialisiert und überzeugt durch ihre Kombination aus juristischem Fachwissen und charismatischer Persönlichkeit. Mit ihrer DSGVO-Expertise und professionellen Auftritt öffnet sie selbst bei skeptischen Geschäftsführern und Vorständen die Tür zum ersten Gespräch.',
           education: {
             title: 'Hintergrund',
@@ -517,9 +503,9 @@ export const translations = {
 
     // Contact Section
     contact: {
-      title: 'Passt LeadGenies zu Ihrem Unternehmen?',
-      subtitle: 'Lassen Sie uns in einem kurzen Gespräch klären, ob wir der richtige Partner für Sie sind.',
-      formTitle: 'Qualifizierungsgespräch anfragen',
+      title: 'Bereit für mehr Umsatz?',
+      subtitle: 'Lassen Sie uns herausfinden, ob wir zueinander passen.',
+      formTitle: 'Schnellkontakt-Formular',
       nameLabel: 'Name*',
       nameRequired: 'Name ist erforderlich',
       companyLabel: 'Unternehmen*',
@@ -528,7 +514,7 @@ export const translations = {
       emailRequired: 'E-Mail ist erforderlich',
       phoneLabel: 'Telefon',
       challengeLabel: 'Was ist Ihre größte Vertriebsherausforderung?',
-      submitButton: 'Qualifizierungsgespräch vereinbaren',
+      submitButton: 'Kostenlos & unverbindlich sprechen',
       responseTime: 'Antwort innerhalb von 2 Stunden während der Geschäftszeiten',
       directContactTitle: 'Direkter Kontakt',
       officeHoursLabel: 'Bürozeiten',
@@ -623,13 +609,13 @@ export const translations = {
           price: '€2.499',
           priceNote: '/Monat · alles inklusive',
           features: [
-            '1 Stunde/Tag dedizierter Sales-Mitarbeiter',
+            '1–2 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefonakquise',
             'Onboarding & Einarbeitung inklusive',
             'DSGVO-konforme Leadlisten inklusive',
             'Wöchentliches Reporting',
             'DSGVO-konform & professionell',
-            'Ziel: 5–8 qualifizierte Termine/Monat'
+            'Ziel: 5–10 qualifizierte Termine/Monat'
           ],
           bestFor: 'Vertrieb starten',
           cta: 'Beratungsgespräch buchen'
@@ -637,17 +623,17 @@ export const translations = {
         {
           name: 'Starter Plus',
           duration: 'Ab 3 Monate',
-          price: '€3.499',
+          price: '€3.999',
           priceNote: '/Monat · alles inklusive',
           savings: 'Empfohlen',
           features: [
-            '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefon + E-Mail Follow-ups',
             'Onboarding & Einarbeitung inklusive',
             'DSGVO-konforme Leadlisten inklusive',
             'Tägliches Reporting + wöchentlicher Feedback-Call',
             'LeadGenies-App: Übersicht & Insights',
-            'Ziel: 8–15 qualifizierte Termine/Monat'
+            'Ziel: 10–18 qualifizierte Termine/Monat'
           ],
           bestFor: 'Bestes Preis-Leistungs-Verhältnis',
           cta: 'Beratungsgespräch buchen'
@@ -655,23 +641,23 @@ export const translations = {
         {
           name: 'Starter Pro',
           duration: 'Ab 3 Monate',
-          price: '€4.499',
+          price: '€5.499',
           priceNote: '/Monat · alles inklusive',
           features: [
-            '3 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '5–6 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefon + E-Mail + LinkedIn Outreach',
             'Onboarding & Einarbeitung inklusive',
             'DSGVO-konforme Leadlisten inklusive',
             'Tägliches Reporting + wöchentlicher Strategy-Call',
             'Sales-Coaching für Ihr Team (1x/Monat)',
-            'Ziel: 15–25 qualifizierte Termine/Monat'
+            'Ziel: 18–30 qualifizierte Termine/Monat'
           ],
           bestFor: 'Maximaler Vertriebsaufbau',
           cta: 'Beratungsgespräch buchen'
         }
       ],
       bestForLabel: 'Ideal für:',
-      roiNote: 'Rechenbeispiel Starter Plus: Bei 10 Terminen/Monat und Ø €5.000 Auftragswert mit 20% Abschlussrate = €10.000 Monatsumsatz-Potenzial. Alles inklusive – keine Extra-Kosten.',
+      roiNote: 'Rechenbeispiel Starter Plus: Bei 14 Terminen/Monat und Ø €5.000 Auftragswert mit 20% Abschlussrate = €14.000 Monatsumsatz-Potenzial. Alles inklusive – keine Extra-Kosten.',
       footerText: 'Sie sind bereits ein etabliertes Unternehmen mit eigenem Vertriebsteam? <a href="/" style="color: #4136b3; font-weight: 600;">Entdecken Sie unsere Enterprise-Pakete →</a>'
     },
 
@@ -741,15 +727,15 @@ export const translations = {
         { label: 'Guarantee', href: '#guarantee' },
         { label: 'Pricing', href: '#pricing' }
       ],
-      ctaText: 'Book Qualification Call'
+      ctaText: 'Get Consultation'
     },
 
     // Hero
     hero: {
-      title: 'The External Sales Department for Established B2B Companies',
-      subtitle: 'Your dedicated telemarketing department for systematic cold calling. Our experienced sales professionals work 2-3 hours daily exclusively for your company – GDPR-compliant, without hiring risk, and with measurable results.',
-      cta: 'Book Qualification Call',
-      belowText: 'For B2B companies with <strong>€20,000+ monthly revenue</strong> and existing sales team',
+      title: 'Professional B2B Telemarketing Experts for Your Scalable Sales',
+      subtitle: 'Your external telemarketing team. Our experienced sales professionals work 2-3 hours daily exclusively for you – from cold calling to CRM management. GDPR-compliant and without hiring risk.',
+      cta: 'Get Free Consultation Now',
+      belowText: 'For established B2B companies with <strong>ambitious growth goals</strong>',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -794,23 +780,15 @@ export const translations = {
 
     // Trust Section
     trust: {
-      title: 'Is LeadGenies Right for Your Business?',
-      subtitle: 'We work exclusively with established B2B companies that already have a functioning sales team and want to systematically scale their sales process.',
-      checklistTitle: 'You\'re a fit if:',
+      title: 'Is LeadGenies the right solution for you?',
+      subtitle: 'We work with established B2B companies (20+ employees) that already have a functioning sales team and want to systematically scale their sales process. Our partners see appointment setting not as a stopgap measure, but as a strategic lever for predictable growth.',
+      checklistTitle: 'Qualification Checklist',
       checklist: [
-        'Your company generates at least €20,000 monthly revenue.',
-        'You have a sales team of min. 3-5 members who can handle more appointments.',
-        'Your average deal size is €15,000+ (ACV).',
-        'You\'re looking for a long-term partner for at least 6 months.'
+        'You have an established product with clear product-market fit.',
+        'Your sales team (min. 3-5 people) can and wants to handle more qualified appointments.',
+        'You are looking for a long-term partner, not a short-term "firefighter".'
       ],
-      checklistFooter: 'All points apply? Let\'s talk.',
-      notSuitableTitle: 'Not suitable for:',
-      notSuitableList: [
-        'Solopreneurs & freelancers without a sales team',
-        'Startups in pre-seed/seed phase',
-        'Companies with deal values under €5,000',
-        'Those seeking short-term "firefighting"'
-      ],
+      checklistFooter: 'Does this apply to you? Let\'s talk.',
       stats: [
         { label: 'Satisfied Partners' },
         { label: 'Conversations Held' },
@@ -997,7 +975,7 @@ export const translations = {
       ],
       bestForLabel: 'Best for:',
       roiNote: 'Scale package example: At 20+ appointments/month = approx. €250 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential.',
-      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For growing companies without a sales team: <a href="/en/starter" style="color: #4136b3; font-weight: 600;">Discover our Starter Program →</a>'
+      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For growing companies without a sales team: <a href="/en/starter" style="color: #4136b3; font-weight: 600;">Discover our Starter Program →</a><br/><br/>Need lead lists separately? Through our partner <a href="https://www.lead-schmiede.de" target="_blank" rel="noopener" style="color: #4136b3; font-weight: 600;">Lead-Schmiede.de</a> you can get GDPR-compliant B2B lead lists from €1.50/lead.'
     },
 
     // Review Cards Section
@@ -1087,8 +1065,6 @@ export const translations = {
           company: 'CoffeeCup.app',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/app-v1.svg',
           industry: 'SaaS / B2B Software',
-          companySize: '25+ employees',
-          avgDealSize: 'ACV €18,000+',
           duration: '12 Months',
           challenge: {
             title: 'The Challenge',
@@ -1117,8 +1093,6 @@ export const translations = {
           company: 'Tech-Experts GmbH',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
           industry: 'Recruitment / HR Services',
-          companySize: '35+ employees',
-          avgDealSize: 'ACV €25,000+',
           duration: '4 Months',
           challenge: {
             title: 'The Challenge',
@@ -1147,8 +1121,6 @@ export const translations = {
           company: 'Intech Automation',
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/intech-v1.svg',
           industry: 'Industrial Automation / B2B Tech',
-          companySize: '50+ employees',
-          avgDealSize: 'ACV €45,000+',
           duration: '10+ Months',
           challenge: {
             title: 'The Challenge',
@@ -1186,7 +1158,7 @@ export const translations = {
           name: 'Mona Petersen',
           role: 'Co-Founder & Director Sales Development',
           badge: 'C-Level Specialist',
-          image: '/mona-petersen.jpg',
+          image: '/mona-petersen.png',
           bio: 'Mona specializes in reaching C-level decision-makers and convinces through her combination of legal expertise and charismatic personality. With her GDPR knowledge and professional presence, she opens doors to conversations even with skeptical CEOs and executives.',
           education: {
             title: 'Background',
@@ -1244,9 +1216,9 @@ export const translations = {
 
     // Contact Section
     contact: {
-      title: 'Is LeadGenies Right for Your Business?',
-      subtitle: 'Let\'s have a quick conversation to determine if we\'re the right partner for you.',
-      formTitle: 'Request Qualification Call',
+      title: 'Ready to Fill Your Pipeline with Qualified Leads?',
+      subtitle: '',
+      formTitle: 'Quick Contact Form',
       nameLabel: 'Name*',
       nameRequired: 'Name is required',
       companyLabel: 'Company*',
@@ -1255,7 +1227,7 @@ export const translations = {
       emailRequired: 'Email is required',
       phoneLabel: 'Phone',
       challengeLabel: "What's your biggest sales challenge?",
-      submitButton: 'Book Qualification Call',
+      submitButton: 'Get Your Free Strategy Session',
       responseTime: 'Response within 2 hours during business days',
       directContactTitle: 'Contact Directly',
       officeHoursLabel: 'Office Hours',
@@ -1350,13 +1322,13 @@ export const translations = {
           price: '€2,499',
           priceNote: '/month · everything included',
           features: [
-            '1 hour/day dedicated sales professional',
+            '1–2 hours/day dedicated sales professional',
             'Channel: Phone outreach',
             'Onboarding & training included',
             'GDPR-compliant lead lists included',
             'Weekly reporting',
             'GDPR-compliant & professional',
-            'Target: 5–8 qualified appointments/month'
+            'Target: 5–10 qualified appointments/month'
           ],
           bestFor: 'Start Selling',
           cta: 'Book Consultation'
@@ -1364,17 +1336,17 @@ export const translations = {
         {
           name: 'Starter Plus',
           duration: 'From 3 months',
-          price: '€3,499',
+          price: '€3,999',
           priceNote: '/month · everything included',
           savings: 'Recommended',
           features: [
-            '2 hours/day dedicated sales professional',
+            '3–4 hours/day dedicated sales professional',
             'Channel: Phone + email follow-ups',
             'Onboarding & training included',
             'GDPR-compliant lead lists included',
             'Daily reporting + weekly feedback call',
             'LeadGenies App: Overview & insights',
-            'Target: 8–15 qualified appointments/month'
+            'Target: 10–18 qualified appointments/month'
           ],
           bestFor: 'Best Value',
           cta: 'Book Consultation'
@@ -1382,23 +1354,23 @@ export const translations = {
         {
           name: 'Starter Pro',
           duration: 'From 3 months',
-          price: '€4,499',
+          price: '€5,499',
           priceNote: '/month · everything included',
           features: [
-            '3 hours/day dedicated sales professional',
+            '5–6 hours/day dedicated sales professional',
             'Channel: Phone + email + LinkedIn outreach',
             'Onboarding & training included',
             'GDPR-compliant lead lists included',
             'Daily reporting + weekly strategy call',
             'Sales coaching for your team (1x/month)',
-            'Target: 15–25 qualified appointments/month'
+            'Target: 18–30 qualified appointments/month'
           ],
           bestFor: 'Maximum Sales Growth',
           cta: 'Book Consultation'
         }
       ],
       bestForLabel: 'Best for:',
-      roiNote: 'Starter Plus example: At 10 appointments/month with avg. €5,000 deal value and 20% close rate = €10,000 monthly revenue potential. Everything included – no extra costs.',
+      roiNote: 'Starter Plus example: At 14 appointments/month with avg. €5,000 deal value and 20% close rate = €14,000 monthly revenue potential. Everything included – no extra costs.',
       footerText: 'Already an established company with your own sales team? <a href="/en" style="color: #4136b3; font-weight: 600;">Discover our Enterprise packages →</a>'
     },
 
