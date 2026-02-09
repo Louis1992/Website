@@ -68,11 +68,11 @@ export const translations = {
     // Trust Section
     trust: {
       title: 'Für wen ist LeadGenies die richtige Lösung?',
-      subtitle: 'Wir arbeiten mit etablierten B2B-Unternehmen (ab 20 Mitarbeitern) zusammen, die bereits über ein funktionierendes Vertriebsteam verfügen und ihren Sales-Prozess systematisch skalieren möchten. Unsere Partner sehen die Terminvereinbarung nicht als Notlösung, sondern als strategischen Hebel für planbares Wachstum.',
+      subtitle: 'Wir arbeiten mit etablierten B2B-Unternehmen ab €20.000 Monatsumsatz zusammen, die ihren Vertrieb systematisch skalieren möchten. Unsere Partner sehen die Terminvereinbarung nicht als Notlösung, sondern als strategischen Hebel für planbares Wachstum.',
       checklistTitle: 'Qualifizierungs-Checkliste',
       checklist: [
         'Sie haben ein etabliertes Produkt mit klarem Product-Market-Fit.',
-        'Ihr Vertriebsteam (mind. 3-5 Mitarbeiter) kann und will mehr qualifizierte Termine wahrnehmen.',
+        'Sie oder Ihr Vertriebsteam können und wollen mehr qualifizierte Termine wahrnehmen.',
         'Sie suchen einen langfristigen Partner, keine kurzfristige "Feuerwehr".'
       ],
       checklistFooter: 'Trifft das auf Sie zu? Dann lassen Sie uns sprechen.',
@@ -781,11 +781,11 @@ export const translations = {
     // Trust Section
     trust: {
       title: 'Is LeadGenies the right solution for you?',
-      subtitle: 'We work with established B2B companies (20+ employees) that already have a functioning sales team and want to systematically scale their sales process. Our partners see appointment setting not as a stopgap measure, but as a strategic lever for predictable growth.',
+      subtitle: 'We work with established B2B companies generating €20,000+ monthly revenue that want to systematically scale their sales. Our partners see appointment setting not as a stopgap measure, but as a strategic lever for predictable growth.',
       checklistTitle: 'Qualification Checklist',
       checklist: [
         'You have an established product with clear product-market fit.',
-        'Your sales team (min. 3-5 people) can and wants to handle more qualified appointments.',
+        'You or your sales team can and want to handle more qualified appointments.',
         'You are looking for a long-term partner, not a short-term "firefighter".'
       ],
       checklistFooter: 'Does this apply to you? Let\'s talk.',
