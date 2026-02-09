@@ -238,7 +238,7 @@ export const translations = {
             'Kanal: Telefon + alle Follow-up-Mails & Nachverfolgung',
             'Super-individuelles Reporting nach Kundenwunsch',
             'LeadGenies-App: Live-Tracking & Insights Plus',
-            'Bis zu 1.000 verifizierte Leads/Monat inkl. mit ICP-Workshop',
+            'Leadlisten (bis zu 1.000/Monat), Onboarding & Infrastruktur inklusive',
             'Wöchentliche Zielgruppen-Review & Qualitäts-Tracking',
             'Ziel: 15–30 qualifizierte Termine/Monat'
           ],
@@ -608,14 +608,13 @@ export const translations = {
         {
           name: 'Starter',
           duration: 'Ab 3 Monate',
-          price: '€2.499',
+          price: '€2.999',
           priceNote: '/Monat · alles inklusive',
-          dailyPrice: 'Ab €57/Stunde',
+          dailyPrice: 'Ab €68/Stunde',
           features: [
-            '1–2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Leadlisten, Onboarding & Infrastruktur – komplett inklusive',
             'Kanal: Telefonakquise',
-            'Onboarding & Einarbeitung inklusive',
-            'DSGVO-konforme Leadlisten inklusive',
             'Wöchentliches Reporting',
             'DSGVO-konform & professionell',
             'Ziel: 5–10 qualifizierte Termine/Monat'
@@ -631,10 +630,9 @@ export const translations = {
           dailyPrice: 'Ab €45/Stunde',
           savings: 'Empfohlen',
           features: [
-            '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '4 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Leadlisten, Onboarding & Infrastruktur – komplett inklusive',
             'Kanal: Telefon + E-Mail Follow-ups',
-            'Onboarding & Einarbeitung inklusive',
-            'DSGVO-konforme Leadlisten inklusive',
             'Tägliches Reporting + wöchentlicher Feedback-Call',
             'LeadGenies-App: Übersicht & Insights',
             'Ziel: 10–18 qualifizierte Termine/Monat'
@@ -649,10 +647,9 @@ export const translations = {
           priceNote: '/Monat · alles inklusive',
           dailyPrice: 'Ab €42/Stunde',
           features: [
-            '5–6 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            '6 Stunden/Tag dedizierter Sales-Mitarbeiter',
+            'Leadlisten, Onboarding & Infrastruktur – komplett inklusive',
             'Kanal: Telefon + E-Mail + LinkedIn Outreach',
-            'Onboarding & Einarbeitung inklusive',
-            'DSGVO-konforme Leadlisten inklusive',
             'Tägliches Reporting + wöchentlicher Strategy-Call',
             'Sales-Coaching für Ihr Team (1x/Monat)',
             'Ziel: 18–30 qualifizierte Termine/Monat'
@@ -956,7 +953,7 @@ export const translations = {
             'Channel: Phone + all follow-up emails & tracking',
             'Highly customized reporting tailored to your needs',
             'LeadGenies App: Live tracking & Insights Plus',
-            'Up to 1,000 verified leads/month incl. with ICP workshop',
+            'Lead lists (up to 1,000/month), onboarding & infrastructure included',
             'Weekly target audience review & quality tracking',
             'Target: 15–30 qualified appointments/month'
           ],
@@ -1326,14 +1323,13 @@ export const translations = {
         {
           name: 'Starter',
           duration: 'From 3 months',
-          price: '€2,499',
+          price: '€2,999',
           priceNote: '/month · everything included',
-          dailyPrice: 'From €57/hour',
+          dailyPrice: 'From €68/hour',
           features: [
-            '1–2 hours/day dedicated sales professional',
+            '2 hours/day dedicated sales professional',
+            'Lead lists, onboarding & infrastructure – fully included',
             'Channel: Phone outreach',
-            'Onboarding & training included',
-            'GDPR-compliant lead lists included',
             'Weekly reporting',
             'GDPR-compliant & professional',
             'Target: 5–10 qualified appointments/month'
@@ -1349,10 +1345,9 @@ export const translations = {
           dailyPrice: 'From €45/hour',
           savings: 'Recommended',
           features: [
-            '3–4 hours/day dedicated sales professional',
+            '4 hours/day dedicated sales professional',
+            'Lead lists, onboarding & infrastructure – fully included',
             'Channel: Phone + email follow-ups',
-            'Onboarding & training included',
-            'GDPR-compliant lead lists included',
             'Daily reporting + weekly feedback call',
             'LeadGenies App: Overview & insights',
             'Target: 10–18 qualified appointments/month'
@@ -1367,10 +1362,9 @@ export const translations = {
           priceNote: '/month · everything included',
           dailyPrice: 'From €42/hour',
           features: [
-            '5–6 hours/day dedicated sales professional',
+            '6 hours/day dedicated sales professional',
+            'Lead lists, onboarding & infrastructure – fully included',
             'Channel: Phone + email + LinkedIn outreach',
-            'Onboarding & training included',
-            'GDPR-compliant lead lists included',
             'Daily reporting + weekly strategy call',
             'Sales coaching for your team (1x/month)',
             'Target: 18–30 qualified appointments/month'
