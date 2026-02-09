@@ -213,6 +213,7 @@ export const translations = {
           duration: 'Ab 3 Monate',
           price: '€3.499',
           priceNote: '/Monat · zzgl. €1.999 Onboarding',
+          dailyPrice: 'Ab €117/Tag',
           features: [
             '2 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefonakquise',
@@ -230,6 +231,7 @@ export const translations = {
           duration: 'Ab 6 Monate',
           price: '€4.999',
           priceNote: '/Monat · Onboarding inkludiert',
+          dailyPrice: 'Ab €167/Tag',
           savings: 'Empfohlen',
           features: [
             '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
@@ -608,6 +610,7 @@ export const translations = {
           duration: 'Ab 3 Monate',
           price: '€2.499',
           priceNote: '/Monat · alles inklusive',
+          dailyPrice: 'Ab €83/Tag',
           features: [
             '1–2 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefonakquise',
@@ -625,6 +628,7 @@ export const translations = {
           duration: 'Ab 3 Monate',
           price: '€3.999',
           priceNote: '/Monat · alles inklusive',
+          dailyPrice: 'Ab €133/Tag',
           savings: 'Empfohlen',
           features: [
             '3–4 Stunden/Tag dedizierter Sales-Mitarbeiter',
@@ -643,6 +647,7 @@ export const translations = {
           duration: 'Ab 3 Monate',
           price: '€5.499',
           priceNote: '/Monat · alles inklusive',
+          dailyPrice: 'Ab €183/Tag',
           features: [
             '5–6 Stunden/Tag dedizierter Sales-Mitarbeiter',
             'Kanal: Telefon + E-Mail + LinkedIn Outreach',
@@ -926,6 +931,7 @@ export const translations = {
           duration: 'From 3 months',
           price: '€3,499',
           priceNote: '/month · plus €1,999 onboarding',
+          dailyPrice: 'From €117/day',
           features: [
             '2 hours/day dedicated sales professional',
             'Channel: Phone outreach',
@@ -943,6 +949,7 @@ export const translations = {
           duration: 'From 6 months',
           price: '€4,999',
           priceNote: '/month · onboarding included',
+          dailyPrice: 'From €167/day',
           savings: 'Recommended',
           features: [
             '3–4 hours/day dedicated sales professional',
@@ -1321,6 +1328,7 @@ export const translations = {
           duration: 'From 3 months',
           price: '€2,499',
           priceNote: '/month · everything included',
+          dailyPrice: 'From €83/day',
           features: [
             '1–2 hours/day dedicated sales professional',
             'Channel: Phone outreach',
@@ -1338,6 +1346,7 @@ export const translations = {
           duration: 'From 3 months',
           price: '€3,999',
           priceNote: '/month · everything included',
+          dailyPrice: 'From €133/day',
           savings: 'Recommended',
           features: [
             '3–4 hours/day dedicated sales professional',
@@ -1356,6 +1365,7 @@ export const translations = {
           duration: 'From 3 months',
           price: '€5,499',
           priceNote: '/month · everything included',
+          dailyPrice: 'From €183/day',
           features: [
             '5–6 hours/day dedicated sales professional',
             'Channel: Phone + email + LinkedIn outreach',

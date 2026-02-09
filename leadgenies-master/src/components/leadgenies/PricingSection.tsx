@@ -7,6 +7,7 @@ interface PricingPackage {
   duration: string;
   price: string;
   priceNote?: string;
+  dailyPrice?: string;
   savings?: string;
   features: string[];
   bestFor: string;
@@ -263,6 +264,19 @@ export default function PricingSection({ lang = 'de', pageVariant = 'main' }: Pr
                       }}
                     >
                       {pkg.priceNote}
+                    </p>
+                  )}
+                  {pkg.dailyPrice && (
+                    <p
+                      style={{
+                        fontFamily: 'Inter, sans-serif',
+                        fontSize: '0.8rem',
+                        color: pkg.highlighted ? 'rgba(16, 185, 129, 0.9)' : '#10B981',
+                        marginTop: '0.35rem',
+                        fontWeight: '600'
+                      }}
+                    >
+                      {pkg.dailyPrice}
                     </p>
                   )}
                 </div>
