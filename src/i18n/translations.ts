@@ -214,13 +214,13 @@ export const translations = {
           price: '€3.499',
           priceNote: '/Monat',
           features: [
-            'Mind. 2 Stunden/Tag reine Calling-Zeit',
-            'Kanal: Telefonakquise',
-            'Tägliches Reporting + wöchentlicher Feedback-Call',
-            'LeadGenies-App: Tägliche Übersicht & Insights',
-            'Leadlisten auf Anfrage (separat buchbar)',
-            'DSGVO-konform & professionell',
-            'Ziel: 8–15 qualifizierte Termine/Monat'
+            'Mind. 2h/Tag reine Calling-Zeit',
+            'Telefonakquise',
+            'Tägliches Reporting + wöchentlicher Call',
+            'LeadGenies-App inklusive',
+            'Leadlisten auf Anfrage',
+            'DSGVO-konform',
+            'Ziel: 8–15 Termine/Monat'
           ],
           bestFor: 'Schneller Einstieg',
           cta: 'Qualifizierungsgespräch buchen'
@@ -233,13 +233,13 @@ export const translations = {
           dailyPrice: 'Ab €57/Stunde',
           savings: 'Empfohlen',
           features: [
-            'Mind. 4 Stunden/Tag reine Calling-Zeit',
-            'Kanal: Telefon + alle Follow-up-Mails & Nachverfolgung',
-            'Super-individuelles Reporting nach Kundenwunsch',
-            'LeadGenies-App: Live-Tracking & Insights Plus',
-            'Leadlisten (bis zu 1.000/Monat), Onboarding & Infrastruktur inklusive',
-            'Wöchentliche Zielgruppen-Review & Qualitäts-Tracking',
-            'Ziel: 15–30 qualifizierte Termine/Monat'
+            'Mind. 4h/Tag reine Calling-Zeit',
+            'Telefon + E-Mail Follow-ups',
+            'Individuelles Reporting',
+            'LeadGenies-App: Live-Tracking',
+            'Bis zu 1.000 Leads/Monat inklusive',
+            'Wöchentliche Zielgruppen-Review',
+            'Ziel: 15–30 Termine/Monat'
           ],
           bestFor: 'Maximales Wachstum',
           cta: 'Qualifizierungsgespräch buchen'
@@ -250,12 +250,12 @@ export const translations = {
           price: 'Individuell',
           priceNote: 'Strategy-Workshop inkludiert',
           features: [
-            'Mind. 6 Stunden/Tag reine Calling-Zeit',
-            'Individuelle Einarbeitung ins Team mit allen Aufgaben',
-            'Volle Integration in Ihre Infrastruktur & Ihr Team',
-            'LeadGenies-App: Vollzugriff & Priority Support',
-            'Unbegrenzte verifizierte Leads inkl. mit dauerhaftem Qualitäts-Reporting',
-            'Ziel: 50+ qualifizierte Termine/Monat'
+            'Mind. 6h/Tag reine Calling-Zeit',
+            'Volle Integration in Ihr Team',
+            'Individuelle Einarbeitung',
+            'LeadGenies-App: Vollzugriff + Priority Support',
+            'Unbegrenzte verifizierte Leads inklusive',
+            'Ziel: 50+ Termine/Monat'
           ],
           bestFor: 'Volle Sales-Power',
           cta: 'Erstgespräch vereinbaren'
@@ -610,12 +610,12 @@ export const translations = {
           price: '€2.999',
           priceNote: '/Monat · alles inklusive',
           features: [
-            'Mind. 2 Stunden/Tag reine Calling-Zeit',
-            'Leadlisten, Onboarding & Infrastruktur – komplett inklusive',
-            'Kanal: Telefonakquise',
+            'Mind. 2h/Tag reine Calling-Zeit',
+            'Leadlisten & Infrastruktur inklusive',
+            'Telefonakquise',
             'Wöchentliches Reporting',
-            'DSGVO-konform & professionell',
-            'Ziel: 5–10 qualifizierte Termine/Monat'
+            'DSGVO-konform',
+            'Ziel: 5–10 Termine/Monat'
           ],
           bestFor: 'Vertrieb starten',
           cta: 'Beratungsgespräch buchen'
@@ -628,12 +628,12 @@ export const translations = {
           dailyPrice: 'Ab €45/Stunde',
           savings: 'Empfohlen',
           features: [
-            'Mind. 4 Stunden/Tag reine Calling-Zeit',
-            'Leadlisten, Onboarding & Infrastruktur – komplett inklusive',
-            'Kanal: Telefon + E-Mail Follow-ups',
-            'Tägliches Reporting + wöchentlicher Feedback-Call',
-            'LeadGenies-App: Übersicht & Insights',
-            'Ziel: 10–18 qualifizierte Termine/Monat'
+            'Mind. 4h/Tag reine Calling-Zeit',
+            'Leadlisten & Infrastruktur inklusive',
+            'Telefon + E-Mail Follow-ups',
+            'Tägliches Reporting + wöchentlicher Call',
+            'LeadGenies-App inklusive',
+            'Ziel: 10–18 Termine/Monat'
           ],
           bestFor: 'Bestes Preis-Leistungs-Verhältnis',
           cta: 'Beratungsgespräch buchen'
@@ -644,12 +644,12 @@ export const translations = {
           price: '€5.499',
           priceNote: '/Monat · alles inklusive',
           features: [
-            'Mind. 6 Stunden/Tag reine Calling-Zeit',
-            'Leadlisten, Onboarding & Infrastruktur – komplett inklusive',
-            'Kanal: Telefon + E-Mail + LinkedIn Outreach',
+            'Mind. 6h/Tag reine Calling-Zeit',
+            'Leadlisten & Infrastruktur inklusive',
+            'Telefon + E-Mail + LinkedIn',
             'Tägliches Reporting + wöchentlicher Strategy-Call',
-            'Sales-Coaching für Ihr Team (1x/Monat)',
-            'Ziel: 18–30 qualifizierte Termine/Monat'
+            'Sales-Coaching (1x/Monat)',
+            'Ziel: 18–30 Termine/Monat'
           ],
           bestFor: 'Maximaler Vertriebsaufbau',
           cta: 'Beratungsgespräch buchen'
@@ -926,13 +926,13 @@ export const translations = {
           price: '€3,499',
           priceNote: '/month',
           features: [
-            'Min. 2 hours/day pure calling time',
-            'Channel: Phone outreach',
-            'Daily reporting + weekly feedback call',
-            'LeadGenies App: Daily overview & insights',
-            'Lead lists available on request (separate)',
-            'GDPR-compliant & professional',
-            'Target: 8–15 qualified appointments/month'
+            'Min. 2h/day pure calling time',
+            'Phone outreach',
+            'Daily reporting + weekly call',
+            'LeadGenies App included',
+            'Lead lists on request',
+            'GDPR-compliant',
+            'Target: 8–15 appointments/month'
           ],
           bestFor: 'Quick Start',
           cta: 'Book Qualification Call'
@@ -945,13 +945,13 @@ export const translations = {
           dailyPrice: 'From €57/hour',
           savings: 'Recommended',
           features: [
-            'Min. 4 hours/day pure calling time',
-            'Channel: Phone + all follow-up emails & tracking',
-            'Highly customized reporting tailored to your needs',
-            'LeadGenies App: Live tracking & Insights Plus',
-            'Lead lists (up to 1,000/month), onboarding & infrastructure included',
-            'Weekly target audience review & quality tracking',
-            'Target: 15–30 qualified appointments/month'
+            'Min. 4h/day pure calling time',
+            'Phone + email follow-ups',
+            'Custom reporting',
+            'LeadGenies App: Live tracking',
+            'Up to 1,000 leads/month included',
+            'Weekly target audience review',
+            'Target: 15–30 appointments/month'
           ],
           bestFor: 'Maximum Growth',
           cta: 'Book Qualification Call'
@@ -962,12 +962,12 @@ export const translations = {
           price: 'Custom',
           priceNote: 'Strategy workshop included',
           features: [
-            'Min. 6 hours/day pure calling time',
-            'Individual team onboarding with all tasks covered',
-            'Full integration into your infrastructure & team',
-            'LeadGenies App: Full access & priority support',
-            'Unlimited verified leads incl. with ongoing quality reporting',
-            'Target: 50+ qualified appointments/month'
+            'Min. 6h/day pure calling time',
+            'Full integration into your team',
+            'Individual onboarding',
+            'LeadGenies App: Full access + priority support',
+            'Unlimited verified leads included',
+            'Target: 50+ appointments/month'
           ],
           bestFor: 'Full Sales Power',
           cta: 'Schedule Introduction Call'
@@ -1322,12 +1322,12 @@ export const translations = {
           price: '€2,999',
           priceNote: '/month · everything included',
           features: [
-            'Min. 2 hours/day pure calling time',
-            'Lead lists, onboarding & infrastructure – fully included',
-            'Channel: Phone outreach',
+            'Min. 2h/day pure calling time',
+            'Lead lists & infrastructure included',
+            'Phone outreach',
             'Weekly reporting',
-            'GDPR-compliant & professional',
-            'Target: 5–10 qualified appointments/month'
+            'GDPR-compliant',
+            'Target: 5–10 appointments/month'
           ],
           bestFor: 'Start Selling',
           cta: 'Book Consultation'
@@ -1340,12 +1340,12 @@ export const translations = {
           dailyPrice: 'From €45/hour',
           savings: 'Recommended',
           features: [
-            'Min. 4 hours/day pure calling time',
-            'Lead lists, onboarding & infrastructure – fully included',
-            'Channel: Phone + email follow-ups',
-            'Daily reporting + weekly feedback call',
-            'LeadGenies App: Overview & insights',
-            'Target: 10–18 qualified appointments/month'
+            'Min. 4h/day pure calling time',
+            'Lead lists & infrastructure included',
+            'Phone + email follow-ups',
+            'Daily reporting + weekly call',
+            'LeadGenies App included',
+            'Target: 10–18 appointments/month'
           ],
           bestFor: 'Best Value',
           cta: 'Book Consultation'
@@ -1356,12 +1356,12 @@ export const translations = {
           price: '€5,499',
           priceNote: '/month · everything included',
           features: [
-            'Min. 6 hours/day pure calling time',
-            'Lead lists, onboarding & infrastructure – fully included',
-            'Channel: Phone + email + LinkedIn outreach',
+            'Min. 6h/day pure calling time',
+            'Lead lists & infrastructure included',
+            'Phone + email + LinkedIn',
             'Daily reporting + weekly strategy call',
-            'Sales coaching for your team (1x/month)',
-            'Target: 18–30 qualified appointments/month'
+            'Sales coaching (1x/month)',
+            'Target: 18–30 appointments/month'
           ],
           bestFor: 'Maximum Sales Growth',
           cta: 'Book Consultation'
