@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
+import FooterSection from '../components/leadgenies/FooterSection.tsx';
+import StickyMobileCTA from '../components/leadgenies/StickyMobileCTA.tsx';
+
+const lang = 'de';
+const pageTitle = "Über uns - LeadGenies | Ihr B2B-Kaltakquise Partner aus Hamburg";
+const pageDescription = "Lernen Sie das Team hinter LeadGenies kennen. Seit 2024 helfen wir B2B-Unternehmen, ihren Vertrieb mit professioneller Kaltakquise zu skalieren.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  type="WebPage"
+  lang={lang}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Über uns", url: "/ueber-uns" }
+  ]}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main style="margin: 0; padding: 0; overflow-x: hidden; width: 100%;">
+
+    <!-- Hero -->
+    <section style="background: linear-gradient(135deg, #f8f7ff 0%, #ffffff 50%, #f0eeff 100%); padding: 140px 16px 80px; text-align: center;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h1 style="font-family: MomoTrustDisplay, sans-serif; font-size: 2.75rem; font-weight: bold; color: #0d0d28; margin-bottom: 1.5rem; line-height: 1.2;">
+          Wir sind LeadGenies
+        </h1>
+        <p style="font-family: Inter, sans-serif; font-size: 1.25rem; color: #6B7280; line-height: 1.7; max-width: 650px; margin: 0 auto;">
+          Ein junges Team aus Hamburg mit einer Mission: B2B-Vertrieb einfacher, transparenter und erfolgreicher machen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section style="padding: 80px 16px; background: #ffffff;">
+      <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        <div>
+          <h2 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.75rem; font-weight: bold; color: #0d0d28; margin-bottom: 1rem;">
+            Unsere Mission
+          </h2>
+          <p style="font-family: Inter, sans-serif; font-size: 1.0625rem; color: #4a4a4a; line-height: 1.7;">
+            Kaltakquise hat ein Imageproblem. Wir ändern das. Mit professionellen SDRs, datengetriebenen Prozessen und unserer eigenen App schaffen wir Transparenz, wo andere eine Black Box liefern.
+          </p>
+          <p style="font-family: Inter, sans-serif; font-size: 1.0625rem; color: #4a4a4a; line-height: 1.7; margin-top: 1rem;">
+            Jeder Kunde sieht in Echtzeit, was passiert — jeden Call, jeden Termin, jede Kennzahl. Das ist unser Standard.
+          </p>
+        </div>
+        <div style="background: #F5F3FF; border-radius: 20px; padding: 40px; box-shadow: 8px 8px 16px rgba(163,177,198,0.25), -8px -8px 16px rgba(255,255,255,0.9);">
+          <div style="text-align: center;">
+            <div style="font-family: MomoTrustDisplay, sans-serif; font-size: 3rem; font-weight: bold; background: linear-gradient(to right, #2f275f, #7a70e2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+              2024
+            </div>
+            <p style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; margin-top: 0.5rem;">Gegründet in Hamburg</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px;">
+            <div style="text-align: center;">
+              <div style="font-family: MomoTrustDisplay, sans-serif; font-size: 2rem; font-weight: bold; color: #4136b3;">8+</div>
+              <p style="font-family: Inter, sans-serif; font-size: 0.875rem; color: #6B7280;">Aktive Kunden</p>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-family: MomoTrustDisplay, sans-serif; font-size: 2rem; font-weight: bold; color: #4136b3;">54k+</div>
+              <p style="font-family: Inter, sans-serif; font-size: 0.875rem; color: #6B7280;">B2B-Kontakte</p>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-family: MomoTrustDisplay, sans-serif; font-size: 2rem; font-weight: bold; color: #4136b3;">300+</div>
+              <p style="font-family: Inter, sans-serif; font-size: 0.875rem; color: #6B7280;">Termine vereinbart</p>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-family: MomoTrustDisplay, sans-serif; font-size: 2rem; font-weight: bold; color: #4136b3;">5.0</div>
+              <p style="font-family: Inter, sans-serif; font-size: 0.875rem; color: #6B7280;">Google Rating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Was uns unterscheidet -->
+    <section style="padding: 80px 16px; background: #F9FAFB;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.75rem; font-weight: bold; color: #0d0d28; margin-bottom: 2.5rem; text-align: center;">
+          Was uns unterscheidet
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+          <div style="background: #ffffff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <div style="width: 56px; height: 56px; border-radius: 14px; background: rgba(65, 54, 179, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4136b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.125rem; font-weight: bold; color: #0d0d28; margin-bottom: 0.75rem;">Eigene App</h3>
+            <p style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; line-height: 1.6;">Live-Dashboard, Echtzeit-Tracking, automatische Reports. Keine andere TM-Agentur bietet das.</p>
+          </div>
+          <div style="background: #ffffff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <div style="width: 56px; height: 56px; border-radius: 14px; background: rgba(16, 185, 129, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.125rem; font-weight: bold; color: #0d0d28; margin-bottom: 0.75rem;">Deutsche SDRs</h3>
+            <p style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; line-height: 1.6;">Muttersprachliche Caller aus Deutschland. Keine Offshore-Teams, keine Sprachbarrieren.</p>
+          </div>
+          <div style="background: #ffffff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <div style="width: 56px; height: 56px; border-radius: 14px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.125rem; font-weight: bold; color: #0d0d28; margin-bottom: 0.75rem;">Null Risiko</h3>
+            <p style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; line-height: 1.6;">0 Rückerstattungen seit Gründung. Monatlich kündbar ab dem 2. Monat. Zufriedenheitsgarantie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standort -->
+    <section style="padding: 80px 16px; background: #ffffff;">
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <h2 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.75rem; font-weight: bold; color: #0d0d28; margin-bottom: 1rem;">
+          Standort Hamburg
+        </h2>
+        <p style="font-family: Inter, sans-serif; font-size: 1.0625rem; color: #6B7280; line-height: 1.7; margin-bottom: 2rem;">
+          Unser Büro befindet sich im Herzen Hamburgs. Von hier aus steuern wir Kampagnen für Unternehmen in ganz Deutschland, Österreich und der Schweiz.
+        </p>
+        <div style="background: #F5F3FF; border-radius: 16px; padding: 24px; display: inline-block;">
+          <p style="font-family: Inter, sans-serif; font-size: 1rem; color: #0d0d28; font-weight: 600; margin: 0;">LeadGenies GmbH</p>
+          <p style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; margin: 4px 0 0;">Hamburg, Deutschland</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding: 80px 16px; background: linear-gradient(135deg, #4136b3 0%, #564DCA 100%); text-align: center;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <h2 style="font-family: MomoTrustDisplay, sans-serif; font-size: 2rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+          Bereit für mehr Termine?
+        </h2>
+        <p style="font-family: Inter, sans-serif; font-size: 1.125rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 2rem;">
+          Lassen Sie uns in einem kostenlosen Gespräch herausfinden, wie viele qualifizierte Termine wir für Sie generieren können.
+        </p>
+        <a
+          href="https://calendly.com/louis-mickley-leadgenies/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-block; padding: 16px 40px; background: #ffffff; color: #4136b3; font-family: Inter, sans-serif; font-size: 1.0625rem; font-weight: 600; border-radius: 50px; text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease;"
+        >
+          Kostenloses Gespräch buchen
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <FooterSection lang={lang} client:load />
+  <StickyMobileCTA client:idle />
+</Layout>
+
+<style>
+  @media (max-width: 768px) {
+    section > div {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

@@ -5,13 +5,10 @@ import { translations, type Language } from '../../i18n/translations';
 
 interface ContactSectionProps {
   lang?: Language;
-  pageVariant?: 'main' | 'starter';
 }
 
-export default function ContactSection({ lang = 'de', pageVariant = 'main' }: ContactSectionProps) {
-  const t = pageVariant === 'starter'
-    ? { ...translations[lang].contact, ...translations[lang].starterContact }
-    : translations[lang].contact;
+export default function ContactSection({ lang = 'de' }: ContactSectionProps) {
+  const t = translations[lang].contact;
   const [state, handleSubmit] = useForm("mjgknrkv");
 
   const [isMobile, setIsMobile] = useState(false);
@@ -78,9 +75,63 @@ export default function ContactSection({ lang = 'de', pageVariant = 'main' }: Co
     }
   };
 
-  // Effect to handle success reset or other side effects if needed
+  // Fire Meta Pixel + CAPI events on successful form submission
   useEffect(() => {
     if (state.succeeded) {
+      // Generate unique event ID for deduplication (Pixel + CAPI send same ID)
+      const eventId = `lead_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+
+      // Client-side: Meta Pixel Lead event
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        (window as any).fbq('track', 'Lead', {
+          content_name: 'Main Contact Form',
+          content_category: 'B2B Lead',
+        }, { eventID: eventId });
+      }
+
+      // Server-side: CAPI event (fire-and-forget)
+      const nameParts = formData.name.trim().split(' ');
+      const firstName = nameParts[0] || '';
+      const lastName = nameParts.slice(1).join(' ') || '';
+
+      // Get Meta cookies for attribution
+      const getCookie = (name: string) => {
+        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        return match ? decodeURIComponent(match[2]) : undefined;
+      };
+      let fbc = getCookie('_fbc');
+      if (!fbc) {
+        const fbclid = new URLSearchParams(window.location.search).get('fbclid');
+        if (fbclid) fbc = `fb.1.${Date.now()}.${fbclid}`;
+      }
+
+      fetch('https://www.leadgenies.cloud/api/meta-capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          event_name: 'Lead',
+          event_id: eventId,
+          event_source_url: window.location.href,
+          email: formData.email,
+          phone: formData.phone || undefined,
+          first_name: firstName,
+          last_name: lastName || undefined,
+          company: formData.company,
+          fbc: fbc || undefined,
+          fbp: getCookie('_fbp') || undefined,
+          content_name: 'Main Contact Form',
+          content_category: 'B2B Lead',
+        }),
+      }).catch(() => {}); // Fire-and-forget — never block UX
+
+      // Also push to GTM dataLayer
+      if ((window as any).dataLayer) {
+        (window as any).dataLayer.push({
+          event: 'form_submission',
+          form_name: 'main_contact',
+        });
+      }
+
       setFormData({ name: '', company: '', email: '', phone: '', message: '' });
     }
   }, [state.succeeded]);
@@ -220,9 +271,6 @@ export default function ContactSection({ lang = 'de', pageVariant = 'main' }: Co
               </h3>
 
               <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                {pageVariant === 'starter' && (
-                  <input type="hidden" name="_source" value="starter" />
-                )}
                 {/* Name Field */}
                 <div>
                   <label

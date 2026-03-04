@@ -18,26 +18,22 @@ interface HeaderLeadGeniesProps {
   menuItems?: MenuItem[];
   ctaText?: string;
   ctaHref?: string;
-  pageVariant?: 'main' | 'starter';
 }
 
 export default function HeaderLeadGenies({
   lang = 'de',
   menuItems,
   ctaText,
-  ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min',
-  pageVariant = 'main'
+  ctaHref = 'https://calendly.com/louis-mickley-leadgenies/30min'
 }: HeaderLeadGeniesProps) {
 
-  const t = translations[lang][pageVariant === 'starter' ? 'starterHeader' : 'header'];
+  const t = translations[lang].header;
   const rawMenuItems = menuItems || t.menuItems;
 
   // Transform menu items to have absolute paths so they work from subpages
   const finalMenuItems = rawMenuItems.map(item => {
     if (item.href.startsWith('#')) {
-      const basePath = pageVariant === 'starter'
-        ? (lang === 'en' ? '/en/starter' : '/starter')
-        : (lang === 'en' ? '/en' : '/');
+      const basePath = lang === 'en' ? '/en' : '/';
       const prefix = basePath === '/' ? '' : basePath;
       return { ...item, href: `${prefix}/${item.href}`.replace('//', '/') };
     }
@@ -45,8 +41,8 @@ export default function HeaderLeadGenies({
   });
 
   // Language switcher paths
-  const dePath = pageVariant === 'starter' ? '/starter' : '/';
-  const enPath = pageVariant === 'starter' ? '/en/starter' : '/en';
+  const dePath = '/';
+  const enPath = '/en';
 
   const finalCtaText = ctaText || t.ctaText;
 

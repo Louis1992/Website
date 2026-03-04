@@ -7,22 +7,22 @@ export const translations = {
     // Header
     header: {
       menuItems: [
-        { label: 'Team', href: '#team' },
-        { label: 'Prozess', href: '#how-it-works' },
-        { label: 'Case Studies', href: '#case-studies' },
+        { label: 'Leistungen', href: '#leistungen' },
+        { label: 'App', href: '#app-showcase' },
+        { label: 'Referenzen', href: '#case-studies' },
         { label: 'ROI-Rechner', href: '#roi-calculator' },
-        { label: 'Garantie', href: '#guarantee' },
-        { label: 'Preis', href: '#pricing' }
+        { label: 'Preise', href: '#pricing' },
+        { label: 'Kontakt', href: '#contact' }
       ],
       ctaText: 'Jetzt beraten lassen'
     },
 
     // Hero
     hero: {
-      title: 'Professionelle B2B-Telemarketing-Experten für Ihren skalierbaren Vertrieb',
-      subtitle: 'Wir sind Ihre externe Telemarketing-Abteilung. Von Kaltakquise über Lead-Nachverfolgung bis hin zur CRM-Pflege – unsere erfahrenen Sales-Mitarbeiter arbeiten täglich 2-3 Stunden exklusiv für Ihr Unternehmen. Flexibel einsetzbar, DSGVO-konform und ohne Personalrisiko.',
-      cta: 'Jetzt unverbindlich beraten lassen',
-      belowText: 'Für etablierte B2B-Unternehmen mit <strong>ambitionierten Wachstumszielen</strong>',
+      title: 'Qualifizierte B2B-Termine. Jeden Tag.',
+      subtitle: 'Wir übernehmen Ihre Kaltakquise — mit eigenem SDR-Team, eigener App und 54.000+ B2B-Kontakten. Volle Transparenz, kein Risiko.',
+      cta: 'Kostenloses Pipeline-Audit sichern',
+      belowText: 'Die einzige Telemarketing-Agentur mit <strong>eigener App und Live-Reporting</strong>',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -195,7 +195,7 @@ export const translations = {
             },
             {
               question: 'Wie werden die Kosten strukturiert?',
-              answer: 'Unser Preismodell ist transparent und fair: Eine kleine einmalige Onboarding-Pauschale für die Schulung und Integration plus ein monatlicher Festpreis für 2-3 Stunden tägliche Arbeitszeit Ihres persönlichen Sales-Mitarbeiters. Optional können Sie über uns DSGVO-konforme Leadlisten beziehen. Alle Details besprechen wir individuell im Beratungsgespräch.'
+              answer: 'Unser Modell basiert auf der Anzahl Caller: 1 Caller ab 3.999 €/Mo, 2 Caller ab 3.500 €/Caller, 3 Caller ab 3.000 €/Caller. Leadlisten aus unserer 54.000+ B2B-Datenbank sind immer inklusive. Bei 1 Caller fällt eine einmalige Onboarding-Pauschale von 990 € an, bei 2+ Callern entfällt diese. Mehr Caller = günstigerer Preis pro Caller.'
             }
           ]
         }
@@ -204,66 +204,100 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparente Preisgestaltung',
-      subtitle: 'Klare Preise, keine versteckten Kosten. Wählen Sie das Paket, das zu Ihrem Wachstum passt.',
-      description: 'Investment für etablierte B2B-Unternehmen:',
+      title: 'Ihr Outbound-Team',
+      subtitle: 'Mehr Caller = günstigerer Preis. Längeres Commitment = kein Setup. Immer volle Transparenz.',
       packages: [
         {
-          name: 'Growth',
-          duration: 'Ab 3 Monate',
-          price: '€3.499',
+          name: '1 Caller',
+          duration: 'Test möglich',
+          price: '€3.999',
           priceNote: '/Monat',
           features: [
-            'Mind. 2h/Tag reine Calling-Zeit',
-            'Telefonakquise',
-            'Tägliches Reporting + wöchentlicher Call',
-            'LeadGenies-App inklusive',
-            'Leadlisten auf Anfrage',
-            'DSGVO-konform',
-            'Ziel: 8–15 Termine/Monat'
+            'Dedizierter SDR (Native Speaker)',
+            '50–80 Calls pro Tag',
+            'Ziel: 8–15 Termine/Monat',
+            'ICP-Analyse + Skript-Erstellung',
+            'Leadlisten aus 54.000+ B2B-Kontakten',
+            'LeadGenies-App: Live-Dashboard',
+            'Tages-, Wochen- & Monatsbericht',
+            'Wöchentlicher Feedback-Call'
           ],
-          bestFor: 'Schneller Einstieg',
-          cta: 'Qualifizierungsgespräch buchen'
+          bestFor: 'Einstieg & Test',
+          cta: 'Jetzt starten',
+          setupNote: '+ €990 Onboarding'
         },
         {
-          name: 'Scale',
-          duration: 'Ab 6 Monate',
-          price: '€4.999',
-          priceNote: '/Monat',
-          dailyPrice: 'Ab €57/Stunde',
+          name: '2 Caller',
+          duration: 'Ab 3 Monate',
+          price: 'ab €3.500',
+          priceNote: '/Caller/Monat',
+          dailyPrice: 'Gesamt ab €7.000/Mo',
           savings: 'Empfohlen',
           features: [
-            'Mind. 4h/Tag reine Calling-Zeit',
-            'Telefon + E-Mail Follow-ups',
-            'Individuelles Reporting',
-            'LeadGenies-App: Live-Tracking',
-            'Bis zu 1.000 Leads/Monat inklusive',
-            'Wöchentliche Zielgruppen-Review',
-            'Ziel: 15–30 Termine/Monat'
+            'Alles aus 1 Caller, doppelt',
+            '100–160 Calls pro Tag',
+            'Ziel: 15–30 Termine/Monat',
+            'Mehrere Zielgruppen parallel',
+            'A/B-Testing verschiedener Pitches',
+            'Priority Support',
+            'Kein Setup',
+            'Vorkasse-Rabatt: €500/Mo sparen'
           ],
-          bestFor: 'Maximales Wachstum',
-          cta: 'Qualifizierungsgespräch buchen'
+          bestFor: 'Schnelles Wachstum',
+          cta: 'Beratung buchen'
         },
         {
-          name: 'Enterprise',
-          duration: 'Ab 12 Monate',
-          price: 'Individuell',
-          priceNote: 'Strategy-Workshop inkludiert',
+          name: '3 Caller',
+          duration: 'Ab 6 Monate',
+          price: 'ab €3.000',
+          priceNote: '/Caller/Monat',
+          dailyPrice: 'Gesamt ab €9.000/Mo',
+          savings: 'Bis zu €9.000 sparen',
           features: [
-            'Mind. 6h/Tag reine Calling-Zeit',
-            'Volle Integration in Ihr Team',
-            'Individuelle Einarbeitung',
-            'LeadGenies-App: Vollzugriff + Priority Support',
-            'Unbegrenzte verifizierte Leads inklusive',
-            'Ziel: 50+ Termine/Monat'
+            'Alles aus 2 Caller, dreifach',
+            '150–240 Calls pro Tag',
+            'Ziel: 25–45 Termine/Monat',
+            'Dedizierter Account Manager',
+            'Wöchentliche Strategie-Calls',
+            'Enterprise-Reporting (Custom)',
+            'Multi-Kanal-Optionen',
+            'Kein Setup'
           ],
           bestFor: 'Volle Sales-Power',
-          cta: 'Erstgespräch vereinbaren'
+          cta: 'Beratung buchen'
+        },
+        {
+          name: 'Mehr?',
+          duration: 'Individuell',
+          price: 'Individuell',
+          priceNote: 'Ab 4 Caller',
+          features: [
+            'Individuelle Preisgestaltung',
+            'Dediziertes Account-Team',
+            'Custom Reporting & Dashboards',
+            'Volle CRM-Integration',
+            'SLA-basierte Vereinbarungen',
+            'Multi-Markt (DACH + International)'
+          ],
+          bestFor: 'Enterprise & Konzerne',
+          cta: 'Sprechen wir'
         }
       ],
       bestForLabel: 'Ideal für:',
-      roiNote: 'Rechenbeispiel Scale-Paket: Bei 20+ Terminen/Monat = ca. €250 pro qualifiziertem Termin. Bei einem Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial.',
-      footerText: 'Diese Investment-Höhe ist ideal für etablierte B2B-Unternehmen mit €20.000+ Monatsumsatz. Für wachsende Unternehmen ohne eigenes Sales-Team: <a href="/starter" style="color: #4136b3; font-weight: 600;">Entdecken Sie unser Starter-Programm →</a><br/><br/>Leadlisten separat benötigt? Über unseren Partner <a href="https://www.lead-schmiede.de" target="_blank" rel="noopener" style="color: #4136b3; font-weight: 600;">Lead-Schmiede.de</a> erhalten Sie DSGVO-konforme B2B-Leadlisten ab €1,50/Lead.'
+      addOn: {
+        name: 'LeadGenies 360',
+        subtitle: 'Add-On für bestehende Kunden',
+        price: '€2.499',
+        priceNote: '/Monat + €1.990 Setup',
+        features: [
+          'Meta & Google Ads Management',
+          'Ad Creative Erstellung',
+          'Vorqualifizierung eingehender Leads',
+          'CRM-Integration (Ads + TM in einer App)'
+        ],
+        cta: 'Mehr erfahren'
+      },
+      roiNote: 'Rechenbeispiel 2 Caller: Bei 20+ Terminen/Monat = ca. €350 pro qualifiziertem Termin. Bei Ø Auftragswert von €15.000 und 20% Abschlussrate = €60.000+ Monatsumsatz-Potenzial. Schon 1 Abschluss = positiver ROI.'
     },
 
     // Review Cards Section
@@ -539,179 +573,39 @@ export const translations = {
       en: 'EN'
     },
 
-    // ===== STARTER PAGE TRANSLATIONS =====
-
-    starterHeader: {
-      menuItems: [
-        { label: 'Prozess', href: '#how-it-works' },
-        { label: 'Case Studies', href: '#case-studies' },
-        { label: 'Garantie', href: '#guarantee' },
-        { label: 'Pakete', href: '#pricing' },
-        { label: 'Kontakt', href: '#contact' }
-      ],
-      ctaText: 'Beratungsgespräch'
-    },
-
-    starterHero: {
-      title: 'Professionelle B2B-Kaltakquise – speziell für wachsende Unternehmen',
-      subtitle: 'Sie haben ein gutes Produkt, aber noch kein großes Vertriebsteam? Wir übernehmen Ihre Kaltakquise komplett – inklusive Leadlisten, Onboarding und Reporting. Ein Preis, alles drin.',
-      cta: 'Kostenloses Beratungsgespräch',
-      belowText: 'Für B2B-Unternehmen die <strong>ihren Vertrieb aufbauen</strong> wollen'
-    },
-
-    starterTrust: {
-      title: 'Ist das Starter-Programm das Richtige für Sie?',
-      subtitle: 'Unser Starter-Programm ist speziell für wachsende B2B-Unternehmen konzipiert, die professionelle Kaltakquise nutzen möchten, ohne gleich ein eigenes SDR-Team aufbauen zu müssen.',
-      checklistTitle: 'Perfekt für Sie, wenn:',
-      checklist: [
-        'Ihr Unternehmen generiert mindestens €5.000 monatlichen Umsatz.',
-        'Sie haben ein B2B-Produkt oder eine B2B-Dienstleistung und möchten aktiv neue Kunden gewinnen.',
-        'Ihre durchschnittliche Auftragsgröße liegt bei €3.000+ (ACV).',
-        'Sie möchten einen strukturierten Vertriebsprozess aufbauen – auch ohne eigenes Sales-Team.'
-      ],
-      checklistFooter: 'Klingt nach Ihnen? Dann lassen Sie uns sprechen.'
-    },
-
-    starterHowItWorks: {
-      title: 'So starten wir gemeinsam',
-      subtitle: 'In 4 einfachen Schritten zu Ihrem externen Vertriebsteam',
-      steps: [
-        {
-          number: '01',
-          title: 'Beratungsgespräch',
-          description: 'Wir lernen Ihr Unternehmen, Ihr Produkt und Ihre Zielgruppe kennen. Gemeinsam definieren wir, welches Starter-Paket am besten passt.'
-        },
-        {
-          number: '02',
-          title: 'Onboarding (inklusive)',
-          description: 'Wir schulen unseren Sales-Mitarbeiter auf Ihr Produkt, entwickeln den Gesprächsleitfaden und richten alle Prozesse ein – ohne Extra-Kosten.'
-        },
-        {
-          number: '03',
-          title: 'Kaltakquise startet',
-          description: 'Ihr dedizierter Sales-Mitarbeiter beginnt mit der täglichen Akquise. Sie erhalten qualifizierte Termine direkt in Ihren Kalender.'
-        },
-        {
-          number: '04',
-          title: 'Wachstum & Optimierung',
-          description: 'Durch regelmäßiges Reporting und Feedback optimieren wir kontinuierlich. Ihre Pipeline wächst planbar und nachhaltig.'
-        }
+    // Leistungen Section
+    leistungen: {
+      title: 'Was jeder Caller beinhaltet',
+      subtitle: 'Unser Komplettpaket — alles inklusive, keine versteckten Kosten.',
+      items: [
+        { icon: 'user', title: 'Dedizierter SDR', description: 'Native German Speaker, C-Level-Kommunikation auf Augenhöhe' },
+        { icon: 'phone', title: '50–80 Calls pro Tag', description: 'Tägliche Kaltakquise an Werktagen durch Ihren persönlichen Mitarbeiter' },
+        { icon: 'target', title: '8–15 Termine/Monat', description: 'Qualifizierte Entscheider-Termine direkt in Ihren Kalender' },
+        { icon: 'search', title: 'ICP-Analyse', description: 'Einmaliger Workshop zur Definition Ihrer idealen Zielgruppe' },
+        { icon: 'fileText', title: 'Skript-Erstellung', description: 'Individueller Pitch mit laufender Optimierung alle 2 Tage' },
+        { icon: 'database', title: '54.000+ B2B-Kontakte', description: 'DSGVO-konforme Leadlisten aus eigener Datenbank inklusive' },
+        { icon: 'barChart', title: 'Live-Reporting', description: 'Tagesberichte, Wochenberichte und Monatsberichte in der App' },
+        { icon: 'monitor', title: 'LeadGenies App', description: 'Live-Dashboard, Lead-Tracking und Ihr eigenes Kunden-Portal' },
+        { icon: 'messageCircle', title: 'Wöchentlicher Call', description: 'Feedback-Call mit Ergebnissen, Anpassungen und nächsten Schritten' },
+        { icon: 'refreshCw', title: 'No-Show-Nachverfolgung', description: 'Geplatzte Termine werden automatisch nachtelefoniert' },
+        { icon: 'shield', title: '100% DSGVO-konform', description: 'Deutsche Server, AVV, Datenschutz nach höchsten Standards' },
+        { icon: 'award', title: 'Pitch-Reviews', description: 'Interne Reviews und Coaching der Caller für maximale Qualität' }
       ]
     },
 
-    starterPricing: {
-      title: 'Starter-Pakete – Alles inklusive',
-      subtitle: 'Ein Preis, keine versteckten Kosten. Onboarding, Leadlisten und Reporting – alles inklusive.',
-      description: 'Investment für wachsende B2B-Unternehmen:',
-      packages: [
-        {
-          name: 'Starter',
-          duration: 'Ab 3 Monate',
-          price: '€2.999',
-          priceNote: '/Monat · alles inklusive',
-          features: [
-            'Mind. 2h/Tag reine Calling-Zeit',
-            'Leadlisten & Infrastruktur inklusive',
-            'Telefonakquise',
-            'Wöchentliches Reporting',
-            'DSGVO-konform',
-            'Ziel: 5–10 Termine/Monat'
-          ],
-          bestFor: 'Vertrieb starten',
-          cta: 'Beratungsgespräch buchen'
-        },
-        {
-          name: 'Starter Plus',
-          duration: 'Ab 3 Monate',
-          price: '€3.999',
-          priceNote: '/Monat · alles inklusive',
-          dailyPrice: 'Ab €45/Stunde',
-          savings: 'Empfohlen',
-          features: [
-            'Mind. 4h/Tag reine Calling-Zeit',
-            'Leadlisten & Infrastruktur inklusive',
-            'Telefon + E-Mail Follow-ups',
-            'Tägliches Reporting + wöchentlicher Call',
-            'LeadGenies-App inklusive',
-            'Ziel: 10–18 Termine/Monat'
-          ],
-          bestFor: 'Bestes Preis-Leistungs-Verhältnis',
-          cta: 'Beratungsgespräch buchen'
-        },
-        {
-          name: 'Starter Pro',
-          duration: 'Ab 3 Monate',
-          price: '€5.499',
-          priceNote: '/Monat · alles inklusive',
-          features: [
-            'Mind. 6h/Tag reine Calling-Zeit',
-            'Leadlisten & Infrastruktur inklusive',
-            'Telefon + E-Mail + LinkedIn',
-            'Tägliches Reporting + wöchentlicher Strategy-Call',
-            'Sales-Coaching (1x/Monat)',
-            'Ziel: 18–30 Termine/Monat'
-          ],
-          bestFor: 'Maximaler Vertriebsaufbau',
-          cta: 'Beratungsgespräch buchen'
-        }
+    // App Showcase Section
+    appShowcase: {
+      title: 'Ihre Kampagne. In Echtzeit.',
+      subtitle: 'Nie wieder Black Box. Sehen Sie live, was Ihr SDR-Team tut — in unserer eigenen App.',
+      tabs: ['Dashboard', 'Leads', 'ICP-Analyse', 'Reports', 'Chat'],
+      tabDescriptions: [
+        'Calls, Termine, Connect Rate — alle KPIs auf einen Blick.',
+        'Jeder Lead in Ihrem Kanban-Board. Von Erstkontakt bis Abschluss.',
+        'Welche Branchen und Jobtitel konvertieren am besten? Wir zeigen es Ihnen.',
+        'Tägliche Berichte automatisch. Kein Nachfragen, keine Verzögerung.',
+        'Direkter Draht zu Ihrem Account Manager. Kein Ticket-System.'
       ],
-      bestForLabel: 'Ideal für:',
-      roiNote: 'Rechenbeispiel Starter Plus: Bei 14 Terminen/Monat und Ø €5.000 Auftragswert mit 20% Abschlussrate = €14.000 Monatsumsatz-Potenzial. Alles inklusive – keine Extra-Kosten.',
-      footerText: 'Sie sind bereits ein etabliertes Unternehmen mit eigenem Vertriebsteam? <a href="/" style="color: #4136b3; font-weight: 600;">Entdecken Sie unsere Enterprise-Pakete →</a>'
-    },
-
-    starterFaq: {
-      title: 'Häufige Fragen zum Starter-Programm',
-      categories: [
-        {
-          title: 'Über das Starter-Programm',
-          items: [
-            {
-              question: 'Was unterscheidet das Starter-Programm von den regulären Paketen?',
-              answer: 'Das Starter-Programm ist speziell für kleinere B2B-Unternehmen konzipiert. Alles ist inklusive – Onboarding, Leadlisten, Reporting. Sie zahlen einen Preis und bekommen den vollen Service. Bei unseren regulären Paketen richten wir uns an größere Unternehmen mit eigenem Vertriebsteam.'
-            },
-            {
-              question: 'Ich habe noch kein Vertriebsteam – ist das ein Problem?',
-              answer: 'Nein, genau dafür ist das Starter-Programm da. Wir übernehmen die Kaltakquise komplett und liefern Ihnen qualifizierte Termine. Sie müssen nur die Gespräche führen und abschließen.'
-            },
-            {
-              question: 'Wie viele Termine kann ich realistisch erwarten?',
-              answer: 'Je nach Paket zwischen 5-25 Termine pro Monat. Beim Starter Plus (unserem beliebtesten Paket) sind es typischerweise 8-15 qualifizierte Termine monatlich.'
-            },
-            {
-              question: 'Warum eine Mindestlaufzeit von 3 Monaten?',
-              answer: 'Der erste Monat dient dem Onboarding und der Kalibrierung. Ab Monat 2-3 sehen Sie die vollen Ergebnisse. Eine kürzere Laufzeit wäre nicht fair Ihnen gegenüber, da der volle Wert erst nach der Einarbeitungsphase sichtbar wird.'
-            }
-          ]
-        },
-        {
-          title: 'Ablauf & Leistungen',
-          items: [
-            {
-              question: 'Was ist alles im Preis enthalten?',
-              answer: 'Alles: Onboarding, Gesprächsleitfaden-Entwicklung, DSGVO-konforme Leadlisten, tägliche Kaltakquise, Reporting und regelmäßige Feedback-Calls. Es gibt keine versteckten Zusatzkosten.'
-            },
-            {
-              question: 'Wie schnell können wir starten?',
-              answer: 'Nach dem Beratungsgespräch und Vertragsabschluss starten wir innerhalb von 7-10 Tagen mit dem Onboarding. Die ersten Anrufe erfolgen typischerweise in der zweiten Woche.'
-            },
-            {
-              question: 'Kann ich später auf ein größeres Paket upgraden?',
-              answer: 'Ja, absolut. Viele unserer Starter-Kunden wachsen mit uns und steigen auf unsere Enterprise-Pakete um. Wir begleiten Sie auf dem gesamten Weg.'
-            },
-            {
-              question: 'Welche Branchen bedient ihr?',
-              answer: 'B2B SaaS, IT-Dienstleistungen, Beratung, Agenturen, Professional Services – alle B2B-Branchen mit Auftragswerten ab €3.000.'
-            }
-          ]
-        }
-      ]
-    },
-
-    starterContact: {
-      title: 'Bereit, Ihren Vertrieb zu starten?',
-      subtitle: 'Lassen Sie uns in einem kurzen Gespräch klären, welches Starter-Paket am besten zu Ihnen passt. Unverbindlich und kostenlos.',
-      formTitle: 'Kostenloses Beratungsgespräch anfragen'
+      cta: 'App-Demo im Beratungsgespräch sehen'
     }
   },
 
@@ -719,22 +613,22 @@ export const translations = {
     // Header
     header: {
       menuItems: [
-        { label: 'Team', href: '#team' },
-        { label: 'Process', href: '#how-it-works' },
+        { label: 'Services', href: '#leistungen' },
+        { label: 'App', href: '#app-showcase' },
         { label: 'Case Studies', href: '#case-studies' },
         { label: 'ROI Calculator', href: '#roi-calculator' },
-        { label: 'Guarantee', href: '#guarantee' },
-        { label: 'Pricing', href: '#pricing' }
+        { label: 'Pricing', href: '#pricing' },
+        { label: 'Contact', href: '#contact' }
       ],
       ctaText: 'Get Consultation'
     },
 
     // Hero
     hero: {
-      title: 'Professional B2B Telemarketing Experts for Your Scalable Sales',
-      subtitle: 'Your external telemarketing team. Our experienced sales professionals work 2-3 hours daily exclusively for you – from cold calling to CRM management. GDPR-compliant and without hiring risk.',
-      cta: 'Get Free Consultation Now',
-      belowText: 'For established B2B companies with <strong>ambitious growth goals</strong>',
+      title: 'Qualified B2B Appointments. Every Day.',
+      subtitle: 'We handle your cold calling — with a dedicated SDR team, our own app, and 54,000+ B2B contacts. Full transparency, zero risk.',
+      cta: 'Get Your Free Pipeline Audit',
+      belowText: 'The only telemarketing agency with its <strong>own app and live reporting</strong>',
       reviews: [
         {
           logo: 'https://syntra-eu.fra1.cdn.digitaloceanspaces.com/leadgenies/Logo-TEC-Experts-v1.svg',
@@ -907,7 +801,7 @@ export const translations = {
             },
             {
               question: 'How are costs structured?',
-              answer: 'Our pricing model is transparent and fair: A small one-time onboarding fee for training and integration plus a monthly fixed price for 2-3 hours daily working time of your personal sales professional. Optionally, you can obtain GDPR-compliant lead lists through us. We discuss all details individually in the consultation call.'
+              answer: 'Our model is based on the number of callers: 1 caller from €3,999/mo, 2 callers from €3,500/caller, 3 callers from €3,000/caller. Lead lists from our 54,000+ B2B database are always included. For 1 caller there is a one-time onboarding fee of €990, which is waived for 2+ callers. More callers = lower price per caller.'
             }
           ]
         }
@@ -916,66 +810,100 @@ export const translations = {
 
     // Pricing Section
     pricing: {
-      title: 'Transparent Pricing',
-      subtitle: 'Clear prices, no hidden costs. Choose the package that fits your growth.',
-      description: 'Investment for established B2B companies:',
+      title: 'Your Outbound Team',
+      subtitle: 'More callers = better price. Longer commitment = no setup fee. Always full transparency.',
       packages: [
         {
-          name: 'Growth',
-          duration: 'From 3 months',
-          price: '€3,499',
+          name: '1 Caller',
+          duration: 'Test available',
+          price: '€3,999',
           priceNote: '/month',
           features: [
-            'Min. 2h/day pure calling time',
-            'Phone outreach',
-            'Daily reporting + weekly call',
-            'LeadGenies App included',
-            'Lead lists on request',
-            'GDPR-compliant',
-            'Target: 8–15 appointments/month'
+            'Dedicated SDR (Native Speaker)',
+            '50–80 calls per day',
+            'Target: 8–15 appointments/month',
+            'ICP analysis + script creation',
+            'Lead lists from 54,000+ B2B contacts',
+            'LeadGenies App: Live dashboard',
+            'Daily, weekly & monthly reports',
+            'Weekly feedback call'
           ],
-          bestFor: 'Quick Start',
-          cta: 'Book Qualification Call'
+          bestFor: 'Getting started',
+          cta: 'Get Started',
+          setupNote: '+ €990 onboarding'
         },
         {
-          name: 'Scale',
-          duration: 'From 6 months',
-          price: '€4,999',
-          priceNote: '/month',
-          dailyPrice: 'From €57/hour',
+          name: '2 Callers',
+          duration: 'From 3 months',
+          price: 'from €3,500',
+          priceNote: '/caller/month',
+          dailyPrice: 'Total from €7,000/mo',
           savings: 'Recommended',
           features: [
-            'Min. 4h/day pure calling time',
-            'Phone + email follow-ups',
-            'Custom reporting',
-            'LeadGenies App: Live tracking',
-            'Up to 1,000 leads/month included',
-            'Weekly target audience review',
-            'Target: 15–30 appointments/month'
+            'Everything from 1 Caller, doubled',
+            '100–160 calls per day',
+            'Target: 15–30 appointments/month',
+            'Multiple target audiences in parallel',
+            'A/B testing different pitches',
+            'Priority support',
+            'No setup fee',
+            'Prepayment discount: save €500/mo'
           ],
-          bestFor: 'Maximum Growth',
-          cta: 'Book Qualification Call'
+          bestFor: 'Fast growth',
+          cta: 'Book Consultation'
         },
         {
-          name: 'Enterprise',
-          duration: 'From 12 months',
-          price: 'Custom',
-          priceNote: 'Strategy workshop included',
+          name: '3 Callers',
+          duration: 'From 6 months',
+          price: 'from €3,000',
+          priceNote: '/caller/month',
+          dailyPrice: 'Total from €9,000/mo',
+          savings: 'Save up to €9,000',
           features: [
-            'Min. 6h/day pure calling time',
-            'Full integration into your team',
-            'Individual onboarding',
-            'LeadGenies App: Full access + priority support',
-            'Unlimited verified leads included',
-            'Target: 50+ appointments/month'
+            'Everything from 2 Callers, tripled',
+            '150–240 calls per day',
+            'Target: 25–45 appointments/month',
+            'Dedicated account manager',
+            'Weekly strategy calls',
+            'Enterprise reporting (custom)',
+            'Multi-channel options',
+            'No setup fee'
           ],
-          bestFor: 'Full Sales Power',
-          cta: 'Schedule Introduction Call'
+          bestFor: 'Full sales power',
+          cta: 'Book Consultation'
+        },
+        {
+          name: 'More?',
+          duration: 'Custom',
+          price: 'Custom',
+          priceNote: 'From 4 callers',
+          features: [
+            'Custom pricing',
+            'Dedicated account team',
+            'Custom reporting & dashboards',
+            'Full CRM integration',
+            'SLA-based agreements',
+            'Multi-market (DACH + International)'
+          ],
+          bestFor: 'Enterprise & Corporations',
+          cta: 'Let\'s Talk'
         }
       ],
       bestForLabel: 'Best for:',
-      roiNote: 'Scale package example: At 20+ appointments/month = approx. €250 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential.',
-      footerText: 'This investment level is ideal for established B2B companies with €20,000+ monthly revenue. For growing companies without a sales team: <a href="/en/starter" style="color: #4136b3; font-weight: 600;">Discover our Starter Program →</a><br/><br/>Need lead lists separately? Through our partner <a href="https://www.lead-schmiede.de" target="_blank" rel="noopener" style="color: #4136b3; font-weight: 600;">Lead-Schmiede.de</a> you can get GDPR-compliant B2B lead lists from €1.50/lead.'
+      addOn: {
+        name: 'LeadGenies 360',
+        subtitle: 'Add-on for existing clients',
+        price: '€2,499',
+        priceNote: '/month + €1,990 setup',
+        features: [
+          'Meta & Google Ads management',
+          'Ad creative creation',
+          'Pre-qualification of inbound leads',
+          'CRM integration (Ads + TM in one app)'
+        ],
+        cta: 'Learn More'
+      },
+      roiNote: '2-Caller example: At 20+ appointments/month = approx. €350 per qualified appointment. With avg. deal value of €15,000 and 20% close rate = €60,000+ monthly revenue potential. Just 1 deal = positive ROI.'
     },
 
     // Review Cards Section
@@ -1251,179 +1179,39 @@ export const translations = {
       en: 'EN'
     },
 
-    // ===== STARTER PAGE TRANSLATIONS =====
-
-    starterHeader: {
-      menuItems: [
-        { label: 'Process', href: '#how-it-works' },
-        { label: 'Case Studies', href: '#case-studies' },
-        { label: 'Guarantee', href: '#guarantee' },
-        { label: 'Packages', href: '#pricing' },
-        { label: 'Contact', href: '#contact' }
-      ],
-      ctaText: 'Free Consultation'
-    },
-
-    starterHero: {
-      title: 'Professional B2B Cold Calling – Built for Growing Companies',
-      subtitle: 'Great product but no big sales team yet? We handle your cold calling completely – including lead lists, onboarding, and reporting. One price, everything included.',
-      cta: 'Free Consultation',
-      belowText: 'For B2B companies looking to <strong>build their sales</strong>'
-    },
-
-    starterTrust: {
-      title: 'Is the Starter Program Right for You?',
-      subtitle: 'Our Starter Program is designed specifically for growing B2B companies that want to leverage professional cold calling without building an in-house SDR team.',
-      checklistTitle: 'Perfect for you if:',
-      checklist: [
-        'Your company generates at least €5,000 monthly revenue.',
-        'You have a B2B product or service and want to actively acquire new customers.',
-        'Your average deal size is €3,000+ (ACV).',
-        'You want to build a structured sales process – even without your own sales team.'
-      ],
-      checklistFooter: 'Sound like you? Let\'s talk.'
-    },
-
-    starterHowItWorks: {
-      title: 'How We Get Started Together',
-      subtitle: 'Your external sales team in 4 simple steps',
-      steps: [
-        {
-          number: '01',
-          title: 'Consultation Call',
-          description: 'We learn about your company, product, and target audience. Together we define which Starter package fits best.'
-        },
-        {
-          number: '02',
-          title: 'Onboarding (Included)',
-          description: 'We train our sales professional on your product, develop conversation scripts, and set up all processes – at no extra cost.'
-        },
-        {
-          number: '03',
-          title: 'Cold Calling Starts',
-          description: 'Your dedicated sales professional begins daily outreach. You receive qualified appointments directly in your calendar.'
-        },
-        {
-          number: '04',
-          title: 'Growth & Optimization',
-          description: 'Through regular reporting and feedback, we continuously optimize. Your pipeline grows predictably and sustainably.'
-        }
+    // Leistungen Section
+    leistungen: {
+      title: 'What Every Caller Includes',
+      subtitle: 'Our complete package — everything included, no hidden costs.',
+      items: [
+        { icon: 'user', title: 'Dedicated SDR', description: 'Native German speaker, C-level communication at eye level' },
+        { icon: 'phone', title: '50–80 Calls Per Day', description: 'Daily cold calling on business days by your personal team member' },
+        { icon: 'target', title: '8–15 Appointments/Month', description: 'Qualified decision-maker appointments directly in your calendar' },
+        { icon: 'search', title: 'ICP Analysis', description: 'One-time workshop to define your ideal target audience' },
+        { icon: 'fileText', title: 'Script Creation', description: 'Individual pitch with ongoing optimization every 2 days' },
+        { icon: 'database', title: '54,000+ B2B Contacts', description: 'GDPR-compliant lead lists from our own database included' },
+        { icon: 'barChart', title: 'Live Reporting', description: 'Daily, weekly and monthly reports in the app' },
+        { icon: 'monitor', title: 'LeadGenies App', description: 'Live dashboard, lead tracking and your own customer portal' },
+        { icon: 'messageCircle', title: 'Weekly Call', description: 'Feedback call with results, adjustments and next steps' },
+        { icon: 'refreshCw', title: 'No-Show Follow-up', description: 'Cancelled appointments are automatically followed up' },
+        { icon: 'shield', title: '100% GDPR Compliant', description: 'German servers, DPA, data protection to the highest standards' },
+        { icon: 'award', title: 'Pitch Reviews', description: 'Internal reviews and coaching of callers for maximum quality' }
       ]
     },
 
-    starterPricing: {
-      title: 'Starter Packages – Everything Included',
-      subtitle: 'One price, no hidden costs. Onboarding, lead lists, and reporting – all included.',
-      description: 'Investment for growing B2B companies:',
-      packages: [
-        {
-          name: 'Starter',
-          duration: 'From 3 months',
-          price: '€2,999',
-          priceNote: '/month · everything included',
-          features: [
-            'Min. 2h/day pure calling time',
-            'Lead lists & infrastructure included',
-            'Phone outreach',
-            'Weekly reporting',
-            'GDPR-compliant',
-            'Target: 5–10 appointments/month'
-          ],
-          bestFor: 'Start Selling',
-          cta: 'Book Consultation'
-        },
-        {
-          name: 'Starter Plus',
-          duration: 'From 3 months',
-          price: '€3,999',
-          priceNote: '/month · everything included',
-          dailyPrice: 'From €45/hour',
-          savings: 'Recommended',
-          features: [
-            'Min. 4h/day pure calling time',
-            'Lead lists & infrastructure included',
-            'Phone + email follow-ups',
-            'Daily reporting + weekly call',
-            'LeadGenies App included',
-            'Target: 10–18 appointments/month'
-          ],
-          bestFor: 'Best Value',
-          cta: 'Book Consultation'
-        },
-        {
-          name: 'Starter Pro',
-          duration: 'From 3 months',
-          price: '€5,499',
-          priceNote: '/month · everything included',
-          features: [
-            'Min. 6h/day pure calling time',
-            'Lead lists & infrastructure included',
-            'Phone + email + LinkedIn',
-            'Daily reporting + weekly strategy call',
-            'Sales coaching (1x/month)',
-            'Target: 18–30 appointments/month'
-          ],
-          bestFor: 'Maximum Sales Growth',
-          cta: 'Book Consultation'
-        }
+    // App Showcase Section
+    appShowcase: {
+      title: 'Your Campaign. In Real Time.',
+      subtitle: 'No more black box. See live what your SDR team is doing — in our own app.',
+      tabs: ['Dashboard', 'Leads', 'ICP Analysis', 'Reports', 'Chat'],
+      tabDescriptions: [
+        'Calls, appointments, connect rate — all KPIs at a glance.',
+        'Every lead in your Kanban board. From first contact to close.',
+        'Which industries and job titles convert best? We show you.',
+        'Daily reports automatically. No follow-up needed, no delays.',
+        'Direct line to your account manager. No ticket system.'
       ],
-      bestForLabel: 'Best for:',
-      roiNote: 'Starter Plus example: At 14 appointments/month with avg. €5,000 deal value and 20% close rate = €14,000 monthly revenue potential. Everything included – no extra costs.',
-      footerText: 'Already an established company with your own sales team? <a href="/en" style="color: #4136b3; font-weight: 600;">Discover our Enterprise packages →</a>'
-    },
-
-    starterFaq: {
-      title: 'Frequently Asked Questions about the Starter Program',
-      categories: [
-        {
-          title: 'About the Starter Program',
-          items: [
-            {
-              question: 'What makes the Starter Program different from regular packages?',
-              answer: 'The Starter Program is designed specifically for smaller B2B companies. Everything is included – onboarding, lead lists, reporting. You pay one price and get the full service. Our regular packages are designed for larger companies with existing sales teams.'
-            },
-            {
-              question: 'I don\'t have a sales team yet – is that a problem?',
-              answer: 'No, that\'s exactly what the Starter Program is for. We handle cold calling completely and deliver qualified appointments. You just need to have the conversations and close deals.'
-            },
-            {
-              question: 'How many appointments can I realistically expect?',
-              answer: 'Depending on the package, between 5-25 appointments per month. With Starter Plus (our most popular package), you can typically expect 8-15 qualified appointments monthly.'
-            },
-            {
-              question: 'Why a minimum commitment of 3 months?',
-              answer: 'The first month is for onboarding and calibration. You\'ll see full results from month 2-3. A shorter period wouldn\'t be fair to you, as the full value only becomes visible after the ramp-up phase.'
-            }
-          ]
-        },
-        {
-          title: 'Process & Services',
-          items: [
-            {
-              question: 'What\'s included in the price?',
-              answer: 'Everything: onboarding, script development, GDPR-compliant lead lists, daily cold calling, reporting, and regular feedback calls. There are no hidden additional costs.'
-            },
-            {
-              question: 'How quickly can we start?',
-              answer: 'After the consultation and contract signing, we begin onboarding within 7-10 days. First calls typically happen in the second week.'
-            },
-            {
-              question: 'Can I upgrade to a larger package later?',
-              answer: 'Yes, absolutely. Many of our Starter customers grow with us and move to our Enterprise packages. We support you every step of the way.'
-            },
-            {
-              question: 'Which industries do you serve?',
-              answer: 'B2B SaaS, IT services, consulting, agencies, professional services – all B2B industries with deal values starting at €3,000.'
-            }
-          ]
-        }
-      ]
-    },
-
-    starterContact: {
-      title: 'Ready to Start Selling?',
-      subtitle: 'Let\'s have a quick chat to figure out which Starter package fits you best. No commitment, completely free.',
-      formTitle: 'Request Free Consultation'
+      cta: 'See App Demo in Consultation'
     }
   }
 };

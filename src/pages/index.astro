@@ -3,23 +3,24 @@ import Layout from '../layouts/Layout.astro';
 import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
 import HeroLeadGeniesv2 from '../components/leadgenies/HeroLeadGeniesv2.tsx';
 import TrustSection from '../components/leadgenies/TrustSection.tsx';
-import ProcessSection from '../components/leadgenies/ProcessSection.tsx';
+import AppFeatureTabs from '../components/leadgenies/AppFeatureTabs.tsx';
+import LeistungenSection from '../components/leadgenies/LeistungenSection.tsx';
 import HowItWorksSectionV5 from '../components/leadgenies/HowItWorksSectionV5.tsx';
+import CaseStudiesSection from '../components/leadgenies/CaseStudiesSection.tsx';
 import ROICalculatorSection from '../components/leadgenies/ROICalculatorSection.tsx';
 import GuaranteeTempSection from '../components/leadgenies/GuaranteeTempSection.tsx';
-import CaseStudiesSection from '../components/leadgenies/CaseStudiesSection.tsx';
-import TeamSection from '../components/leadgenies/TeamSection.tsx';
 import FAQSection from '../components/leadgenies/FAQSection.tsx';
 import PricingSection from '../components/leadgenies/PricingSection.tsx';
 import ContactSection from '../components/leadgenies/ContactSection.tsx';
 import FooterSection from '../components/leadgenies/FooterSection.tsx';
+import StickyMobileCTA from '../components/leadgenies/StickyMobileCTA.tsx';
 
 // Language for this page
 const lang = 'de';
 
 // Page metadata (German)
-const pageTitle = "LeadGenies - KI-gestützte B2B Kaltakquise";
-const pageDescription = "Transformieren Sie Ihren B2B-Vertrieb mit KI-gestützter Kaltakquise. Deutsche Präzision trifft auf modernste Technologie für unübertroffene Leadgenerierung.";
+const pageTitle = "LeadGenies - Qualifizierte B2B-Termine durch professionelle Kaltakquise";
+const pageDescription = "Wir übernehmen Ihre Kaltakquise — mit eigenem SDR-Team, eigener App und 54.000+ B2B-Kontakten. Qualifizierte Termine ab dem ersten Monat.";
 
 // VideoObject Schema for SEO
 const videoSchema = {
@@ -34,7 +35,7 @@ const videoSchema = {
   "duration": "PT30S"
 };
 ---
- 
+
 <Layout
   title={pageTitle}
   description={pageDescription}
@@ -47,63 +48,62 @@ const videoSchema = {
 
   <main class="relative" style="margin: 0; padding: 0; overflow-x: hidden; width: 100%;">
     <!-- SEO H1 (hidden but crawlable) -->
-    <h1 class="sr-only">LeadGenies - KI-gestützte B2B Kaltakquise Services</h1>
+    <h1 class="sr-only">LeadGenies - Qualifizierte B2B-Termine durch professionelle Kaltakquise</h1>
 
-    <!-- Hero Section with Intro Animation -->
+    <!-- 1. Hero Section with App Dashboard Preview -->
     <section id="hero">
       <HeroLeadGeniesv2 lang={lang} client:load />
     </section>
 
-    <!-- Trust Section with Animated Stats -->
+    <!-- 2. Trust Section with Animated Stats + Reviews -->
     <TrustSection lang={lang} client:idle />
 
-    <!-- Team Section - Meet Your Callers -->
-    <section id="team">
-      <TeamSection lang={lang} client:idle />
-    </section>
+    <!-- 3. App Showcase (Interactive Feature Tabs) -->
+    <AppFeatureTabs lang={lang} client:idle />
 
-    <!-- Process Section with Video -->
-    <!-- <ProcessSection client:idle /> -->
+    <!-- 4. Leistungen (What's Included) -->
+    <LeistungenSection lang={lang} client:idle />
 
-    <!-- How It Works Section (V5) -->
+    <!-- 5. How It Works -->
     <section id="how-it-works">
       <HowItWorksSectionV5 lang={lang} client:idle />
     </section>
 
-    <!-- ROI Calculator Section -->
-    <section id="roi-calculator">
-      <ROICalculatorSection lang={lang} client:idle />
-    </section>
-
-    <!-- Guarantee Section (with InfiniteMenu) -->
-    <section id="guarantee">
-      <GuaranteeTempSection lang={lang} client:idle />
-    </section>
-
-    <!-- Case Studies Section -->
+    <!-- 6. Case Studies -->
     <section id="case-studies">
       <CaseStudiesSection lang={lang} client:idle />
     </section>
 
-    <!-- FAQ Section -->
-    <FAQSection lang={lang} client:idle />
+    <!-- 7. ROI Calculator -->
+    <section id="roi-calculator">
+      <ROICalculatorSection lang={lang} client:idle />
+    </section>
 
-    <!-- Pricing Section -->
+    <!-- 8. Pricing (Caller-based) -->
     <section id="pricing">
       <PricingSection lang={lang} client:idle />
     </section>
 
-    <!-- Contact Section -->
-    <ContactSection lang={lang} client:idle />
+    <!-- 9. Guarantee -->
+    <section id="guarantee">
+      <GuaranteeTempSection lang={lang} client:idle />
+    </section>
 
+    <!-- 10. FAQ -->
+    <FAQSection lang={lang} client:idle />
+
+    <!-- 11. Contact -->
+    <ContactSection lang={lang} client:idle />
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <FooterSection lang={lang} client:load />
+
+  <!-- Sticky Mobile CTA -->
+  <StickyMobileCTA client:idle />
 </Layout>
 
 <style>
-  /* Hide SEO elements visually but keep them for crawlers */
   .sr-only {
     position: absolute;
     width: 1px;
@@ -116,4 +116,3 @@ const videoSchema = {
     border-width: 0;
   }
 </style>
- 

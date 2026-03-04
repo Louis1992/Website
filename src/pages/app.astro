@@ -1,0 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderLeadGenies from '../components/leadgenies/HeaderLeadGenies.tsx';
+import AppFeatureTabs from '../components/leadgenies/AppFeatureTabs.tsx';
+import FooterSection from '../components/leadgenies/FooterSection.tsx';
+import StickyMobileCTA from '../components/leadgenies/StickyMobileCTA.tsx';
+
+const lang = 'de';
+const pageTitle = "Die LeadGenies App - Ihr Kampagnen-Dashboard in Echtzeit";
+const pageDescription = "Live-Dashboard, Lead-Tracking, ICP-Analyse, automatische Reports und Team-Chat — alles in einer App. Die einzige TM-Agentur mit eigener Plattform.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  type="WebPage"
+  lang={lang}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "App", url: "/app" }
+  ]}
+>
+  <HeaderLeadGenies lang={lang} client:load />
+
+  <main style="margin: 0; padding: 0; overflow-x: hidden; width: 100%;">
+
+    <!-- Hero -->
+    <section style="background: linear-gradient(135deg, #f8f7ff 0%, #ffffff 50%, #f0eeff 100%); padding: 140px 16px 60px; text-align: center;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="display: inline-block; background: rgba(65, 54, 179, 0.1); color: #4136b3; font-family: Inter, sans-serif; font-size: 0.875rem; font-weight: 600; padding: 6px 16px; border-radius: 50px; margin-bottom: 1.5rem;">
+          Exklusiv bei LeadGenies
+        </div>
+        <h1 style="font-family: MomoTrustDisplay, sans-serif; font-size: 2.75rem; font-weight: bold; color: #0d0d28; margin-bottom: 1.5rem; line-height: 1.2;">
+          Ihre Kampagne.<br/>In Echtzeit.
+        </h1>
+        <p style="font-family: Inter, sans-serif; font-size: 1.25rem; color: #6B7280; line-height: 1.7; max-width: 650px; margin: 0 auto;">
+          Kein Warten auf Monatsreports. Kein Excel. Kein Raten. Unsere App zeigt Ihnen jeden Call, jeden Termin und jede Kennzahl — live.
+        </p>
+      </div>
+    </section>
+
+    <!-- App Feature Tabs (Full Version) -->
+    <AppFeatureTabs lang={lang} client:idle />
+
+    <!-- Vorher/Nachher -->
+    <section style="padding: 80px 16px; background: #F9FAFB;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-family: MomoTrustDisplay, sans-serif; font-size: 1.75rem; font-weight: bold; color: #0d0d28; margin-bottom: 3rem; text-align: center;">
+          Vorher vs. Nachher
+        </h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+          <!-- Vorher -->
+          <div style="background: #ffffff; border-radius: 20px; padding: 40px; border: 2px solid #E5E7EB;">
+            <div style="display: inline-block; background: #FEE2E2; color: #DC2626; font-family: Inter, sans-serif; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 50px; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.5px;">
+              Vorher
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; text-decoration: line-through;">Excel-Tabellen per E-Mail</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; text-decoration: line-through;">Wöchentliche Reports</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; text-decoration: line-through;">Black Box — keine Transparenz</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280; text-decoration: line-through;">Manuelle Lead-Übergabe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nachher -->
+          <div style="background: #ffffff; border-radius: 20px; padding: 40px; border: 2px solid #10B981; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.1);">
+            <div style="display: inline-block; background: #D1FAE5; color: #059669; font-family: Inter, sans-serif; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 50px; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.5px;">
+              Mit LeadGenies App
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #0d0d28; font-weight: 500;">Live-Dashboard mit allen KPIs</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #0d0d28; font-weight: 500;">Echtzeit-Updates bei jedem Call</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #0d0d28; font-weight: 500;">Volle Transparenz über alles</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #0d0d28; font-weight: 500;">Automatische Lead-Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section style="padding: 80px 16px; background: #ffffff;">
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="margin-bottom: 1.5rem; opacity: 0.2;">
+          <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="#4136b3"/>
+          <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="#4136b3"/>
+        </svg>
+        <blockquote style="font-family: Inter, sans-serif; font-size: 1.25rem; color: #0d0d28; line-height: 1.7; font-style: italic; margin: 0 0 1.5rem;">
+          &ldquo;Endlich sehe ich in Echtzeit, was mein Outbound-Team macht. Die App war für mich das entscheidende Argument für LeadGenies.&rdquo;
+        </blockquote>
+        <p style="font-family: Inter, sans-serif; font-size: 0.9375rem; color: #6B7280;">
+          — Zufriedener Kunde
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding: 80px 16px; background: linear-gradient(135deg, #4136b3 0%, #564DCA 100%); text-align: center;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <h2 style="font-family: MomoTrustDisplay, sans-serif; font-size: 2rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+          Überzeugen Sie sich selbst
+        </h2>
+        <p style="font-family: Inter, sans-serif; font-size: 1.125rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 2rem;">
+          In einem kostenlosen Gespräch zeigen wir Ihnen die App live und besprechen, wie wir Ihre Kaltakquise übernehmen können.
+        </p>
+        <a
+          href="https://calendly.com/louis-mickley-leadgenies/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-block; padding: 16px 40px; background: #ffffff; color: #4136b3; font-family: Inter, sans-serif; font-size: 1.0625rem; font-weight: 600; border-radius: 50px; text-decoration: none;"
+        >
+          Kostenloses Gespräch buchen
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <FooterSection lang={lang} client:load />
+  <StickyMobileCTA client:idle />
+</Layout>
+
+<style>
+  @media (max-width: 768px) {
+    section > div > div[style*="grid-template-columns: 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

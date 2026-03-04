@@ -1,5 +1,17 @@
 {
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/starter",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/starter",
+      "destination": "/en",
+      "statusCode": 301
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -18,7 +30,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://vercel.live https://*.vercel.app https://calendly.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; media-src 'self' https://syntra-eu.fra1.cdn.digitaloceanspaces.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.vercel.app https://vercel.live https://formspree.io https://calendly.com; frame-src 'self' https://calendly.com https://www.youtube.com https://www.google.com https://vercel.live; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://vercel.live https://*.vercel.app https://calendly.com https://assets.calendly.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; media-src 'self' https://syntra-eu.fra1.cdn.digitaloceanspaces.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.vercel.app https://vercel.live https://formspree.io https://calendly.com https://www.facebook.com https://graph.facebook.com https://www.leadgenies.cloud; frame-src 'self' https://calendly.com https://www.youtube.com https://www.google.com https://vercel.live; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;"
         }
       ]
     }

@@ -58,12 +58,14 @@ const currentLang = lang;
 // Map of German to English page equivalents
 const pageLanguageMap: Record<string, string> = {
   '/': '/en',
-  '/starter': '/en/starter',
+  '/ueber-uns': '/en/about',
+  '/app': '/en/app',
   '/agb': '/en/terms',
   '/impressum': '/en/imprint',
   '/datenschutz': '/en/privacy',
   '/en': '/',
-  '/en/starter': '/starter',
+  '/en/about': '/ueber-uns',
+  '/en/app': '/app',
   '/en/terms': '/agb',
   '/en/imprint': '/impressum',
   '/en/privacy': '/datenschutz',
@@ -160,6 +162,33 @@ const ogUrl = canonicalUrl;
       } catch(e) {}
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel (Facebook) — respects consent mode -->
+    <script is:inline>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+
+      // Default: revoked until cookie consent
+      fbq('consent', 'revoke');
+      fbq('init', '1437965234702282');
+
+      // Grant consent + track PageView if cookies already accepted
+      try {
+        if (localStorage.getItem('cookie_consent') === 'true') {
+          fbq('consent', 'grant');
+          fbq('track', 'PageView');
+        }
+      } catch(e) {}
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1437965234702282&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel -->
 
     <meta name="description" content={pageDescription} />
 

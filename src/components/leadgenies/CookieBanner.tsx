@@ -37,6 +37,12 @@ export default function CookieBanner({ lang = 'de' }: CookieBannerProps) {
             (window as any).dataLayer = (window as any).dataLayer || [];
             (window as any).dataLayer.push({ 'event': 'consent_update' });
         }
+
+        // Grant Meta Pixel consent and track PageView
+        if (typeof window !== 'undefined' && (window as any).fbq) {
+            (window as any).fbq('consent', 'grant');
+            (window as any).fbq('track', 'PageView');
+        }
     };
 
     const declineCookies = () => {
